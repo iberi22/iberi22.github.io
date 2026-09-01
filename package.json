@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "private": true,
-  "description": "Brahyan Belalc\u00e1zar (iberi22) - Full-Stack Engineer & AI Orchestration Portfolio",
+  "description": "Brahyan Belalcázar (iberi22) - Full-Stack Engineer & AI Orchestration Portfolio",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -12,19 +12,19 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@astrojs/mdx": "^5.0.4",
+    "@astrojs/mdx": "^8.0.0",
     "@astrojs/rss": "4.0.19",
-    "@astrojs/svelte": "^8.1.0",
+    "@astrojs/svelte": "^9.0.1",
     "@tailwindcss/vite": "^4.2.4",
-    "astro": "^6.2.2",
+    "astro": "^7.2.10",
     "svelte": "^5.55.5",
     "tailwindcss": "^4.2.4"
   },
   "devDependencies": {
-    "typescript": "~5.7.0",
-    "vitest": "4.1.11",
     "@playwright/test": "^1.62.1",
     "@testing-library/svelte": "^5.4.2",
-    "jsdom": "^30.0.1"
+    "jsdom": "^30.0.1",
+    "typescript": "~5.7.0",
+    "vitest": "4.1.11"
   }
 }

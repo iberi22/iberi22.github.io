@@ -23,7 +23,7 @@ interface Props {
 const {
   title = "Brahyan Belalcázar — iberi22 | Full-Stack Engineer & AI Orchestration",
   description = "Brahyan Belalcázar — iberi22. Full-Stack Engineer & AI Orchestration Specialist. Software en producción con tubería de desarrollo orquestada por IA.",
-  image = "https://iberi22.github.io/portfolio-iberi22/og/default.png",
+  image = siteUrl("og/default.png"),
   imageAlt = "Brahyan Belalcázar — iberi22 | Portfolio, arquitectura y sistemas agénticos",
   imageWidth = "1200",
   imageHeight = "630",
@@ -106,7 +106,7 @@ const jsonLd = article ? {
   "@type": "Person",
   "name": "Brahyan Belalcázar",
   "alternateName": "iberi22",
-  "url": "https://iberi22.github.io/portfolio-iberi22/",
+  "url": siteRoot,
   "jobTitle": "Full-Stack Engineer & AI Orchestration Architect",
   "sameAs": [
     "https://github.com/iberi22",
