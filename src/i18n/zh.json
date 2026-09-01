@@ -1,0 +1,595 @@
+{
+  "nav": {
+    "about": "关于",
+    "projects": "项目",
+    "blog": "博客",
+    "contact": "联系",
+    "git": "GIT",
+    "github": "GITHUB",
+    "agenda": "预约",
+    "simulator": "模拟器",
+    "resources": "模拟器"
+  },
+  "hero": {
+    "badge": "资深全栈工程师 · 10+ 年生产经验",
+    "firstName": "Brahyan",
+    "lastName": "Belalcázar",
+    "tagline": "十年磨一剑，专注打造高可靠生产级软件。",
+    "taglineExtra": "JavaScript, PHP, Web 与移动端架构 — 涵盖工业采矿、财税咨询、出版及电子商务全流程。",
+    "viewProjects": "查看项目",
+    "getInTouch": "取得联系",
+    "scroll": "向下滚动"
+  },
+  "about": {
+    "heading": "# 关于我",
+    "title": "Web 架构与",
+    "titleAccent": " 全栈工程",
+    "titleSuffix": " 十年行业沉淀",
+    "bio": "我是 Brahyan Belalcázar，拥有 10+ 年生产级软件开发经验的全栈工程师。曾服务于工业采矿与电力（Tripro）、财税法律咨询（Restrepo y Londoño）、B2B/B2C 电子商务（Siesa Ecommerce）、ERP 与交互标识（LogicalSoft）以及出版业（Los Tres Editores）。核心技术栈为精通级别的 JavaScript 和 PHP，结合现代 AI 辅助工程体系，加速产品迭代与交付。",
+    "philosophy": "我坚信闭环工程：每个功能都历经仿真、实现、评审与测试，且全程保持人工把控。",
+    "philosophyAccent": "快速迭代，严格验证，交付生产。",
+    "statProjects": "核心项目",
+    "statStack": "主要技术栈",
+    "competencies": "核心能力",
+    "stackIndex": "技术索引",
+    "yearsInProduction": "年生产实战经验",
+    "fullStackLabel": "全栈 JS · PHP · Rust · AI",
+    "specialties": {
+      "0x01": {
+        "title": "全栈工程与高级 PHP 开发",
+        "desc": "10+ 年生产经验：自主架构 WordPress 插件、定制主题开发、REST API、Hooks/Filters 及完整 Node.js 架构。"
+      },
+      "0x02": {
+        "title": "AI 编排框架、Agent Harness 与 Skills",
+        "desc": "基于自主 Agent（Hermes、GitCore、Gestalt、Jules）构建确定性流水线，设计自定义 Skill，QA 自动化脚本及多模型路由。"
+      },
+      "0x03": {
+        "title": "系统编程、Rust 与 离线优先移动端",
+        "desc": "Rust 高性能微服务、Flutter 移动应用、本地加密数据库以及 WebAssembly 运行时。"
+      },
+      "0x04": {
+        "title": "关系型与向量数据库",
+        "desc": "PostgreSQL/MySQL 架构设计，基于 pgvector、SQLite-vec 与 HNSW 实现本地语义搜索与情节记忆。"
+      },
+      "0x05": {
+        "title": "VPS 基础设施、cPanel 与 服务器运维",
+        "desc": "Linux/NixOS 专用/VPS 部署，cPanel/WHM 全盘管理，Nginx/PHP-FPM 性能调优与 SSL/DNS 配置。"
+      },
+      "0x06": {
+        "title": "安全加固、代码审计与 MCP 工具",
+        "desc": "代码审计、恶意软件与漏洞扫描、自研杀毒工具及基于 MCP 协议的检查服务器。"
+      }
+    },
+    "stackCategories": {
+      "cat1": "编程语言与运行时",
+      "cat2": "Web、CMS 与前端框架",
+      "cat3": "数据库与向量检索",
+      "cat4": "AI 工具与智能体编排",
+      "cat5": "基础设施、服务器与 DevSecOps"
+    }
+  },
+  "projects": {
+    "heading": "# 项目",
+    "title": "构建",
+    "titleAccent": "分布式",
+    "titleSuffix": "系统",
+    "subtitle": "从采矿工业遥测到 AI 认知记忆核心——每个项目均通过仿真与大模型辅助完成闭环验证。",
+    "techStack": "技术栈",
+    "timeline": "时间线与路线图",
+    "repository": "代码仓库",
+    "filter": {
+      "all": "全部",
+      "production": "生产实战与工业 (10+年)",
+      "opensource": "开源与深科技 (Deep Tech)"
+    },
+    "section": {
+      "opensource": "// 01. 深科技核心与开源生态",
+      "production": "// 02. 生产实战与工作履历 (10+年)"
+    },
+    "status": {
+      "production": "生产运行",
+      "active": "活跃",
+      "beta": "Beta 测试",
+      "prototype": "原型"
+    },
+    "btn": {
+      "showDetails": "查看架构与指标",
+      "hideDetails": "隐藏详情",
+      "viewRepo": "查看源码仓库",
+      "visitDemo": "访问生产环境 / 网站",
+      "readStudy": "阅读论文 / 报道"
+    },
+    "label": {
+      "architecture": "技术架构与决策",
+      "stack": "完整技术栈",
+      "metrics": "性能指标与成果",
+      "research": "科学研究与前沿科技报道（玻璃 5D 存储）",
+      "researchDesc": "支持该仿真模型理论可行性的全球前沿学术论文与里程碑：",
+      "timeline": "时间线与关键节点"
+    },
+    "xavier2": {
+      "name": "Xavier",
+      "tagline": "AI 认知记忆核心",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - 至今",
+      "description": "基于 Rust 实现的 AI Agent 本地持久化认知记忆核心。基于 Docker 容器化的微服务，提供向量存储、HNSW 语义索引与统一知识图谱。",
+      "architecture": "Rust 原生引擎，集成 SQLite-vec 与 pgvector。基于余弦相似度的本地向量检索，无需依赖外部云服务。提供极速 REST 和 RPC 接口。",
+      "metrics": [
+        "本地索引检索延迟 < 10ms",
+        "零云端锁定：100% 设备端运行",
+        "与 Hermes 和 Gestalt 无缝统一集成"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "Rust 架构设计与向量持久化层实现"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "v0.1 发布 - CRUD 操作、本地 Embeddings 及 REST 接口"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "v0.6.0-beta - HNSW 索引、Docker 容器化与情节记忆"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "路线图：语义图谱集成与上下文路由"
+        }
+      ]
+    },
+    "gitcore": {
+      "name": "GitCore",
+      "tagline": "自主多 Agent Git/GitHub 编排器",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2026 - 至今",
+      "description": "面向自主编码 Agent（Jules、Claude Code、OpenCode）的操作 Harness 与确定性编排器。自动生成规范 Issue、最多支持 15 个并发任务的微碎片化处理及无冲突 PR 校验。",
+      "architecture": "Rust 解耦架构与 CLI 自动化脚本。相交隔离文件岛（Disjoint file islands）机制，防止大规模并行执行时的 Merge 冲突。",
+      "metrics": [
+        "支持高达 15 个并行自主任务",
+        "100% 规范 Issue 可追溯性",
+        "顺序合并 0 冲突"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "初始 Issue 协议与 Agent 可追溯性体系"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Wave 批处理：微碎片化与 15 个并发微任务批次"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "与 Hermes Gateway 集成及预委托审计"
+        },
+        {
+          "date": "2026 Q4",
+          "label": "路线图：多仓库 P2P 分布式集群"
+        }
+      ]
+    },
+    "gestalt": {
+      "name": "Gestalt",
+      "tagline": "多 Agent 蜂群编排 CLI",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - 至今",
+      "description": "基于 Rust 的自主 Agent 蜂群编排与多角色智能路由命令行工具（CLI）。使用 SurrealDB 进行状态持久化、基于角色的任务路由及自定义 Agent 间通信协议。",
+      "architecture": "Rust 原生 CLI，集成 Tokio 异步运行时。SurrealDB 图与状态持久化。用于大模型生成代码测试的确定性 Sandbox。",
+      "metrics": [
+        "Agent 在隔离 Sandbox 中安全执行",
+        "SurrealDB 响应式状态持久化",
+        "按专业领域动态路由"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "原型开发与 SurrealDB 状态 Schema 设计"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "多 Agent 协调层与 CLI 动态执行环境"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "与 Xavier 认知记忆库闭环集成"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "路线图：去中心化蜂群智能"
+        }
+      ]
+    },
+    "photon-core": {
+      "name": "Photon-Core",
+      "tagline": "5D 光学存储仿真 (PoC) 与学术研究",
+      "companyOrContext": "高校科研 & SWAL Lab 路线图",
+      "period": "2025 - 2026",
+      "description": "个人自主知识产权的高校科研成果，作为 SouthWest AI Labs 探索未来超高密度体存储技术的理论基础。基于 Rust 开发的仿真软件，模拟石英玻璃中飞秒激光脉冲的偏振双折射、3D 空间串扰 mitigation 与 Reed-Solomon 纠错。",
+      "architecture": "Rust 确定性物理仿真器，建模光与熔融石英玻璃的相互作用：将慢轴延迟与光轴方向作为额外的 2 维（配合 X, Y, Z 轴）。利用 Rayon 并行计算，理论编码吞吐量 >470 MB/s。",
+      "metrics": [
+        "个人自主研发的数学仿真与 PoC 软件",
+        "计算编码吞吐量 > 470 MB/s",
+        "结合 Reed-Solomon ECC 容忍 >30% 的 3D 空间串扰",
+        "SWAL 物理硬件路线图的研究基石"
+      ],
+      "researchLinks": [
+        {
+          "title": "玻璃 5D 数据存储（南安普顿大学 ORC：360 TB & 亿年保存）",
+          "source": "南安普顿大学光电子研究中心"
+        },
+        {
+          "title": "Project Silica：利用超快激光在玻璃中存储数据千年",
+          "source": "微软研究院"
+        },
+        {
+          "title": "石英玻璃中飞秒激光 5D 光学数据高速存储",
+          "source": "Optica Publishing Group / SPIE"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "初始数学模型与光子体素（Voxel）定义"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Reed-Solomon ECC 集成与 3D 空间串扰仿真"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "隐写数据隐藏与 CLI 工具包发布"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "路线图：基于深度学习的信号重建"
+        }
+      ]
+    },
+    "edge-mesh": {
+      "name": "edge-mesh",
+      "tagline": "具有 CRDT 与后量子加密的 P2P Mesh 网络",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - 至今",
+      "description": "点对点（P2P）通信网络库，具备无冲突可复制数据类型（CRDTs）与基于 ML-DSA-65 的后量子加密身份体系。",
+      "architecture": "无中心服务器的去中心化 P2P 拓扑。结合 Yjs/Automerge 实现恶劣网络环境下的确定性状态同步。",
+      "metrics": [
+        "零中心服务器依赖",
+        "抗量子计算的 ML-DSA-65 加密标准",
+        "P2P 通信延迟 < 15ms"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q3",
+          "label": "P2P 节点发现协议设计"
+        },
+        {
+          "date": "2025 Q4",
+          "label": "CRDT 数据结构实现与分支冲突解决"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "全面采纳 ML-DSA-65 后量子加密标准"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "路线图：Android 与 iOS 移动端 SDK"
+        }
+      ]
+    },
+    "orion": {
+      "name": "OrionHealth",
+      "tagline": "离线优先 (Offline-First) 健康生态系统",
+      "companyOrContext": "HealthTech",
+      "period": "2025 - 2026",
+      "description": "100% 离线优先的个人健康追踪与临床指标应用。设备端 SQLite 加密存储、后台数据同步引擎及交互式分析仪表盘。",
+      "architecture": "Flutter & Dart 构建，搭载 SQLCipher 本地加密数据库。具备断网自动重连与 SSI 隐私保护标准。",
+      "metrics": [
+        "100% 数据在设备端加密",
+        "无网络环境下持续稳定运行",
+        "交互式临床分析仪表盘"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "临床数据建模与离线优先 Flutter 架构设计"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "基于 SQLite 的加密持久化与安全 Schema"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "后台同步引擎核心与分析看板"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "路线图：P2P 去中心化云同步 GA"
+        }
+      ]
+    },
+    "gara-g": {
+      "name": "GARA-G",
+      "tagline": "DePIN 出行与车联网 V2V Mesh 网络",
+      "companyOrContext": "Mobility Tech",
+      "period": "2026",
+      "description": "面向汽车领域的 DePIN 出行网络与车对车（V2V）Mesh 网络，支持实时遥测、AI 驾驶副驾及去中心化市场。",
+      "architecture": "Rust 编写的高性能车联网遥测处理后端，配合 Flutter 移动端。具备无蜂窝网络覆盖下的车际预警协议。",
+      "metrics": [
+        "低延迟车载遥测数据处理",
+        "设备端 OBD-II 故障诊断 AI 副驾",
+        "Polygon 区块链网络集成"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "车载遥测协议架构与数据链路"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "用于 OBD-II 故障诊断的 AI 副驾集成"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "路线图：行车途中的车际 Mesh 组网"
+        }
+      ]
+    },
+    "tripro-mining": {
+      "name": "Tripro SPA (智利)",
+      "tagline": "工业物联网、采矿遥测与实时仪表盘",
+      "companyOrContext": "工业电力服务与矿业",
+      "period": "2025 - 2026",
+      "description": "开发连接重型采矿机械传感器与 Web 实时仪表盘的监控软件平台。构建从厂区到云端的数据采集通道以实现预测性维护，开发带有支付网关的 Web 应用。",
+      "architecture": "基于 Astro、Next.js、React、PostgreSQL 与 Tailwind CSS 的现代 Stack。Python、n8n 和 Node.js 数据流水线，集成 Telegram 告警 Bot 与工单自动生成。",
+      "metrics": [
+        "采矿厂重型设备传感器的持续实时监控",
+        "将原始遥测数据转化为预测性分析",
+        "CGP San Patricio Web 应用成功部署 Flow 支付网关"
+      ],
+      "timeline": [
+        {
+          "date": "2025.06 - 2025.10",
+          "label": "Astro + Flow 官网、CGP San Patricio Web 应用及 n8n/Python 多站点 Bot"
+        },
+        {
+          "date": "2026.01 - 2026.05",
+          "label": "矿山传感器 IoT 遥测平台及轻量级 AI 能效优化系统"
+        }
+      ]
+    },
+    "smartax-mobile": {
+      "name": "Restrepo y Londoño / Smartax",
+      "tagline": "API 数据消费、Google Play 审核认证与 WordPress 架构",
+      "companyOrContext": "财税与法律咨询事务所",
+      "period": "2021 - 2025",
+      "description": "与 WordPress CMS 的 API 数据消费集成，并对移动应用进行技术升级以完全符合 Google Play Store 当前的合规与安全验证标准。开发企业专用 PHP 插件。",
+      "architecture": "连接 WordPress CMS 的 REST API 消费层。升级 Android/Google Play 安全规范、权限管理、PDF 报告渲染及用于税务计算的 PHP 插件。",
+      "metrics": [
+        "成功通过 Google Play Store 严格审核并上架",
+        "流畅的 REST API 内容同步集成",
+        "用于税务逻辑与报告生成的自研 PHP 插件"
+      ],
+      "timeline": [
+        {
+          "date": "2021.10 - 2022.09",
+          "label": "B2B 网站开发、自研 PHP 插件及企业 Web 运维管理"
+        },
+        {
+          "date": "2025.01 - 2025.05",
+          "label": "数据 API 集成、Google Play 合规适配与发布"
+        }
+      ]
+    },
+    "siesa-ecommerce": {
+      "name": "Siesa Ecommerce (E-Solutions)",
+      "tagline": "企业级 B2B/B2C 电商与云基础设施",
+      "companyOrContext": "E-Solutions / Siesa",
+      "period": "2019 - 2020",
+      "description": "为企业级 B2B 和 B2C 电商平台开发高可扩展功能。从零构建用于发货排期的物流日历模块，并管理 Linux (CentOS 7) 服务器基础设施。",
+      "architecture": "PHP Yii2 框架后端与 Angular 响应式前端。通过 Linux 终端管理 LAMP 服务器，Git CI/CD 自动化部署，SSL 证书、VPN 与防火墙规则管理。",
+      "metrics": [
+        "物流日历模块成功上线运行",
+        "Linux CentOS 7 LAMP 服务器环境部署与调优",
+        "编制标准化运维手册与技术规范"
+      ],
+      "timeline": [
+        {
+          "date": "2019.10 - 2020.01",
+          "label": "物流日历模块与电商核心功能开发"
+        },
+        {
+          "date": "2020.02 - 2020.04",
+          "label": "云服务器部署、CI/CD 自动化与安全加固"
+        }
+      ]
+    },
+    "logicalsoft-siip": {
+      "name": "LogicalSoft",
+      "tagline": "SIIP 移动端 Android App、零售分析与 Electron 桌面端",
+      "companyOrContext": "ERP、交互标识与零售分析",
+      "period": "2015 - 2019",
+      "description": "主导开发在 Google Play 上架的 SIIP Móvil 混合应用（包含 15+ 业务视图）。开发用于商场评估的 PHP/MySQL RIA Web 应用以及支持离线的 Electron 桌面应用。",
+      "architecture": "PHP 与 MySQL 后端，配合 JavaScript 前端及本地 IndexedDB 存储。基于 Electron、Node.js 与 ReactJS 的跨平台桌面应用。AWS 与 GCP 云端运维。",
+      "metrics": [
+        "SIIP Móvil 应用在 Google Play 成功发布",
+        "集成二维码快速扫码核销模块",
+        "基于 IndexedDB 实现无网离线作业"
+      ],
+      "timeline": [
+        {
+          "date": "2015 - 2017",
+          "label": "PHP/MySQL RIA Web 应用、IndexedDB 离线普查及 Electron 桌面端"
+        },
+        {
+          "date": "2018",
+          "label": "遗留系统架构现代化与性能优化 Sprint"
+        },
+        {
+          "date": "2019",
+          "label": "SIIP Móvil 应用（PHP/JS/WebView）开发并在 Play Store 上架"
+        }
+      ]
+    },
+    "los-tres-editores": {
+      "name": "Los Tres Editores SAS",
+      "tagline": "PostgreSQL 存储过程、Java EE 架构与 Debian 服务器",
+      "companyOrContext": "大型出版与印刷集团",
+      "period": "2013 - 2015",
+      "description": "深入进行 PostgreSQL 数据库服务端编程（存储过程、自定义函数及触发器）。开发基于 iReport 的 Java EE 报表组件，PHP (FPDF) 动态 PDF 报表模块及 Debian Linux 服务器运维。",
+      "architecture": "PostgreSQL 关系型数据库，业务逻辑封装于存储过程。Java EE 服务层用于海量企业报表生成与 Moodle 教育平台二次开发。",
+      "metrics": [
+        "PostgreSQL 复杂查询与 Trigger 性能大幅优化",
+        "海量企业级 PDF 报表自动化批量生成",
+        "Debian 生产服务器的高可用运维与稳定保障"
+      ],
+      "timeline": [
+        {
+          "date": "2013 - 2014",
+          "label": "遗留系统技术文档梳理与 PostgreSQL 自定义函数编写"
+        },
+        {
+          "date": "2014 - 2015",
+          "label": "Java EE 组件实现、FPDF/iReport 报表开发与 Debian 运维"
+        }
+      ]
+    },
+    "filterAll": "Todos",
+    "filterProduction": "Producción e Industria (10+ Años)",
+    "filterOpenSource": "Open Source y Deep Tech",
+    "secDeepTech": "// 01. Núcleos Deep Tech y Ecosistema Open Source",
+    "secProduction": "// 02. Experiencias Laborales y Software en Producción (10+ Años)",
+    "hideDetails": "Ocultar Detalles",
+    "viewDetails": "Ver Arquitectura y Métricas",
+    "archTitle": "Arquitectura y Decisiones Técnicas",
+    "stackTitle": "Stack Técnico Completo",
+    "metricsTitle": "Métricas de Rendimiento y Resultados",
+    "viewRepo": "Ver Repositorio",
+    "visitProd": "Visitar Producción / Web",
+    "researchTitle": "Estudios Científicos y Noticias del Avance Tecnológico (Memoria 5D en Vidrio)",
+    "researchDesc": "Publicaciones científicas globales que respaldan la viabilidad del modelo:",
+    "readResearch": "Leer Estudio / Noticia",
+    "timelineTitle": "Cronograma e Hitos Clave"
+  },
+  "blog": {
+    "heading": "# 博客",
+    "title": "技术洞察与",
+    "titleAccent": "架构思考",
+    "subtitle": "深入探讨系统架构、AI 基础设施以及项目背后的工程实践。",
+    "draft": "草稿",
+    "comingSoon": "即将推出",
+    "pipelineStatus": "自动化流水线运行中 / 系统状态：正常",
+    "readMore": "阅读全文 →"
+  },
+  "contact": {
+    "heading": "# 联系",
+    "title": "让我们构建",
+    "titleAccent": "高可扩展的",
+    "titleSuffix": "系统",
+    "subtitle": "需要具备丰富生产环境实战经验的工程师？欢迎随时与我联系。",
+    "emailPlaceholder": "YOUR@EMAIL.COM",
+    "messagePlaceholder": "描述您的项目需求或技术架构...",
+    "submit": "发送联系请求",
+    "email": "EMAIL"
+  },
+  "footer": {
+    "tagline": "资深全栈工程师",
+    "partOf": "隶属于",
+    "builtWith": "构建于"
+  },
+  "locale": {
+    "label": "语言",
+    "announcement": "本网站支持您的语言。语言不是开源与技术社区交流的障碍。",
+    "mission": "SouthWest AI Labs 是一个面向社区融合解决方案的创意实验室。我们的使命：让每个人都能获得尖端工具，设计改善生活质量的信息系统。",
+    "accelerate": "我们加速能够为人们带来生活质量的技术系统。"
+  },
+  "agenda": {
+    "badge": "技术咨询",
+    "title": "预约技术交流与咨询",
+    "subtitle": "全面评估并整合您的开发资源 — AI 智能体、自动化与基础设施 — 提升团队工程产出效率。",
+    "p1t": "开发资源审计",
+    "p1d": "全面梳理您现有的工具链、AI 智能体、代码库与流程：优化冗余，补齐短板。",
+    "p2t": "AI 编排落地方案",
+    "p2d": "制定将自主智能体无缝无冲突集成至现有工作流的具体协议、代码评审及测试标准。",
+    "p3t": "架构与长期可维护性",
+    "p3d": "建立可复用的设计系统、共享组件库与动态文档，确保系统长期健康演进。",
+    "fmtTitle": "咨询形式",
+    "fmtDur": "时长",
+    "fmtDurV": "60 分钟（远程）",
+    "fmtMod": "形式",
+    "fmtModV": "视频会议 + 会后诊断报告",
+    "fmtLang": "语言",
+    "fmtLangV": "中文 / English / Español 等 10 种语言",
+    "fmtFol": "后续跟进",
+    "fmtFolV": "首次沟通体验免费",
+    "topTitle": "常见交流主题",
+    "top1": "从零构建 AI 智能体辅助的研发流水线",
+    "top2": "审计与统一分散的开发资源（代码库、自动化工具）",
+    "top3": "本地优先与数据隐私：私有化硬件运行 AI",
+    "top4": "提升现有工程团队的交付效能",
+    "top5": "模块化架构：设计系统、共享库与技术债务治理",
+    "top6": "数字产品与创新构想的技术可行性评估",
+    "slotsLabel": "可预约时间",
+    "slot1": "周一至周五 · 下午（GMT-5）",
+    "slot2": "24 小时内快速回复",
+    "slot3": "每周名额有限",
+    "formTitle": "预约您的技术咨询",
+    "formName": "您的姓名",
+    "formEmail": "您的电子邮箱",
+    "formMsg": "简要说明您的需求：项目背景、团队情况或希望优化的方向…",
+    "formSubmit": "提交预约请求",
+    "formNote": "提交后将自动打开您的邮件客户端。也可直接发送邮件至 iberi22@gmail.com",
+    "okTitle": "请求已就绪！",
+    "okText": "请在邮件客户端中确认并发送，我将在 24 小时内与您回复。",
+    "priceTag": "$20 USD",
+    "priceSub": "Base Diagnostic + Multi-Agent Council Validation + Skills Package",
+    "track1Title": "Express Technical Diagnostic ($20 USD)",
+    "track1Desc": "AI provider audit, local hardware vs. cloud balance, and formal action roadmap validated by multi-agent council + 60-min 1-on-1 session.",
+    "track2Title": "Training & Transition in Generative AI",
+    "track2Desc": "Hands-on workshops for developers and teams: learn to move beyond interactive chat to deterministic orchestration via micro-fragmentation and disjoint file islands.",
+    "track3Title": "Harness Setup & CLI Tooling Deployment",
+    "track3Desc": "Installation and configuration of Hermes Gateway, OpenClaw, GitCore, Gestalt, Jules, and agentic CLI tooling tailored to your hardware and infrastructure.",
+    "methodologyTitle": "Methodology: Local-First Data Gathering & Simulation",
+    "methodologySub": "A 100% serverless workflow running strictly in your browser, guaranteeing absolute data privacy, client-side database persistence, and algorithmic simulation of the Top 5 configurations.",
+    "m1t": "1. Local-First Multi-Tool Gathering",
+    "m1d": "Input and scan of available resources (providers, .env paths, rate limits, local hardware vs. cloud) processed 100% in your browser database without leaking sensitive data.",
+    "m2t": "2. Top 5 Configuration Simulations",
+    "m2d": "Running simulations to optimize the two most critical assets of any project: Cost (USD/tokens) vs. Development Speed (parallelism and delivery).",
+    "m3t": "3. Generation of Skills, Prompts & .env",
+    "m3d": "Automatic generation of a fine-tuned master agent prompt and customized skills templates adapted to your available providers and quota limits.",
+    "m4t": "4. Lead Architect & Multi-Agent Council Review",
+    "m4d": "Final technical synthesis by Brahyans Belalcázar cross-validated with formal multi-agent advisory consensus.",
+    "formProfile": "Organization / Profile Type",
+    "formProfile1": "Startup / Software Company",
+    "formProfile2": "Independent Developer / Consultant",
+    "formProfile3": "Enterprise / Digital Transformation",
+    "formProfile4": "Academic / Research Project",
+    "formService": "Service of Interest",
+    "formService1": "Technical Diagnostic & Report ($20 USD)",
+    "formService2": "Training & Generative AI Transition (Teams)",
+    "formService3": "Harness Setup & Deployment (Hermes / OpenClaw / GitCore)",
+    "formService4": "End-to-End Architecture Advisory",
+    "formInfra": "Current Providers & Hardware",
+    "formInfraPh": "e.g., Gemini/OpenAI API, Ubuntu Linux VPS, Local Mac Studio, AWS...",
+    "formPayNote": "For the Base Diagnostic ($20 USD), payment is processed securely via Stripe after registering specifications.",
+    "formSubmitAlt": "Submit Training / Setup Request",
+    "formSubmitStripe": "Pay $20 USD with Stripe ↗",
+    "fmtLangNote": "支持翻译平台协助沟通。如您不会西班牙语，会议将以英语进行。"
+  },
+  "simulator": {
+    "badge": "100% SERVERLESS · LOCAL-FIRST PRIVACY · SWAL SIMULATION FRAMEWORK",
+    "title": "Agentic Resource & Scenario Simulator",
+    "subtitle": "Calculate the Top 5 Optimal Agent Architectures based on your hardware, cloud providers, rate limits, and monthly budget. Generate custom Master Prompts, SKILL.md templates, and sanitized .env files with zero backend storage.",
+    "sectionResources": "1. Multi-Tool Resource Input Engine",
+    "sectionSimulations": "2. Scenario Simulation & Scoring (Top 5 Architectures)",
+    "sectionArtifacts": "3. Custom Skills, Master System Prompt & .env Generator",
+    "runSimulation": "Run Parametric Simulation",
+    "exportProfile": "Export Profile (JSON)",
+    "importProfile": "Import Profile (JSON)",
+    "resetDefaults": "Reset Defaults",
+    "copyPrompt": "Copy Master System Prompt",
+    "copySkill": "Copy SKILL.md",
+    "copyEnv": "Copy .env.example",
+    "downloadAll": "Download All Artifacts"
+  }
+}

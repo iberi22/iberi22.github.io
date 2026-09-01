@@ -1,0 +1,595 @@
+{
+  "nav": {
+    "about": "نبذة عني",
+    "projects": "المشاريع",
+    "blog": "المدونة",
+    "contact": "التواصل",
+    "git": "GIT",
+    "github": "GITHUB",
+    "agenda": "حجز موعد",
+    "simulator": "محاكي الموارد",
+    "resources": "محاكي الموارد"
+  },
+  "hero": {
+    "badge": "كبير مطوري Full-Stack · خبرة +10 سنوات في الإنتاج",
+    "firstName": "صاموئيل",
+    "lastName": "بيلالكازار",
+    "tagline": "برمجيات إنتاجية مصقولة بعقد من الخبرة العملية.",
+    "taglineExtra": "JavaScript و PHP وهياكل الويب والموبايل — من الفكرة إلى النشر في قطاعات التعدين والضرائب والنشر والتجارة الإلكترونية.",
+    "viewProjects": "عرض المشاريع",
+    "getInTouch": "تواصل معي",
+    "scroll": "التمرير لأسفل"
+  },
+  "about": {
+    "heading": "# نبذة عني",
+    "title": "هندسة الويب",
+    "titleAccent": " الشاملة (Full-Stack)",
+    "titleSuffix": " بخبرة تمتد لعقد كامل",
+    "bio": "أنا برايان بيلالكازار، مطور Full-Stack بخبرة تتجاوز 10 سنوات في بناء البرمجيات الإنتاجية عبر قطاعات متعدّدة: التعدين الصناعي والكهرباء (Tripro)، الاستشارات الضريبية والقانونية (Restrepo y Londoño)، التجارة الإلكترونية (Siesa Ecommerce)، وأنظمة ERP والنشر. أدواتي الأساسية هي JavaScript و PHP بمستوى خبير، بالإضافة إلى هندسة الذكاء الاصطناعي.",
+    "philosophy": "أؤمن بإغلاق الحلقة: كل ميزة تمر عبر المحاكاة والتنفيذ والمراجعة والاختبار تحت إشراف بشري كامل.",
+    "philosophyAccent": "تكرار سريع، تحقق دائم، ونشر في الإنتاج.",
+    "statProjects": "المشاريع الرئيسية",
+    "statStack": "التقنيات الأساسية",
+    "competencies": "الكفاءات الرئيسية",
+    "stackIndex": "فهرس التقنيات",
+    "yearsInProduction": "سنوات في الإنتاج",
+    "fullStackLabel": "Full-Stack JS · PHP · Rust · AI",
+    "specialties": {
+      "0x01": {
+        "title": "هندسة Full-Stack و PHP المتقدمة",
+        "desc": "+10 سنوات في الإنتاج: تطوير إضافات ووردبريس المخصصة، قوالب خاصة، واجهات REST API وهياكل Node.js."
+      },
+      "0x02": {
+        "title": "أدوات الذكاء الاصطناعي والتنسيق",
+        "desc": "خطوط معالجة حتمية مع وكلاء مستقلين (Hermes, GitCore, Gestalt, Jules) وتنسيق المهارات المخصصة."
+      },
+      "0x03": {
+        "title": "الأنظمة و Rust وتطبيقات الموبايل دون إنترنت",
+        "desc": "خدمات عالية الأداء بـ Rust، تطبيقات موبايل بـ Flutter، قواعد بيانات محلية مشفرة و WebAssembly."
+      },
+      "0x04": {
+        "title": "قواعد البيانات العلاقية والاتجاهية",
+        "desc": "تصميم المخططات في PostgreSQL/MySQL ومحركات البحث الدلالي المحلي بـ pgvector و SQLite-vec و HNSW."
+      },
+      "0x05": {
+        "title": "البنية التحتية VPS و cPanel والاستضافة",
+        "desc": "إعداد السيرفرات الخاصة و VPS على Linux و NixOS وإدارة cPanel/WHM وتحسين Nginx/PHP-FPM."
+      },
+      "0x06": {
+        "title": "الأمان والتحصين وأدوات MCP",
+        "desc": "تدقيق البرمجيات، فحص الثغرات والبرامج الخبيثة، أدوات الحماية الخاصة وخوادم الفحص بموجب بروتوكول MCP."
+      }
+    },
+    "stackCategories": {
+      "cat1": "اللغات وبئات التشغيل",
+      "cat2": "الويب وإدارة المحتوى وإطارات العمل",
+      "cat3": "قواعد البيانات والبحث الاتجاهي",
+      "cat4": "أدوات الذكاء الاصطناعي وتنسيق الوكلاء",
+      "cat5": "البنية التحتية والخوادم والأمان DevSecOps"
+    }
+  },
+  "projects": {
+    "heading": "# المشاريع",
+    "title": "بناء",
+    "titleAccent": "أنظمة",
+    "titleSuffix": "موزعة",
+    "subtitle": "من الاتصالات التعدينية إلى نوى ذاكرة الذكاء الاصطناعي — كل مشروع يغلق الدائرة بالمحاكاة والتطوير.",
+    "techStack": "التقنيات المستخدمة",
+    "timeline": "الجدول الزمني وخطة الطريق",
+    "repository": "المستودع",
+    "filter": {
+      "all": "الكل",
+      "production": "الإنتاج والصناعة (+10 سنوات)",
+      "opensource": "المصدر المفتوح والتقنيات العميقة"
+    },
+    "section": {
+      "opensource": "// 01. النوى التقنية العميقة وبيئة المصدر المفتوح",
+      "production": "// 02. الخبرة العملية والبرمجيات الإنتاجية (+10 سنوات)"
+    },
+    "status": {
+      "production": "في الإنتاج",
+      "active": "نشط",
+      "beta": "تجريبي (Beta)",
+      "prototype": "نموذج أولي"
+    },
+    "btn": {
+      "showDetails": "عرض المعمارية والمقاييس",
+      "hideDetails": "إخفاء التفاصيل",
+      "viewRepo": "عرض المستودع",
+      "visitDemo": "زيارة الموقع / الإنتاج",
+      "readStudy": "قراءة الدراسة / الخبر"
+    },
+    "label": {
+      "architecture": "المعمارية والقرارات التقنية",
+      "stack": "التقنيات الكاملة",
+      "metrics": "مقاييس الأداء والنتائج",
+      "research": "الدراسات العلمية وأخبار التكنولوجيا (الذاكرة الخماسية 5D)",
+      "researchDesc": "الأوراق العلمية العالمية والإنجازات التي تدعم الجدوى النظرية لهذا النموذج:",
+      "timeline": "الجدول الزمني والمحطات الرئيسية"
+    },
+    "xavier2": {
+      "name": "Xavier",
+      "tagline": "نواة الذاكرة المعرفية للذكاء الاصطناعي",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - الحالي",
+      "description": "نواة ذاكرة معرفية دائمية محلية لوكلاء الذكاء الاصطناعي مطورة بـ Rust. خدمة مصغرة بـ Docker توفر تخزيناً اتجاهياً وفهرس HNSW ودوال معرفية موحدة.",
+      "architecture": "محرك Rust أصلي مع SQLite-vec و pgvector. بحث اتجاهي بالتشابه الدلالي مع تضمين محلي دون الاعتماد على السحابة الخارجية.",
+      "metrics": [
+        "زمن استجابة البحث أقل من 10ms في الفهارس المحلية",
+        "استقلالية سحابية كاملة: 100% على الجهاز",
+        "تكامل موحد مع Hermes و Gestalt"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "التصميم المعماري وطبقة التخزين الاتجاهي بـ Rust"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "الإصدار v0.1 - عمليات CRUD والتضمين المحلي وواجهات REST"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "v0.6.0-beta - فهارس HNSW وتغليف Docker والذاكرة العرضية"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "خطة الطريق: تكامل الرسوم البيانية الدلالية وتوجيه السياق"
+        }
+      ]
+    },
+    "gitcore": {
+      "name": "GitCore",
+      "tagline": "منسق Git/GitHub للوكلاء المستقلين",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2026 - الحالي",
+      "description": "منسق حتمي لوكلاء البرمجة المستقلين (Jules, Claude Code, OpenCode). يؤتمت إنشاء المشكلات والمواصفات الرسمية ومعالجة 15 مهمة متوازية بدون تضارب.",
+      "architecture": "معمارية منفصلة بـ Rust وسكربتات CLI. نظام جزر الملفات المستقلة لمنع تضارب الدمج أثناء التنفيذ المتوازي.",
+      "metrics": [
+        "حتى 15 مهمة مستقلة متوازية",
+        "تتبع كامل 100% مع المشكلات الموحدة",
+        "0 تضارب في الدمج التسلسلي"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "بروتوكول المشكلات الأولية وتتبع الوكلاء"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "عمليات الموجة: التجزئة الدقيقة ودفعات 15 مهمة"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "التكامل مع بوابة Hermes والتدقيق المسبق"
+        },
+        {
+          "date": "2026 Q4",
+          "label": "خطة الطريق: سرب موزّع P2P متعدد المستودعات"
+        }
+      ]
+    },
+    "gestalt": {
+      "name": "Gestalt",
+      "tagline": "أداة CLI لتنسيق أسراب الوكلاء المتعددين",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - الحالي",
+      "description": "منسق للأسراب المستقلة والتوجيه الذكي لوكلاء متعدد ألمهام بـ Rust. يستخدم SurrealDB لحفظ الحالات وتوجيه المهام.",
+      "architecture": "أداة CLI بـ Rust مع دعم Tokio الأسينك. حفظ الحالات والرسوم البيانية في SurrealDB والبيئات المعزولة للتدقيق.",
+      "metrics": [
+        "تشغيل الوكلاء في بيئات اختبار معزولة",
+        "حفظ الحالات التفاعلية في SurrealDB",
+        "توجيه ديناميكي حسب التخصص"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "النموذج الأولي ومخطط الحالة في SurrealDB"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "طبقة التنسيق والتنفيذ الديناميكي من CLI"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "التكامل في دورة مستمرة مع ذاكرة Xavier"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "خطة الطريق: ذكاء الأسراب اللامركزي"
+        }
+      ]
+    },
+    "photon-core": {
+      "name": "Photon-Core",
+      "tagline": "محاكاة الذاكرة الضوئية الخماسية 5D وأبحاث أكاديمية",
+      "companyOrContext": "أبحاث جامعية وخطة طريق SWAL",
+      "period": "2025 - 2026",
+      "description": "بحث جامعي وملكية فكرية شخصية تشكل الأساس العلمي لـ SouthWest AI Labs. برمجية محاكاة بـ Rust لنمذجة الفيزياء الضوئية لنبضات الليزر في زجاج السيليكا.",
+      "architecture": "محاكي حتمي بـ Rust ينمذج التفاعل بين الضوء والزجاج: التأخير الضوئي والاتجاه كبعدين إضافيين. معالجة Rayon المتوازية لتشفير >470 MB/s.",
+      "metrics": [
+        "محاكاة رياضية وبرمجيات إثبات مفهوم خاصة",
+        "سرعة تشفير حاسوبية >470 MB/s",
+        "تحمل التداخل الفضائي ثلاثي الأبعاد >30%",
+        "قاعدة بحثية لخطة الطريق الفيزيائية"
+      ],
+      "researchLinks": [
+        {
+          "title": "تخزين البيانات الخماسي 5D في الزجاج (جامعة ساوثهامبتون)",
+          "source": "مركز أبحاث البصريات الإلكترونية بجامعة ساوثهامبتون"
+        },
+        {
+          "title": "مشروع السيليكا: تخزين البيانات في الزجاج لآلاف السنين",
+          "source": "أبحاث مايكروسوفت"
+        },
+        {
+          "title": "التخزين الضوئي الخماسي السريع للبيانات في السيليكا",
+          "source": "Optica Publishing Group / SPIE"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "النموذج الرياضي الأولي وتعريف الفوكسل الضوئي"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "تكامل تصحيح الأخطاء Reed-Solomon ومحاكاة التداخل"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "إخفاء البيانات وأدوات CLI"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "خطة الطريق: إعادة بناء الإشارة بالتعلم العميق"
+        }
+      ]
+    },
+    "edge-mesh": {
+      "name": "edge-mesh",
+      "tagline": "شبكة Mesh P2P مع CRDT وتشفير ما بعد الكم",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - الحالي",
+      "description": "مكتبة شبكات الاتصال بين الند للند (P2P) مع مزامنة حالة خالية من التضارب (CRDTs) وهوية قائمة على التشفير ما بعد الكمي ML-DSA-65.",
+      "architecture": "بنية لامركزية ند لند بدون خادم المركزي. أنواع بيانات خالية من التضارب (Yjs/Automerge) للمزامنة الحتمية.",
+      "metrics": [
+        "صفر اعتماد على الخوادم المركزية",
+        "تشفير مقاوم للحوسبة الكمومية ML-DSA-65",
+        "زمن استجابة P2P أقل من 15ms"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q3",
+          "label": "تصميم بروتوكول اكتشاف الند للند P2P"
+        },
+        {
+          "date": "2025 Q4",
+          "label": "تطبيق مخططات CRDT وحل التفرعات"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "اعتماد معيار التشفير ما بعد الكمي ML-DSA-65"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "خطة الطريق: حزمة SDK للموبايل Android و iOS"
+        }
+      ]
+    },
+    "orion": {
+      "name": "OrionHealth",
+      "tagline": "نظام صحي يعمل بدون إنترنت (Offline-First)",
+      "companyOrContext": "HealthTech",
+      "period": "2025 - 2026",
+      "description": "تطبيق لتتبع الصحة الشخصية والمؤشرات السريرية يعمل 100% بدون إنترنت. تخزين محلي مشفر بـ SQLite ومحرك مزامنة خلفي ولوحة تحليلات تفاعلية.",
+      "architecture": "مبني بـ Flutter و Dart مع قاعدة بيانات SQLite مشفرة (SQLCipher). مزامنة مرنة مع تسوية البيانات الموفقة ومقاييس الخصوصية.",
+      "metrics": [
+        "100% بيانات مشفرة على الجهاز",
+        "تشغيل مستمر بدون اتصال",
+        "لوحة تحكم سريرية تفاعلية"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "النمذجة السريرية ومعمارية Flutter بدون إنترنت"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "التخزين المشفر بـ SQLite ومخططات آمنة"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "محرك المزامنة الخلفي والتحليلات"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "خطة الطريق: المزامنة اللامركزية الند للند"
+        }
+      ]
+    },
+    "gara-g": {
+      "name": "GARA-G",
+      "tagline": "شبكة تنقل DePIN وسيارات متصلة V2V",
+      "companyOrContext": "Mobility Tech",
+      "period": "2026",
+      "description": "شبكة DePIN للتنقل والاتصال بين المركبات (V2V) مع قياس عن بعد في الوقت الفعلي ومساعد ذكاء اصطناعي وسوق لامركزي للسيارات.",
+      "architecture": "عمود فقري بـ Rust لمعالجة اتصالات السيارات وتطبيق موبايل بـ Flutter. بروتوكول اتصال بين المركبات للتنبيهات المرورية بدون تغطية خلية.",
+      "metrics": [
+        "قياس الاتصالات بإنتاجية منخفضة التأخير",
+        "مساعد فحص وتأمين السيارات على الجهاز",
+        "تكامل مع شبكة Polygon"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "معمارية بروتوكول الاتصال عن بعد للسيارات"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "دمج مساعد الذكاء الاصطناعي لفحص OBD-II"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "خطة الطريق: شبكة اتصال بين المركبات على الطريق"
+        }
+      ]
+    },
+    "tripro-mining": {
+      "name": "Tripro SPA (تشيلي)",
+      "tagline": "إنترنت الأشياء الصناعي وقياسات التعدين واللوحات التفاعلية",
+      "companyOrContext": "الخدمات الكهربائية الصناعية والتعدين",
+      "period": "2025 - 2026",
+      "description": "تطوير البرمجيات ومنصات المراقبة التي تربط مستشعرات الآلات الثقيلة بلواح تحكم ويب في الوقت الفعلي وإنشاء قنوات معالجة البيانات للتحليل التنبؤي.",
+      "architecture": "تقنيات حديثة بـ Astro و Next.js و React و PostgreSQL و Tailwind CSS. خطوط معالجة بـ Python و n8n و Node.js مع بوتات تلغرام للتنبيهات.",
+      "metrics": [
+        "مراقبة مستمرة للمستشعرات في مصانع التعدين",
+        "تحويل القياسات إلى تحليلات تنبؤية",
+        "تطبيق CGP San Patricio المدمج مع بوابة بوابات الدفع Flow"
+      ],
+      "timeline": [
+        {
+          "date": "يونيو 2025 - أكتوبر 2025",
+          "label": "موقع Astro + Flow وتطبيق CGP San Patricio وبوت الدعم n8n/Python"
+        },
+        {
+          "date": "يناير 2026 - مايو 2026",
+          "label": "منصة القياس عن بعد لمستشعرات التعدين والذكاء الاصطناعي لتحسين الطاقة"
+        }
+      ]
+    },
+    "smartax-mobile": {
+      "name": "Restrepo y Londoño / Smartax",
+      "tagline": "استهلاك APIs واعتماد Google Play ومعمارية ووردبريس",
+      "companyOrContext": "شركة استشارات ضريبية وقانونية",
+      "period": "2021 - 2025",
+      "description": "تكامل واجهات API لاستهلاك البيانات مع ووردبريس والإعداد التقني للتطبيق للتوافق مع معايير متجر Google Play وشروط النشر المعتمدة. تطوير إضافات PHP خاصة.",
+      "architecture": "طبقة استهلاك REST API متصلة بنظام ووردبريس. تحديث الأمان وتصاريح Android وإنشاء تقارير PDF وإضافات PHP للحسابات الضريبية.",
+      "metrics": [
+        "القبول والاعتماد بنجاح على متجر Google Play",
+        "تكامل سلس لواجهات REST API لمزامنة المحتوى",
+        "إضافات PHP مخصصة للمنطق الضريبي والتقارير"
+      ],
+      "timeline": [
+        {
+          "date": "أكتوبر 2021 - سبتمبر 2022",
+          "label": "تطوير مواقع الشركات وإضافات PHP وإدارة المواقع"
+        },
+        {
+          "date": "يناير 2025 - مايو 2025",
+          "label": "تكامل واجهات البيانات والامتثال لسياسات Google Play والنشر"
+        }
+      ]
+    },
+    "siesa-ecommerce": {
+      "name": "Siesa Ecommerce (E-Solutions)",
+      "tagline": "التجارة الإلكترونية والبنية التحتية السحابية B2B/B2C",
+      "companyOrContext": "E-Solutions / Siesa",
+      "period": "2019 - 2020",
+      "description": "تطوير ميزات قابلة للتوسع لمنصات التجارة الإلكترونية B2B و B2C. إنشاء وحدة تقويم لوجستي لجدولة الشحنات وإدارة خوادم Linux (CentOS 7).",
+      "architecture": "خلفية بـ PHP مع Yii2 وواجهة تفاعلية بـ Angular. إدارة خوادم LAMP عبر الطرفية وأتمتة CI/CD بـ Git وشهادات SSL و VPN.",
+      "metrics": [
+        "وحدة التقويم اللوجستي في الإنتاج",
+        "إعداد خوادم Linux CentOS 7 LAMP",
+        "أدلة التشغيل والتقييس التقني"
+      ],
+      "timeline": [
+        {
+          "date": "أكتوبر 2019 - يناير 2020",
+          "label": "تطوير وحدة التقويم اللوجستي وميزات التجارة الإلكترونية"
+        },
+        {
+          "date": "فبراير 2020 - أبريل 2020",
+          "label": "إعداد الخوادم السحابية وأتمتة CI/CD وتحصين الأمان"
+        }
+      ]
+    },
+    "logicalsoft-siip": {
+      "name": "LogicalSoft",
+      "tagline": "تطبيق أندرويد SIIP وتحليلات التجزئة وتطبيق Electron",
+      "companyOrContext": "أنظمة ERP واللافتات وتحليلات التجزئة",
+      "period": "2015 - 2019",
+      "description": "التطوير الكامل لتطبيق SIIP Móvil على متجر Google Play مع أكثر من 15 شاشة تشغيلية. تطبيقات ويب بـ PHP/MySQL وتطبيق مكتب بـ Electron يعمل بدون إنترنت.",
+      "architecture": "خلفية بـ PHP و MySQL وواجهة JavaScript وتخزين محلي IndexedDB. تطبيق سطح مكتب بـ Electron و Node.js و ReactJS وشبكات AWS/GCP.",
+      "metrics": [
+        "تطبيق SIIP Móvil منشور على Google Play",
+        "وحدات وصول سريع عبر رموز QR",
+        "عمل بدون إنترنت باستخدام IndexedDB"
+      ],
+      "timeline": [
+        {
+          "date": "2015 - 2017",
+          "label": "تطبيقات PHP/MySQL وتطبيق الإحصاء بـ IndexedDB وتطبيق Electron"
+        },
+        {
+          "date": "2018",
+          "label": "مرحلة التحديث وتحسين أداء المنصات السابقة"
+        },
+        {
+          "date": "2019",
+          "label": "تطوير تطبيق SIIP Móvil المنشور على Play Store"
+        }
+      ]
+    },
+    "los-tres-editores": {
+      "name": "Los Tres Editores SAS",
+      "tagline": "إجراءات PostgreSQL ومعمارية Java EE وخوادم Debian",
+      "companyOrContext": "دار نشر وطباعة واسعة النطاق",
+      "period": "2013 - 2015",
+      "description": "برمجة قواعد البيانات المتقدمة بإنشاء الإجراءات المخزنة والدوال والمحفزات (Triggers) في PostgreSQL. مكونات Java EE وتقارير PDF بـ PHP والصيانة.",
+      "architecture": "قاعدة بيانات PostgreSQL مع منطق الأعمال في الإجراءات المخزنة. طبقة خدمات Java EE لإنشاء التقارير الضخمة وتخصيص Moodle.",
+      "metrics": [
+        "تحسين الاستعلامات والمحفزات في PostgreSQL",
+        "إنشاء أوتوماتيكي لتقارير PDF الضخمة",
+        "إدارة واستقرار خوادم Debian"
+      ],
+      "timeline": [
+        {
+          "date": "2013 - 2014",
+          "label": "التوثيق التقني للأنظمة السابقة وتطوير دوال PostgreSQL"
+        },
+        {
+          "date": "2014 - 2015",
+          "label": "تطبيق Java EE وتقارير FPDF/iReport وإدارة خوادم Debian"
+        }
+      ]
+    },
+    "filterAll": "Todos",
+    "filterProduction": "Producción e Industria (10+ Años)",
+    "filterOpenSource": "Open Source y Deep Tech",
+    "secDeepTech": "// 01. Núcleos Deep Tech y Ecosistema Open Source",
+    "secProduction": "// 02. Experiencias Laborales y Software en Producción (10+ Años)",
+    "hideDetails": "Ocultar Detalles",
+    "viewDetails": "Ver Arquitectura y Métricas",
+    "archTitle": "Arquitectura y Decisiones Técnicas",
+    "stackTitle": "Stack Técnico Completo",
+    "metricsTitle": "Métricas de Rendimiento y Resultados",
+    "viewRepo": "Ver Repositorio",
+    "visitProd": "Visitar Producción / Web",
+    "researchTitle": "Estudios Científicos y Noticias del Avance Tecnológico (Memoria 5D en Vidrio)",
+    "researchDesc": "Publicaciones científicas globales que respaldan la viabilidad del modelo:",
+    "readResearch": "Leer Estudio / Noticia",
+    "timelineTitle": "Cronograma e Hitos Clave"
+  },
+  "blog": {
+    "heading": "# المدونة",
+    "title": "رؤى و",
+    "titleAccent": "معمارية",
+    "subtitle": "مقالات عميقة حول معمارية الأنظمة، البنية التحتية للذكاء الاصطناعي والهندسة خلف مشاريعي.",
+    "draft": "مسودة",
+    "comingSoon": "قريباً",
+    "pipelineStatus": "خط المعالجة الأوتوماتيكي نشط / حالة النظام: اسمية",
+    "readMore": "اقرأ المزيد ←"
+  },
+  "contact": {
+    "heading": "# التواصل",
+    "title": "لنبنِ",
+    "titleAccent": "شيئاً",
+    "titleSuffix": "قابلاً للتوسع",
+    "subtitle": "هل تبحث عن مطور بخبرة إنتاجية حقيقية عبر نماذج أعمال متعددة؟ يسعدني التواصل معك.",
+    "emailPlaceholder": "YOUR@EMAIL.COM",
+    "messagePlaceholder": "صف مشروعك أو المعمارية المطلوبة...",
+    "submit": "إرسال طلب التواصل",
+    "email": "البريد الإلكتروني"
+  },
+  "footer": {
+    "tagline": "كبير مطوري Full-Stack",
+    "partOf": "جزء من",
+    "builtWith": "تم البناء باستخدام"
+  },
+  "locale": {
+    "label": "اللغة",
+    "announcement": "هذا الموقع يتحدث لغتك. اللغة ليست عائقاً لبناء البرمجيات والتطوير في مجتمع متكامل.",
+    "mission": "SouthWest AI Labs هو مختبر أفكار للحلول المدمجة مع المجتمع. مهمتنا: منح الجميع الوصول إلى أحدث الأدوات لتصميم أنظمة معلومات تحسن جودة الحياة.",
+    "accelerate": "نحن نسرع الأنظمة التي تمنح جودة الحياة للأفراد."
+  },
+  "agenda": {
+    "badge": "استشارة تقنية",
+    "title": "احجز جلسة استشارية تقنية",
+    "subtitle": "تحليل وتوحيد موارد التطوير لديك — الذكاء الاصطناعي والأتمتة والبنية التحتية — لرفع إنتاجية فريقك.",
+    "p1t": "تدقيق الموارد",
+    "p1d": "رسم خريطة كاملة لأدواتك الحالية ووكلاء الذكاء الاصطناعي والمستودعات والعمليات.",
+    "p2t": "خطة تنسيق الذكاء الاصطناعي",
+    "p2d": "بروتوكولات محددة لدمج الوكلاء المستقلين في سير عملك مع المراجعات وشروط القبول.",
+    "p3t": "المعمارية الاستدامة",
+    "p3d": "أنظمة تصميم قابلة لإعادة الاستخدام ومكتبات مشتركة وثائق حية.",
+    "fmtTitle": "صيغة الجلسة",
+    "fmtDur": "المدة",
+    "fmtDurV": "60 دقيقة (عن بُعد)",
+    "fmtMod": "الشكل",
+    "fmtModV": "مكالمة فيديو + وثيقة تشخيصية بعد الجلسة",
+    "fmtLang": "اللغات",
+    "fmtLangV": "العربية / English / Español +7",
+    "fmtFol": "المتابعة",
+    "fmtFolV": "الجلسة التعريفية الأولى مجانية",
+    "topTitle": "المواضيع الشائعة",
+    "top1": "إعداد خط معالجة تطوير مدعوم بوكلاء الذكاء الاصطناعي من الصفر",
+    "top2": "تدقيق وتوحيد الموارد المشتتة (المستودعات والأدوات)",
+    "top3": "العمل المحلي والخصوصية: تشغيل الذكاء الاصطناعي على أجهزتك الخاصة",
+    "top4": "تحسين إنتاجية فرق التطوير الحالية",
+    "top5": "المعمارية الموديلية: أنظمة التصميم والمكتبات المشتركة",
+    "top6": "تقييم الجدوى التقنية للأفكار والمنتجات الرقمية",
+    "slotsLabel": "المواعيد المتاحة",
+    "slot1": "الإثنين–الجمعة · بعد الظهر (GMT-5)",
+    "slot2": "الرد خلال أقل من 24 ساعة",
+    "slot3": "عدد المقاعد محدود أسبوعياً",
+    "formTitle": "احجز جلسة الاستشارة",
+    "formName": "اسمك",
+    "formEmail": "بريدك الإلكتروني",
+    "formMsg": "صف حالتك باختصار: المشروع، الفريق، ما تريد تحسينه…",
+    "formSubmit": "إرسال الطلب",
+    "formNote": "سيتم فتح برنامج البريد الإلكتروني الخاص بك مع الطلب جاهزاً للإرسال. يمكنك أيضاً الكتابة مباشرة إلى iberi22@gmail.com",
+    "okTitle": "تم إعداد الطلب!",
+    "okText": "تحقق من برنامج البريد الإلكتروني وأرسل الرسالة. سأجيبك خلال أقل من 24 ساعة.",
+    "priceTag": "$20 USD",
+    "priceSub": "Base Diagnostic + Multi-Agent Council Validation + Skills Package",
+    "track1Title": "Express Technical Diagnostic ($20 USD)",
+    "track1Desc": "AI provider audit, local hardware vs. cloud balance, and formal action roadmap validated by multi-agent council + 60-min 1-on-1 session.",
+    "track2Title": "Training & Transition in Generative AI",
+    "track2Desc": "Hands-on workshops for developers and teams: learn to move beyond interactive chat to deterministic orchestration via micro-fragmentation and disjoint file islands.",
+    "track3Title": "Harness Setup & CLI Tooling Deployment",
+    "track3Desc": "Installation and configuration of Hermes Gateway, OpenClaw, GitCore, Gestalt, Jules, and agentic CLI tooling tailored to your hardware and infrastructure.",
+    "methodologyTitle": "Methodology: Local-First Data Gathering & Simulation",
+    "methodologySub": "A 100% serverless workflow running strictly in your browser, guaranteeing absolute data privacy, client-side database persistence, and algorithmic simulation of the Top 5 configurations.",
+    "m1t": "1. Local-First Multi-Tool Gathering",
+    "m1d": "Input and scan of available resources (providers, .env paths, rate limits, local hardware vs. cloud) processed 100% in your browser database without leaking sensitive data.",
+    "m2t": "2. Top 5 Configuration Simulations",
+    "m2d": "Running simulations to optimize the two most critical assets of any project: Cost (USD/tokens) vs. Development Speed (parallelism and delivery).",
+    "m3t": "3. Generation of Skills, Prompts & .env",
+    "m3d": "Automatic generation of a fine-tuned master agent prompt and customized skills templates adapted to your available providers and quota limits.",
+    "m4t": "4. Lead Architect & Multi-Agent Council Review",
+    "m4d": "Final technical synthesis by Brahyans Belalcázar cross-validated with formal multi-agent advisory consensus.",
+    "formProfile": "Organization / Profile Type",
+    "formProfile1": "Startup / Software Company",
+    "formProfile2": "Independent Developer / Consultant",
+    "formProfile3": "Enterprise / Digital Transformation",
+    "formProfile4": "Academic / Research Project",
+    "formService": "Service of Interest",
+    "formService1": "Technical Diagnostic & Report ($20 USD)",
+    "formService2": "Training & Generative AI Transition (Teams)",
+    "formService3": "Harness Setup & Deployment (Hermes / OpenClaw / GitCore)",
+    "formService4": "End-to-End Architecture Advisory",
+    "formInfra": "Current Providers & Hardware",
+    "formInfraPh": "e.g., Gemini/OpenAI API, Ubuntu Linux VPS, Local Mac Studio, AWS...",
+    "formPayNote": "For the Base Diagnostic ($20 USD), payment is processed securely via Stripe after registering specifications.",
+    "formSubmitAlt": "Submit Training / Setup Request",
+    "formSubmitStripe": "Pay $20 USD with Stripe ↗",
+    "fmtLangNote": "منصات الترجمة مدعومة. إذا كنت لا تتحدث الإسبانية، يُعقد الاجتماع بالإنجليزية."
+  },
+  "simulator": {
+    "badge": "100% SERVERLESS · LOCAL-FIRST PRIVACY · SWAL SIMULATION FRAMEWORK",
+    "title": "Agentic Resource & Scenario Simulator",
+    "subtitle": "Calculate the Top 5 Optimal Agent Architectures based on your hardware, cloud providers, rate limits, and monthly budget. Generate custom Master Prompts, SKILL.md templates, and sanitized .env files with zero backend storage.",
+    "sectionResources": "1. Multi-Tool Resource Input Engine",
+    "sectionSimulations": "2. Scenario Simulation & Scoring (Top 5 Architectures)",
+    "sectionArtifacts": "3. Custom Skills, Master System Prompt & .env Generator",
+    "runSimulation": "Run Parametric Simulation",
+    "exportProfile": "Export Profile (JSON)",
+    "importProfile": "Import Profile (JSON)",
+    "resetDefaults": "Reset Defaults",
+    "copyPrompt": "Copy Master System Prompt",
+    "copySkill": "Copy SKILL.md",
+    "copyEnv": "Copy .env.example",
+    "downloadAll": "Download All Artifacts"
+  }
+}

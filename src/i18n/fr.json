@@ -1,0 +1,595 @@
+{
+  "nav": {
+    "about": "À propos",
+    "projects": "Projets",
+    "blog": "Blog",
+    "contact": "Contact",
+    "git": "GIT",
+    "github": "GITHUB",
+    "agenda": "Prendre RDV",
+    "simulator": "Simulateur",
+    "resources": "Simulateur"
+  },
+  "hero": {
+    "badge": "Développeur Full-Stack Senior · 10+ ans en Production",
+    "firstName": "Brahyan",
+    "lastName": "Belalcázar",
+    "tagline": "Logiciel en production, raffiné par una década d'expérience.",
+    "taglineExtra": "JavaScript, PHP, architectures web et mobiles — du concept au déploiement dans l'industrie, la fiscalité, l'édition et le e-commerce.",
+    "viewProjects": "Voir les Projets",
+    "getInTouch": "Me Contacter",
+    "scroll": "DÉFILER"
+  },
+  "about": {
+    "heading": "# à propos",
+    "title": "Ingénierie web",
+    "titleAccent": " Full-Stack",
+    "titleSuffix": " avec une décennie d'expérience",
+    "bio": "Je suis Brahyan Belalcázar, développeur Full-Stack avec plus de 10 ans d'expérience dans la création de logiciels en production dans des secteurs aux modèles très variés : industrie minière et électrique (Tripro), conseil fiscal et juridique (Restrepo y Londoño), e-commerce B2B et B2C (Siesa Ecommerce), ERP et affichage interactif (LogicalSoft), et édition (Los Tres Editores). Ma pile principale repose sur JavaScript et PHP, maîtrisés au niveau senior.",
+    "philosophy": "Je crois en la fermeture de la boucle : chaque fonctionnalité passe par la simulation, l'implémentation, la revue et les tests, toujours sous contrôle humain.",
+    "philosophyAccent": "itérer rapidement, toujours vérifier, livrer en production.",
+    "statProjects": "Projets Clés",
+    "statStack": "Stack Principale",
+    "competencies": "Compétences Clés",
+    "stackIndex": "Index des Technologies",
+    "yearsInProduction": "Ans en Production",
+    "fullStackLabel": "Full-Stack JS · PHP · Rust · IA",
+    "specialties": {
+      "0x01": {
+        "title": "Ingénierie Full-Stack & PHP Avancé",
+        "desc": "10+ ans en production : architecture de plugins sur mesure pour WordPress, thèmes personnalisés, API REST et architectures Node.js."
+      },
+      "0x02": {
+        "title": "Harnais d'IA, Orchestration & Skills",
+        "desc": "Pipelines déterministes avec agents autonomes (Hermes, GitCore, Gestalt, Jules), création de skills personnalisées et scripts de QA."
+      },
+      "0x03": {
+        "title": "Systèmes, Rust & Mobile Offline-First",
+        "desc": "Services haute performance en Rust, applications mobiles avec Flutter, bases de données locales chiffrées et runtimes WebAssembly."
+      },
+      "0x04": {
+        "title": "Bases de Données Relationnelles & Vectorielles",
+        "desc": "Conception de schémas PostgreSQL/MySQL et moteurs de recherche sémantique locale avec pgvector, SQLite-vec et mémoire HNSW."
+      },
+      "0x05": {
+        "title": "Infrastructure VPS, cPanel & Hébergement",
+        "desc": "Provisionnement de serveurs dédiés/VPS sous Linux et NixOS, administration cPanel/WHM, optimisation Nginx/PHP-FPM et SSL/DNS."
+      },
+      "0x06": {
+        "title": "Sécurité, Hardening & Outils MCP",
+        "desc": "Audits de code, analyse de logiciels malveillants et vulnérabilités, outils antivirus propriétaires et serveurs d'inspection sous le protocole MCP."
+      }
+    },
+    "stackCategories": {
+      "cat1": "Langages & Runtimes",
+      "cat2": "Web, CMS & Frameworks",
+      "cat3": "Bases de Données & Recherche Vectorielle",
+      "cat4": "Harnais d'IA & Orchestration d'Agents",
+      "cat5": "Infrastructure, Serveurs & DevSecOps"
+    }
+  },
+  "projects": {
+    "heading": "# projets",
+    "title": "Construction de",
+    "titleAccent": "systèmes",
+    "titleSuffix": "distribués",
+    "subtitle": "De la télémétrie minière aux noyaux de mémoire IA — chaque projet boucle le cycle par des simulations et l'itération assistée par IA.",
+    "techStack": "Stack Technique",
+    "timeline": "Chronologie & Roadmap",
+    "repository": "Dépôt Code",
+    "filter": {
+      "all": "Tous",
+      "production": "Production & Industrie (10+ ans)",
+      "opensource": "Open Source & Deep Tech"
+    },
+    "section": {
+      "opensource": "// 01. Noyaux Deep Tech & Écosystème Open Source",
+      "production": "// 02. Expérience Professionnelle & Logiciels en Production (10+ ans)"
+    },
+    "status": {
+      "production": "Production",
+      "active": "Actif",
+      "beta": "Bêta",
+      "prototype": "Prototype"
+    },
+    "btn": {
+      "showDetails": "Voir Architecture & Métriques",
+      "hideDetails": "Masquer les Détails",
+      "viewRepo": "Voir le Dépôt",
+      "visitDemo": "Visiter la Production / Web",
+      "readStudy": "Lire l'Étude / Article"
+    },
+    "label": {
+      "architecture": "Architecture & Décisions Techniques",
+      "stack": "Stack Technique Complète",
+      "metrics": "Métriques de Performance & Résultats",
+      "research": "Études Scientifiques & Actualités Technologiques (Mémoire 5D)",
+      "researchDesc": "Publications scientifiques mondiales et jalons étayant la viabilité théorique de ce modèle de simulation :",
+      "timeline": "Chronologie & Jalons Clés"
+    },
+    "xavier2": {
+      "name": "Xavier",
+      "tagline": "Noyau de Mémoire Cognitive pour IA",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - Présent",
+      "description": "Noyau de mémoire cognitive locale et persistante pour agents IA développé en Rust. Microservice Dockerisé offrant un stockage vectoriel, un index de recherche sémantique HNSW et des graphes de connaissances.",
+      "architecture": "Moteur natif Rust avec SQLite-vec et pgvector. Recherche vectorielle par similitude cosinus avec embeddings locaux sans dépendance au cloud.",
+      "metrics": [
+        "Latence de recherche <10ms sur index locaux",
+        "Indépendance totale vis-à-vis du cloud : 100% sur l'appareil",
+        "Intégration unifiée avec Hermes et Gestalt"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "Conception architecturale et couche de persistance vectorielle en Rust"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Version v0.1 - Opérations CRUD, embeddings locaux et endpoints REST"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "v0.6.0-beta - Index HNSW, conteneurisation Docker et mémoire épisodique"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap : Intégration de graphes sémantiques et routage de contexte"
+        }
+      ]
+    },
+    "gitcore": {
+      "name": "GitCore",
+      "tagline": "Orchestrateur Git/GitHub Multi-Agents Autonome",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2026 - Présent",
+      "description": "Harnais opérationnel et orchestrateur déterministe pour agents de codage autonomes (Jules, Claude Code, OpenCode). Automatise la création d'issues avec spécifications formelles.",
+      "architecture": "Architecture découplée en Rust et scripts d'automatisation CLI. Système d'îlots de fichiers disjoints pour éviter les conflits de fusion.",
+      "metrics": [
+        "Jusqu'à 15 tâches autonomes en parallèle",
+        "Traçabilité à 100% avec issues canoniques",
+        "0 conflit lors de la fusion séquentielle"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "Protocole initial d'issues et traçabilité pour agents"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Wave Operations : micro-fragmentation et lots de 15 micro-tâches"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Intégration avec Hermes Gateway et audit pré-délégation"
+        },
+        {
+          "date": "2026 Q4",
+          "label": "Roadmap : Essaim distribué P2P multi-dépôts"
+        }
+      ]
+    },
+    "gestalt": {
+      "name": "Gestalt",
+      "tagline": "CLI d'Orchestration d'Essaims Multi-Agents",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - Présent",
+      "description": "Orchestrateur d'essaims autonomes et routage intelligent d'agents multi-rôles en ligne de commande (CLI) en Rust. Utilise SurrealDB pour la persistance des états.",
+      "architecture": "CLI native en Rust avec intégration asynchrone Tokio. Persistance de graphes dans SurrealDB. Sandboxes déterministes pour tester le code généré par LLM.",
+      "metrics": [
+        "Exécution des agents dans des sandboxes isolés",
+        "Persistance réactive des états dans SurrealDB",
+        "Routage dynamique par spécialité"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "Prototype et schéma d'état SurrealDB"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Couche de coordination multi-agent et exécution dynamique CLI"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Intégration en boucle continue avec la mémoire Xavier"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap : Intelligence d'essaim décentralisée"
+        }
+      ]
+    },
+    "photon-core": {
+      "name": "Photon-Core",
+      "tagline": "Simulation de Mémoire Optique 5D (PoC) & Recherche",
+      "companyOrContext": "Recherche Universitaire & SWAL Lab Roadmap",
+      "period": "2025 - 2026",
+      "description": "Recherche universitaire et propriété intellectuelle servant de base scientifique à SouthWest AI Labs. Logiciel de simulation en Rust modélisant la physique optique des impulsions laser femtoseconde dans le verre de silice fondue.",
+      "architecture": "Simulateur déterministe en Rust modélisant l'interaction lumière-silice : retard optique et orientation de l'axe optique comme dimensions supplémentaires. Parallélisme Rayon évalué à >470 Mo/s.",
+      "metrics": [
+        "Simulation mathématique et logiciel PoC propriétaire",
+        "Débit de codage informatique >470 Mo/s",
+        "Tolérance au crosstalk spatial 3D >30% avec ECC Reed-Solomon",
+        "Base de recherche pour la roadmap physique de SWAL"
+      ],
+      "researchLinks": [
+        {
+          "title": "Stockage de données 5D dans le verre (ORC Southampton)",
+          "source": "Université de Southampton"
+        },
+        {
+          "title": "Projet Silica : Stocker des données dans le verre pendant des milliers d'années",
+          "source": "Microsoft Research"
+        },
+        {
+          "title": "Stockage optique de données 5D par laser ultrarapide dans la silice fondue",
+          "source": "Optica Publishing Group / SPIE"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "Modèle mathématique initial et définition du voxel photonique"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Intégration ECC Reed-Solomon et simulation du crosstalk 3D"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Dissimulation stéganographique de données et kit CLI"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap : Reconstruction de signal assistée par deep learning"
+        }
+      ]
+    },
+    "edge-mesh": {
+      "name": "edge-mesh",
+      "tagline": "Réseau Mesh P2P avec CRDT & Crypto Post-Quantique",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - Présent",
+      "description": "Bibliothèque de réseau de communication entre pairs (P2P) avec synchronisation d'état sans conflit (CRDT) et identité basée sur la cryptographie post-quantique ML-DSA-65.",
+      "architecture": "Topologie peer-to-peer décentralisée sans serveur central. Types de données répliquées sans conflit (Yjs/Automerge) pour une synchronisation déterministe.",
+      "metrics": [
+        "Zéro dépendance envers des serveurs centraux",
+        "Cryptographie post-quantique résistante ML-DSA-65",
+        "Latence P2P <15ms"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q3",
+          "label": "Conception du protocole de découverte P2P"
+        },
+        {
+          "date": "2025 Q4",
+          "label": "Implémentation des schémas CRDT et résolution des bifurcations"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Adoption du standard cryptographique post-quantique ML-DSA-65"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap : SDK mobile pour Android et iOS"
+        }
+      ]
+    },
+    "orion": {
+      "name": "OrionHealth",
+      "tagline": "Écosystème de Santé Offline-First",
+      "companyOrContext": "HealthTech",
+      "period": "2025 - 2026",
+      "description": "Application de suivi de santé personnelle et métriques cliniques 100% hors-ligne. Stockage local SQLite chiffré, moteur de synchronisation en arrière-plan et tableau de bord analytique.",
+      "architecture": "Flutter & Dart avec base de données SQLite chiffrée sur l'appareil (SQLCipher). Synchronisation résiliente avec réconciliation de données hors-ligne.",
+      "metrics": [
+        "100% de données chiffrées sur l'appareil",
+        "Fonctionnement continu sans connexion",
+        "Tableau de bord clinique interactif"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "Modélisation clinique et architecture Flutter offline-first"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Persistance chiffrée avec SQLite et schémas sécurisés"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Moteur de synchronisation en arrière-plan et analyses"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap : Synchronisation décentralisée P2P"
+        }
+      ]
+    },
+    "gara-g": {
+      "name": "GARA-G",
+      "tagline": "Mobilité DePIN & Réseau Vehiculaire V2V",
+      "companyOrContext": "Mobility Tech",
+      "period": "2026",
+      "description": "Réseau DePIN de mobilité et maillage véhiculaire (V2V) avec télémétrie en temps réel, copilote IA et marché décentralisé pour le secteur automobile.",
+      "architecture": "Backbone en Rust pour le traitement de la télémétrie automobile et application mobile Flutter. Protocole véhiculaire pour alertes de trafic sans couverture cellulaire.",
+      "metrics": [
+        "Télémétrie véhiculaire à faible latence",
+        "Copilote de diagnostic automobile sur l'appareil",
+        "Intégration au réseau Polygon"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "Architecture du protocole de télémétrie véhiculaire"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Intégration du copilote IA pour diagnostics OBD-II"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap : Réseau maillé entre véhicules sur route"
+        }
+      ]
+    },
+    "tripro-mining": {
+      "name": "Tripro SPA (Chili)",
+      "tagline": "IoT Industriel, Télémétrie Minière & Dashboards Temps Réel",
+      "companyOrContext": "Services Électriques Industriels et Mines",
+      "period": "2025 - 2026",
+      "description": "Développement de logiciels et plateformes de surveillance connectant les capteurs de machines minières lourdes à des tableaux de bord web en temps réel. Pipelines de données avec Python et n8n.",
+      "architecture": "Stack moderne avec Astro, Next.js, React, PostgreSQL et Tailwind CSS. Pipelines Python et Node.js avec bots d'alerte Telegram et création automatisée de tickets de support.",
+      "metrics": [
+        "Surveillance continue des capteurs dans les usines minières",
+        "Conversion de la télémétrie brute en analyse prédictive",
+        "Application Web CGP San Patricio déployée avec passerelle Flow"
+      ],
+      "timeline": [
+        {
+          "date": "Juin 2025 - Oct 2025",
+          "label": "Site Astro + Flow, Web App CGP San Patricio et bot n8n/Python"
+        },
+        {
+          "date": "Jan 2026 - Mai 2026",
+          "label": "Plateforme IoT de télémétrie minière et IA légère d'optimisation énergétique"
+        }
+      ]
+    },
+    "smartax-mobile": {
+      "name": "Restrepo y Londoño / Smartax",
+      "tagline": "Consommation d'API, Validation Google Play & WordPress",
+      "companyOrContext": "Cabinet de Conseil Fiscal et Juridique",
+      "period": "2021 - 2025",
+      "description": "Intégration d'API pour la consommation de données avec le CMS WordPress et préparation technique de l'application mobile aux exigences de validation du Google Play Store. Développement de plugins propriétaires en PHP.",
+      "architecture": "Couche de consommation API REST connectée à WordPress. Mise en conformité avec les directives de sécurité Android/Google Play, génération de rapports PDF et plugins PHP.",
+      "metrics": [
+        "Validation et publication réussie sur le Google Play Store",
+        "Intégration fluide de l'API REST pour la synchronisation de contenu",
+        "Plugins PHP propriétaires pour calculs fiscaux et rapports"
+      ],
+      "timeline": [
+        {
+          "date": "Oct 2021 - Sep 2022",
+          "label": "Développement web B2B, plugins PHP et administration web d'entreprise"
+        },
+        {
+          "date": "Jan 2025 - Mai 2025",
+          "label": "Intégration d'API, mise en conformité Google Play et publication"
+        }
+      ]
+    },
+    "siesa-ecommerce": {
+      "name": "Siesa Ecommerce (E-Solutions)",
+      "tagline": "E-Commerce Enterprise B2B/B2C & Infrastructure Cloud",
+      "companyOrContext": "E-Solutions / Siesa",
+      "period": "2019 - 2020",
+      "description": "Développement de fonctionnalités évolutives pour plateformes e-commerce B2B et B2C. Création d'un module de calendrier logistique pour la planification des expéditions et administration de serveurs Linux (CentOS 7).",
+      "architecture": "Backend PHP avec framework Yii2 et frontend réactif Angular. Administration de serveurs LAMP sous Linux, automatisation CI/CD avec Git, gestion SSL et VPN.",
+      "metrics": [
+        "Module de calendrier logistique en production",
+        "Provisionnement de serveurs Linux CentOS 7 LAMP",
+        "Manuels opérationnels et standardisation technique"
+      ],
+      "timeline": [
+        {
+          "date": "Oct 2019 - Jan 2020",
+          "label": "Développement du module de calendrier logistique et e-commerce"
+        },
+        {
+          "date": "Fév 2020 - Avr 2020",
+          "label": "Provisionnement de serveurs cloud, automatisation CI/CD et sécurité"
+        }
+      ]
+    },
+    "logicalsoft-siip": {
+      "name": "LogicalSoft",
+      "tagline": "App Mobile Android SIIP, Analytique Retail & Desktop Electron",
+      "companyOrContext": "ERP, Signage & Analytique Retail",
+      "period": "2015 - 2019",
+      "description": "Développement complet de l'application hybride SIIP Móvil sur Google Play (plus de 15 vues opérationnelles). Applications web RIA en PHP/MySQL et application de bureau Electron avec support hors-ligne.",
+      "architecture": "Backend PHP/MySQL avec frontend JavaScript et stockage IndexedDB local. Application de bureau multiplateforme sous Electron, Node.js et ReactJS. Gestion cloud sur AWS et GCP.",
+      "metrics": [
+        "Application SIIP Móvil publiée sur le Play Store",
+        "Modules d'accès rapide via codes QR",
+        "Fonctionnement hors-ligne avec IndexedDB"
+      ],
+      "timeline": [
+        {
+          "date": "2015 - 2017",
+          "label": "Apps web RIA PHP/MySQL, recensement mobile IndexedDB et desktop Electron"
+        },
+        {
+          "date": "2018",
+          "label": "Sprint de modernisation et d'optimisation des performances legacy"
+        },
+        {
+          "date": "2019",
+          "label": "Développement de SIIP Móvil (PHP/JS/WebView) publié sur le Play Store"
+        }
+      ]
+    },
+    "los-tres-editores": {
+      "name": "Los Tres Editores SAS",
+      "tagline": "Procédures PostgreSQL, Architecture Java EE & Serveurs Debian",
+      "companyOrContext": "Édition et Impression à Grande Échelle",
+      "period": "2013 - 2015",
+      "description": "Programmation avancée de bases de données avec procédures stockées, fonctions et triggers dans PostgreSQL. Développement Java EE avec iReport, modules de rapports PDF en PHP (FPDF) et gestion de serveurs Debian.",
+      "architecture": "Base de données relationnelle PostgreSQL avec logique métier encapsulée. Couche de services Java EE pour la génération massive de rapports et personnalisation de Moodle.",
+      "metrics": [
+        "Optimisation de requêtes et triggers sous PostgreSQL",
+        "Génération automatisée de rapports PDF massifs",
+        "Administration et stabilité des serveurs Debian"
+      ],
+      "timeline": [
+        {
+          "date": "2013 - 2014",
+          "label": "Documentation technique des systèmes hérités et développement de fonctions PostgreSQL"
+        },
+        {
+          "date": "2014 - 2015",
+          "label": "Mise en œuvre Java EE, rapports FPDF/iReport et administration Debian"
+        }
+      ]
+    },
+    "filterAll": "Todos",
+    "filterProduction": "Producción e Industria (10+ Años)",
+    "filterOpenSource": "Open Source y Deep Tech",
+    "secDeepTech": "// 01. Núcleos Deep Tech y Ecosistema Open Source",
+    "secProduction": "// 02. Experiencias Laborales y Software en Producción (10+ Años)",
+    "hideDetails": "Ocultar Detalles",
+    "viewDetails": "Ver Arquitectura y Métricas",
+    "archTitle": "Arquitectura y Decisiones Técnicas",
+    "stackTitle": "Stack Técnico Completo",
+    "metricsTitle": "Métricas de Rendimiento y Resultados",
+    "viewRepo": "Ver Repositorio",
+    "visitProd": "Visitar Producción / Web",
+    "researchTitle": "Estudios Científicos y Noticias del Avance Tecnológico (Memoria 5D en Vidrio)",
+    "researchDesc": "Publicaciones científicas globales que respaldan la viabilidad del modelo:",
+    "readResearch": "Leer Estudio / Noticia",
+    "timelineTitle": "Cronograma e Hitos Clave"
+  },
+  "blog": {
+    "heading": "# blog",
+    "title": "Analyses &",
+    "titleAccent": "architecture",
+    "subtitle": "Articles approfondis sur l'architecture système, l'infrastructure d'IA et l'ingénierie derrière mes projets.",
+    "draft": "Brouillon",
+    "comingSoon": "À VENIR",
+    "pipelineStatus": "Pipeline automatisé actif / État du système : nominal",
+    "readMore": "Lire la suite →"
+  },
+  "contact": {
+    "heading": "# contact",
+    "title": "Construisons",
+    "titleAccent": "quelque chose de",
+    "titleSuffix": "scalable",
+    "subtitle": "Vous recherchez un développeur avec une véritable expérience de la production ? Parlons-en.",
+    "emailPlaceholder": "VOTRE@EMAIL.COM",
+    "messagePlaceholder": "DÉCRIVEZ VOTRE PROJET OU ARCHITECTURE...",
+    "submit": "INITIALISER LE CONTACT",
+    "email": "EMAIL"
+  },
+  "footer": {
+    "tagline": "Développeur Full-Stack Senior",
+    "partOf": "Fait partie de",
+    "builtWith": "Construit avec"
+  },
+  "locale": {
+    "label": "Langue",
+    "announcement": "Ce site parle votre langue. La langue n'est pas une barrière pour créer du logiciel en communauté.",
+    "mission": "SouthWest AI Labs est un laboratoire d'idées pour des solutions communautaires. Notre mission : donner accès à des outils de pointe pour concevoir des systèmes qui améliorent la qualité de vie.",
+    "accelerate": "Nous accélérons les systèmes qui améliorent la qualité de vie des personnes."
+  },
+  "agenda": {
+    "badge": "CONSEIL TECHNIQUE",
+    "title": "Réserver une session technique",
+    "subtitle": "Analyse et unification de vos ressources de développement — IA, automatisation et infrastructure — pour optimiser vos pipelines d'ingénierie.",
+    "p1t": "Audit de ressources",
+    "p1d": "Cartographie complète de vos outils actuels, agents d'IA, dépôts et processus : ce qui fonctionne, ce qui es en double, ce qui manque.",
+    "p2t": "Plan d'orchestration IA",
+    "p2d": "Protocole précis pour intégrer des agents autonomes dans votre flux de travail avec revues et critères d'acceptation vérifiables.",
+    "p3t": "Architecture & Maintien",
+    "p3d": "Systèmes de design réutilisables, bibliothèques partagées et documentation vivante.",
+    "fmtTitle": "Format de la session",
+    "fmtDur": "Durée",
+    "fmtDurV": "60 minutes (à distance)",
+    "fmtMod": "Format",
+    "fmtModV": "Appel vidéo + document de diagnostic",
+    "fmtLang": "Langues",
+    "fmtLangV": "Français / English / Español +7",
+    "fmtFol": "Suivi",
+    "fmtFolV": "Première session d'introduction gratuite",
+    "topTitle": "Sujets fréquents",
+    "top1": "Mettre en place un pipeline de développement assisté par des agents d'IA",
+    "top2": "Auditer et unifier des ressources dispersées (dépôts, outils, automatisation)",
+    "top3": "Local-first & confidentialité : exécuter l'IA sur votre matériel sans dépendre du cloud",
+    "top4": "Optimiser le rendement de vos équipes de développement existantes",
+    "top5": "Architecture modulaire : design systems, bibliothèques partagées et dette technique",
+    "top6": "Évaluation de la faisabilité technique pour des projets et produits numériques",
+    "slotsLabel": "Disponibilité",
+    "slot1": "Lun–Ven · après-midi (GMT-5)",
+    "slot2": "Réponse sous 24h",
+    "slot3": "Places limitées par semaine",
+    "formTitle": "Réservez votre session",
+    "formName": "Votre nom",
+    "formEmail": "Votre e-mail",
+    "formMsg": "Décrivez brièvement votre cas : projet, équipe, ce que vous souhaitez optimiser…",
+    "formSubmit": "Envoyer la demande",
+    "formNote": "Votre client e-mail s'ouvrira avec la demande prête à l'envoi. Vous pouvez aussi écrire à iberi22@gmail.com",
+    "okTitle": "Demande préparée !",
+    "okText": "Vérifiez votre client de messagerie et envoyez el message. Je vous répondrai sous 24 heures.",
+    "priceTag": "$20 USD",
+    "priceSub": "Base Diagnostic + Multi-Agent Council Validation + Skills Package",
+    "track1Title": "Express Technical Diagnostic ($20 USD)",
+    "track1Desc": "AI provider audit, local hardware vs. cloud balance, and formal action roadmap validated by multi-agent council + 60-min 1-on-1 session.",
+    "track2Title": "Training & Transition in Generative AI",
+    "track2Desc": "Hands-on workshops for developers and teams: learn to move beyond interactive chat to deterministic orchestration via micro-fragmentation and disjoint file islands.",
+    "track3Title": "Harness Setup & CLI Tooling Deployment",
+    "track3Desc": "Installation and configuration of Hermes Gateway, OpenClaw, GitCore, Gestalt, Jules, and agentic CLI tooling tailored to your hardware and infrastructure.",
+    "methodologyTitle": "Methodology: Local-First Data Gathering & Simulation",
+    "methodologySub": "A 100% serverless workflow running strictly in your browser, guaranteeing absolute data privacy, client-side database persistence, and algorithmic simulation of the Top 5 configurations.",
+    "m1t": "1. Local-First Multi-Tool Gathering",
+    "m1d": "Input and scan of available resources (providers, .env paths, rate limits, local hardware vs. cloud) processed 100% in your browser database without leaking sensitive data.",
+    "m2t": "2. Top 5 Configuration Simulations",
+    "m2d": "Running simulations to optimize the two most critical assets of any project: Cost (USD/tokens) vs. Development Speed (parallelism and delivery).",
+    "m3t": "3. Generation of Skills, Prompts & .env",
+    "m3d": "Automatic generation of a fine-tuned master agent prompt and customized skills templates adapted to your available providers and quota limits.",
+    "m4t": "4. Lead Architect & Multi-Agent Council Review",
+    "m4d": "Final technical synthesis by Brahyans Belalcázar cross-validated with formal multi-agent advisory consensus.",
+    "formProfile": "Organization / Profile Type",
+    "formProfile1": "Startup / Software Company",
+    "formProfile2": "Independent Developer / Consultant",
+    "formProfile3": "Enterprise / Digital Transformation",
+    "formProfile4": "Academic / Research Project",
+    "formService": "Service of Interest",
+    "formService1": "Technical Diagnostic & Report ($20 USD)",
+    "formService2": "Training & Generative AI Transition (Teams)",
+    "formService3": "Harness Setup & Deployment (Hermes / OpenClaw / GitCore)",
+    "formService4": "End-to-End Architecture Advisory",
+    "formInfra": "Current Providers & Hardware",
+    "formInfraPh": "e.g., Gemini/OpenAI API, Ubuntu Linux VPS, Local Mac Studio, AWS...",
+    "formPayNote": "For the Base Diagnostic ($20 USD), payment is processed securely via Stripe after registering specifications.",
+    "formSubmitAlt": "Submit Training / Setup Request",
+    "formSubmitStripe": "Pay $20 USD with Stripe ↗",
+    "fmtLangNote": "Plateformes de traduction prises en charge. Si vous ne parlez pas espagnol, la réunion se déroule en anglais."
+  },
+  "simulator": {
+    "badge": "100% SERVERLESS · LOCAL-FIRST PRIVACY · SWAL SIMULATION FRAMEWORK",
+    "title": "Agentic Resource & Scenario Simulator",
+    "subtitle": "Calculate the Top 5 Optimal Agent Architectures based on your hardware, cloud providers, rate limits, and monthly budget. Generate custom Master Prompts, SKILL.md templates, and sanitized .env files with zero backend storage.",
+    "sectionResources": "1. Multi-Tool Resource Input Engine",
+    "sectionSimulations": "2. Scenario Simulation & Scoring (Top 5 Architectures)",
+    "sectionArtifacts": "3. Custom Skills, Master System Prompt & .env Generator",
+    "runSimulation": "Run Parametric Simulation",
+    "exportProfile": "Export Profile (JSON)",
+    "importProfile": "Import Profile (JSON)",
+    "resetDefaults": "Reset Defaults",
+    "copyPrompt": "Copy Master System Prompt",
+    "copySkill": "Copy SKILL.md",
+    "copyEnv": "Copy .env.example",
+    "downloadAll": "Download All Artifacts"
+  }
+}

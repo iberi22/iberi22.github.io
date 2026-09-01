@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.svelte';
+import HeroSection from '../components/HeroSection.svelte';
+import AboutSection from '../components/AboutSection.svelte';
+import ProjectsTimeline from '../components/ProjectsTimeline.svelte';
+import BlogSection from '../components/BlogSection.svelte';
+import ContactSection from '../components/ContactSection.svelte';
+import Footer from '../components/Footer.svelte';
+import { getCollection } from 'astro:content';
+
+const rawPosts = await getCollection('blog');
+const posts = rawPosts.map((p) => ({
+  slug: p.id,
+  title: p.data.title,
+  excerpt: p.data.excerpt,
+  date: p.data.date,
+  tags: p.data.tags,
+  draft: p.data.draft,
+}));
+---
+
+<Layout>
+  <Nav client:load />
+  <main>
+    <HeroSection client:load />
+    <AboutSection client:load />
+    <ProjectsTimeline client:load />
+    <BlogSection client:load posts={posts} />
+    <ContactSection client:load />
+    <Footer client:load />
+  </main>
+</Layout>

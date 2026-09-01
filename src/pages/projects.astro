@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.svelte';
+import ProjectsTimeline from '../components/ProjectsTimeline.svelte';
+import Footer from '../components/Footer.svelte';
+---
+
+<Layout>
+  <Nav client:load />
+  <main class="pt-24">
+    <div class="py-16 px-6 text-center">
+      <span class="text-accent text-sm tracking-widest mb-4 block"># projects</span>
+      <h1 class="section-title">
+        All <span class="text-accent">Projects</span>
+      </h1>
+      <p class="text-text-muted text-lg mt-4 max-w-2xl mx-auto">
+        A comprehensive view of everything I'm building at SouthWest AI Labs.
+      </p>
+    </div>
+    <ProjectsTimeline client:load />
+  </main>
+  <Footer client:load />
+</Layout>

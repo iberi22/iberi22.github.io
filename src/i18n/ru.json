@@ -1,0 +1,383 @@
+{
+  "nav": {
+    "about": "Обо мне",
+    "projects": "Проекты",
+    "blog": "Блог",
+    "contact": "Контакты",
+    "git": "GIT",
+    "github": "GITHUB",
+    "agenda": "Консультация",
+    "simulator": "Симулятор ресурсов",
+    "resources": "Симулятор ресурсов"
+  },
+  "hero": {
+    "badge": "Ведущий Full-Stack разработчик · 10+ лет в Продакшене",
+    "firstName": "Брайан",
+    "lastName": "Белалькасар",
+    "tagline": "Промышленный софт, отточенный десятилетием реальной практики.",
+    "taglineExtra": "JavaScript, PHP, веб- и мобильные архитектуры — от идеи до внедрения в горнодобывающей промышленности, налоговом учете, издательстве и электронной коммерции.",
+    "viewProjects": "Посмотреть проекты",
+    "getInTouch": "Связаться со мной",
+    "scroll": "ПРОКРУТИТЬ"
+  },
+  "about": {
+    "heading": "# обо мне",
+    "title": "Веб-инженерия",
+    "titleAccent": " Full-Stack",
+    "titleSuffix": " с десятилетним опытом",
+    "bio": "Я Брайан Белалькасар, разработчик Full-Stack с более чем 10 годами создания ПО в продакшене. Работал в различных отраслях: горная промышленность и энергетика (Tripro), налоговый и юридический консалтинг (Restrepo y Londoño), B2B/B2C e-commerce (Siesa Ecommerce), ERP (LogicalSoft) и издательство (Los Tres Editores). Мой стек — JavaScript и PHP на сеньор-уровне, совмещенный с ИИ-ускорением.",
+    "philosophy": "Я верю в завершенный цикл: каждая функция проходит через моделирование, реализацию, проверку и тестирование под контролем человека.",
+    "philosophyAccent": "быстро итерировать, всегда проверять, поставлять в продакшен.",
+    "statProjects": "Ключевые проекты",
+    "statStack": "Основной стек",
+    "competencies": "Ключевые компетенции",
+    "stackIndex": "Индекс технологий",
+    "yearsInProduction": "Лет в Продакшене",
+    "fullStackLabel": "Full-Stack JS · PHP · Rust · AI",
+    "specialties": {
+      "0x01": {
+        "title": "Full-Stack инженерия и продвинутый PHP",
+        "desc": "10+ лет в продакшене: архитектура проприетарных плагинов WordPress, кастомные темы с нуля, REST API, хуки и архитектуры Node.js."
+      },
+      "0x02": {
+        "title": "ИИ-каркасы, оркестрация и навыки",
+        "desc": "Детерминированные пайплайны с автономными агентами (Hermes, GitCore, Gestalt, Jules), создание навыков, скрипты QA и маршрутизация моделей."
+      },
+      "0x03": {
+        "title": "Системы, Rust и Offline-First Mobile",
+        "desc": "Высокопроизводительные сервисы на Rust, мобильные приложения на Flutter, зашифрованные локальные базы данных и WebAssembly."
+      },
+      "0x04": {
+        "title": "Реляционные и векторные базы данных",
+        "desc": "Проектирование схем в PostgreSQL/MySQL и локальный семантический поиск с pgvector, SQLite-vec и эпизодической памятью HNSW."
+      },
+      "0x05": {
+        "title": "Инфраструктура VPS, cPanel и хостинг",
+        "desc": "Развертывание серверов VPS на Linux/NixOS, администрирование cPanel/WHM, тюнинг Nginx/PHP-FPM и настройка SSL/DNS."
+      },
+      "0x06": {
+        "title": "Безопасность, харденинг и инструменты MCP",
+        "desc": "Аудит кода, сканирование уязвимостей, проприетарные антивирусные инструменты и инспекционные серверы по протоколу MCP."
+      }
+    },
+    "stackCategories": {
+      "cat1": "Языки и среды выполнения",
+      "cat2": "Веб, CMS и фреймворки",
+      "cat3": "Базы данных и векторный поиск",
+      "cat4": "ИИ-каркасы и оркестрация агентов",
+      "cat5": "Инфраструктура, серверы и DevSecOps"
+    }
+  },
+  "projects": {
+    "heading": "# проекты",
+    "title": "Создание",
+    "titleAccent": "распределенных",
+    "titleSuffix": "систем",
+    "subtitle": "От промышленной телеметрии до ядер памяти ИИ — каждый проект закрывает цикл через симуляцию и помощь ИИ.",
+    "techStack": "Технологический стек",
+    "timeline": "Хронология и дорожная карта",
+    "repository": "Репозиторий",
+    "filter": {
+      "all": "Все",
+      "production": "Продакшен и индустрия (10+ лет)",
+      "opensource": "Open Source и Deep Tech"
+    },
+    "section": {
+      "opensource": "// 01. Deep Tech ядра и Open Source экосистема",
+      "production": "// 02. Профессиональный опыт и софт в продакшене (10+ лет)"
+    },
+    "status": {
+      "production": "Продакшен",
+      "active": "Активен",
+      "beta": "Бета",
+      "prototype": "Прототип"
+    },
+    "btn": {
+      "showDetails": "Посмотреть архитектуру и метрики",
+      "hideDetails": "Скрыть детали",
+      "viewRepo": "Репозиторий",
+      "visitDemo": "Сайт проекта",
+      "readStudy": "Научная статья"
+    },
+    "label": {
+      "architecture": "Архитектура и технические решения",
+      "stack": "Полный стек технологий",
+      "metrics": "Метрики производительности и результаты",
+      "research": "Научные исследования (5D Glass Memory)",
+      "researchDesc": "Публикации и научные вехи, подтверждающие теоретическую модель:",
+      "timeline": "Хронология и этапы"
+    },
+    "xavier2": {
+      "name": "Xavier",
+      "tagline": "Когнитивное ядро памяти для ИИ",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - Настоящее время",
+      "description": "Постоянное локальное ядро когнитивной памяти для агентов ИИ на Rust. Контейнеризованный микросервис Docker, предоставляющий векторное хранилище, индекс семантического поиска HNSW и графы знаний.",
+      "architecture": "Движок на Rust со SQLite-vec и pgvector. Векторный поиск по косинусному сходству с локальными эмбеддингами без внешних облаков.",
+      "metrics": [
+        "Задержка поиска <10мс на локальных индексах",
+        "100% автономность без привязки к облаку",
+        "Интеграция с Hermes и Gestalt"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "Архитектурный дизайн и уровень векторного хранения на Rust"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Релиз v0.1 - CRUD-операции, локальные эмбеддинги и REST"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "v0.6.0-beta - Индексы HNSW, Docker и эпизодическая память"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Дорожная карта: Интеграция семантических графов"
+        }
+      ]
+    },
+    "gitcore": {
+      "name": "GitCore",
+      "tagline": "Автономный мультиагентный оркестратор Git/GitHub",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2026 - Настоящее время",
+      "description": "Детерминированный каркас для автономных кодинг-агентов (Jules, Claude Code, OpenCode). Автоматизирует создание задач, микрофрагментацию до 15 параллельных задач и слияние без конфликтов.",
+      "architecture": "Декуплированная архитектура на Rust и скриптах CLI. Система непересекающихся файловых островов.",
+      "metrics": [
+        "До 15 параллельных автономных задач",
+        "100% трассируемость через канонические задачи",
+        "0 конфликтов при слиянии PR"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "Протокол задач и трассируемость агентов"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Wave Operations: микрофрагментация на 15 задач"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Интеграция с Hermes Gateway и предаудит"
+        }
+      ]
+    },
+    "photon-core": {
+      "name": "Photon-Core",
+      "tagline": "Симуляция 5D оптического хранения данных",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2026 - Настоящее время",
+      "description": "Фреймворк симуляции оптической физики на Rust для объемного 5D хранения данных в кристаллах плавленого кварца.",
+      "architecture": "Многопоточный движок на Rust с параллелизацией Rayon. Моделирование лазерного воздействия и коррекция ошибок Рида-Соломона.",
+      "metrics": [
+        "Пропускная способность кодирования >470 МБ/с",
+        "Симуляция 5D вокселей",
+        "Восстановление данных через ECC Рида-Соломона"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "Математическая модель и определение фотонного вокселя"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Интеграция ECC Рида-Соломона и 3D-перекрестных помех"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Стеганографическое сокрытие данных и CLI-тулкит"
+        }
+      ]
+    },
+    "gestalt": {
+      "name": "Gestalt",
+      "tagline": "Автономный роевой оркестратор",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - Настоящее время",
+      "description": "Оркестратор автономных роев и интеллектуальная маршрутизация мультиролевых агентов через CLI на Rust.",
+      "architecture": "Асинхронная архитектура на Tokio и SurrealDB для сохранения состояний и коммуникации между агентами.",
+      "metrics": [
+        "Маршрутизация агентов <5мс",
+        "Асинхронная модель состояний SurrealDB",
+        "Полный детерминизм в локальном окружении"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q3",
+          "label": "Прототип маршрутизации задач на SurrealDB"
+        },
+        {
+          "date": "2025 Q4",
+          "label": "Мультиагентная координация и CLI"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Интеграция с Xavier Memory Core"
+        }
+      ]
+    },
+    "nvc": {
+      "tagline": "Офлайн голосовой ассистент",
+      "description": "Локальный голосовой ассистент, сочетающий аудиоядро на Rust и интерфейс на Flutter через Flutter Rust Bridge со распознаванием речи через Vosk.",
+      "t0": "Модульная архитектура на Rust",
+      "t1": "Захват аудио cpal и транскрипция Vosk",
+      "t2": "Интеграция Flutter Rust Bridge",
+      "t3": "Дорожная карта: локальный пайплайн LLM"
+    },
+    "orion": {
+      "tagline": "Offline-First экосистема здоровья",
+      "description": "Персональное приложение для здоровья без подключения к сети на Flutter и Dart с зашифрованным хранилищем SQLite.",
+      "t0": "Старт Flutter и локальные схемы",
+      "t1": "Offline-first с зашифрованным SQLite",
+      "t2": "Движок синхронизации и панель аналитики",
+      "t3": "Дорожная карта: облачная синхронизация"
+    },
+    "gos": {
+      "tagline": "Кулинарный PWA-сервис",
+      "description": "Монорепозиторий PWA для поиска ресторанов и офлайн-отзывов на Flutter и PWA.",
+      "t0": "Старт монорепозитория и дизайн-система",
+      "t1": "PWA shell, сервис-воркеры и офлайн-кэш",
+      "t2": "Бета-релиз с отзывами и сканированием меню",
+      "t3": "Дорожная карта: рекомендации на базе ИИ"
+    },
+    "filterAll": "Todos",
+    "filterProduction": "Producción e Industria (10+ Años)",
+    "filterOpenSource": "Open Source y Deep Tech",
+    "secDeepTech": "// 01. Núcleos Deep Tech y Ecosistema Open Source",
+    "secProduction": "// 02. Experiencias Laborales y Software en Producción (10+ Años)",
+    "hideDetails": "Ocultar Detalles",
+    "viewDetails": "Ver Arquitectura y Métricas",
+    "archTitle": "Arquitectura y Decisiones Técnicas",
+    "stackTitle": "Stack Técnico Completo",
+    "metricsTitle": "Métricas de Rendimiento y Resultados",
+    "viewRepo": "Ver Repositorio",
+    "visitProd": "Visitar Producción / Web",
+    "researchTitle": "Estudios Científicos y Noticias del Avance Tecnológico (Memoria 5D en Vidrio)",
+    "researchDesc": "Publicaciones científicas globales que respaldan la viabilidad del modelo:",
+    "readResearch": "Leer Estudio / Noticia",
+    "timelineTitle": "Cronograma e Hitos Clave"
+  },
+  "blog": {
+    "heading": "# блог",
+    "title": "Идеи и",
+    "titleAccent": "архитектура",
+    "subtitle": "Глубокие разборы архитектуры систем, инфраструктуры ИИ и инженерии моих проектов.",
+    "draft": "Черновик",
+    "comingSoon": "СКОРО",
+    "pipelineStatus": "Автоматический пайплайн активен / Статус системы: в норме"
+  },
+  "contact": {
+    "heading": "# контакты",
+    "title": "Давайте",
+    "titleAccent": "построим",
+    "titleSuffix": "масштабируемое решение",
+    "subtitle": "Нужен инженер с реальным опытом в продакшене и знанием различных бизнес-моделей? Напишите мне.",
+    "emailPlaceholder": "ВАШ@EMAIL.COM",
+    "messagePlaceholder": "ОПИШИТЕ ВАШ ПРОЕКТ ИЛИ ЗАДАЧУ...",
+    "submit": "ОТПРАВИТЬ ЗАПРОС",
+    "email": "EMAIL"
+  },
+  "footer": {
+    "tagline": "Ведущий Full-Stack разработчик",
+    "partOf": "Проект",
+    "builtWith": "Создано с помощью"
+  },
+  "agenda": {
+    "badge": "ТЕХНИЧЕСКИЙ КОНСАЛТИНГ",
+    "title": "Записаться на техническую сессию",
+    "subtitle": "Аудит и объединение ваших ресурсов разработки — ИИ, автоматизации и инфраструктуры — для устойчивой оптимизации ваших проектов.",
+    "p1t": "Аудит ресурсов",
+    "p1d": "Полный анализ ваших инструментов, ИИ-агентов, репозиториев и процессов: что работает, что дублируется, чего не хватает.",
+    "p2t": "План оркестрации ИИ",
+    "p2d": "Четкие протоколы внедрения автономных агентов в ваш процесс разработки с код-ревью, тестами и верификацией.",
+    "p3t": "Долгосрочная надежность",
+    "p3d": "Модульные дизайн-системы, библиотеки и живая документация, предотвращающие накопление технического долга.",
+    "fmtTitle": "Формат сессии",
+    "fmtDur": "Длительность",
+    "fmtDurV": "60 минут (удаленно)",
+    "fmtMod": "Формат",
+    "fmtModV": "Видеозвонок + подробный отчет с рекомендациями",
+    "fmtLang": "Языки",
+    "fmtLangV": "Русский / English / Español +7",
+    "fmtFol": "Стоимость",
+    "fmtFolV": "Первая вводная диагностическая сессия — бесплатно",
+    "topTitle": "Популярные темы",
+    "top1": "Настройка пайплайна с ИИ-агентами с нуля",
+    "top2": "Аудит и унификация разрозненных репозиториев и инструментов",
+    "top3": "Local-first и приватность: запуск ИИ на собственном оборудовании",
+    "top4": "Оптимизация скорости работы инженерных команд",
+    "top5": "Устойчивая архитектура: устранение техдолга и масштабирование",
+    "top6": "Оценка технической жизнеспособности цифровых продуктов",
+    "slotsLabel": "Доступность",
+    "slot1": "Пн–Пт · после полудня (GMT-5)",
+    "slot2": "Ответ в течение 24 часов",
+    "slot3": "Ограниченное количество мест в неделю",
+    "formTitle": "Забронировать консультацию",
+    "formName": "Ваше имя",
+    "formEmail": "Ваш email",
+    "formMsg": "Кратко опишите вашу задачу: проект, команда, что хотите оптимизировать…",
+    "formSubmit": "Отправить запрос",
+    "formNote": "Ваш почтовый клиент откроется с готовым сообщением. Вы также можете написать на iberi22@gmail.com",
+    "okTitle": "Запрос подготовлен!",
+    "okText": "Проверьте почтовую программу и отправьте письмо. Я отвечу в течение 24 часов.",
+    "priceTag": "$20 USD",
+    "priceSub": "Base Diagnostic + Multi-Agent Council Validation + Skills Package",
+    "track1Title": "Express Technical Diagnostic ($20 USD)",
+    "track1Desc": "AI provider audit, local hardware vs. cloud balance, and formal action roadmap validated by multi-agent council + 60-min 1-on-1 session.",
+    "track2Title": "Training & Transition in Generative AI",
+    "track2Desc": "Hands-on workshops for developers and teams: learn to move beyond interactive chat to deterministic orchestration via micro-fragmentation and disjoint file islands.",
+    "track3Title": "Harness Setup & CLI Tooling Deployment",
+    "track3Desc": "Installation and configuration of Hermes Gateway, OpenClaw, GitCore, Gestalt, Jules, and agentic CLI tooling tailored to your hardware and infrastructure.",
+    "methodologyTitle": "Methodology: Local-First Data Gathering & Simulation",
+    "methodologySub": "A 100% serverless workflow running strictly in your browser, guaranteeing absolute data privacy, client-side database persistence, and algorithmic simulation of the Top 5 configurations.",
+    "m1t": "1. Local-First Multi-Tool Gathering",
+    "m1d": "Input and scan of available resources (providers, .env paths, rate limits, local hardware vs. cloud) processed 100% in your browser database without leaking sensitive data.",
+    "m2t": "2. Top 5 Configuration Simulations",
+    "m2d": "Running simulations to optimize the two most critical assets of any project: Cost (USD/tokens) vs. Development Speed (parallelism and delivery).",
+    "m3t": "3. Generation of Skills, Prompts & .env",
+    "m3d": "Automatic generation of a fine-tuned master agent prompt and customized skills templates adapted to your available providers and quota limits.",
+    "m4t": "4. Lead Architect & Multi-Agent Council Review",
+    "m4d": "Final technical synthesis by Brahyans Belalcázar cross-validated with formal multi-agent advisory consensus.",
+    "formProfile": "Organization / Profile Type",
+    "formProfile1": "Startup / Software Company",
+    "formProfile2": "Independent Developer / Consultant",
+    "formProfile3": "Enterprise / Digital Transformation",
+    "formProfile4": "Academic / Research Project",
+    "formService": "Service of Interest",
+    "formService1": "Technical Diagnostic & Report ($20 USD)",
+    "formService2": "Training & Generative AI Transition (Teams)",
+    "formService3": "Harness Setup & Deployment (Hermes / OpenClaw / GitCore)",
+    "formService4": "End-to-End Architecture Advisory",
+    "formInfra": "Current Providers & Hardware",
+    "formInfraPh": "e.g., Gemini/OpenAI API, Ubuntu Linux VPS, Local Mac Studio, AWS...",
+    "formPayNote": "For the Base Diagnostic ($20 USD), payment is processed securely via Stripe after registering specifications.",
+    "formSubmitAlt": "Submit Training / Setup Request",
+    "formSubmitStripe": "Pay $20 USD with Stripe ↗",
+    "fmtLangNote": "Поддерживаются платформы перевода. Если вы не говорите по-испански, встреча проходит на английском."
+  },
+  "simulator": {
+    "badge": "100% SERVERLESS · LOCAL-FIRST PRIVACY · SWAL SIMULATION FRAMEWORK",
+    "title": "Agentic Resource & Scenario Simulator",
+    "subtitle": "Calculate the Top 5 Optimal Agent Architectures based on your hardware, cloud providers, rate limits, and monthly budget. Generate custom Master Prompts, SKILL.md templates, and sanitized .env files with zero backend storage.",
+    "sectionResources": "1. Multi-Tool Resource Input Engine",
+    "sectionSimulations": "2. Scenario Simulation & Scoring (Top 5 Architectures)",
+    "sectionArtifacts": "3. Custom Skills, Master System Prompt & .env Generator",
+    "runSimulation": "Run Parametric Simulation",
+    "exportProfile": "Export Profile (JSON)",
+    "importProfile": "Import Profile (JSON)",
+    "resetDefaults": "Reset Defaults",
+    "copyPrompt": "Copy Master System Prompt",
+    "copySkill": "Copy SKILL.md",
+    "copyEnv": "Copy .env.example",
+    "downloadAll": "Download All Artifacts"
+  },
+  "locale": {
+    "label": "Язык",
+    "announcement": "Этот сайт говорит на вашем языке. Язык не является барьером для создания программного обеспечения в сообществе.",
+    "mission": "SouthWest AI Labs — это лаборатория идей для решений с интеграцией сообщества. Наша миссия: дать каждому доступ к передовым инструментам для проектирования информационных систем, улучшающих качество жизни.",
+    "accelerate": "Мы ускоряем системы, которые приносят качество жизни людям."
+  }
+}

@@ -1,0 +1,31 @@
+/* paywall.css — Flexible Sampling styles (lead-in + blur) */
+.paywall-badge{
+  display:flex; align-items:center; gap:.5rem;
+  margin:0 0 1.25rem 0; padding:.6rem .9rem;
+  border-radius:999px; border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.04); backdrop-filter:blur(8px);
+  font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size:11px; letter-spacing:.06em; color:#a1a1aa;
+}
+.paywall-badge a{ color:#22d3ee; text-decoration:underline; text-underline-offset:3px; }
+.paywall-badge a:hover{ color:#67e8f9; }
+.paywall-badge-dot{ width:7px; height:7px; border-radius:999px; background:#22d3ee; box-shadow:0 0 10px rgba(34,211,238,.6); flex-shrink:0; }
+.paywall-badge-dot--over{ background:#f59e0b; box-shadow:0 0 10px rgba(245,158,11,.6); }
+
+/* Default: full article visible (Googlebot + users under quota) */
+.paywall{ position:relative; }
+
+/* When over quota, blur after ~650px and show gradient fade */
+html.paywall-active .paywall{
+  max-height: 640px;
+  overflow: hidden;
+}
+html.paywall-active .paywall::after{
+  content:"";
+  position:absolute; left:0; right:0; bottom:0; height:220px;
+  background: linear-gradient(to bottom, transparent, #0a0a0f 85%);
+  pointer-events:none;
+}
+html.paywall-active .paywall--leadonly{
+  max-height: 640px;
+}

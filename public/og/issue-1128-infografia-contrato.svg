@@ -1,0 +1,266 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1680" width="1200" height="1680" role="img" aria-labelledby="title desc">
+<title id="title">Issue como Contrato — Anatomía del Issue #1128 [JULES] WorldeXams</title>
+<desc id="desc">Desglose visual del protocolo de issue-contrato para agentes: 12 secciones, files to modify, acceptance criteria verificables, anti-drift y file islands.</desc>
+<style>
+  .bg { fill: #0a0a0f; }
+  .card { fill: #111114; stroke: rgba(255,255,255,0.08); stroke-width:1; rx:16; }
+  .accent { fill: #22d3ee; }
+  .accent2 { fill: #00ff88; }
+  .purple { fill: #a78bfa; }
+  .orange { fill: #fbbf24; }
+  .muted { fill: #9ca3af; }
+  .white { fill: #ffffff; }
+  .mono { font-family: 'Fira Code', 'JetBrains Mono', 'DejaVu Sans Mono', monospace; }
+  .sans { font-family: 'Inter', 'DejaVu Sans', system-ui, sans-serif; }
+  .small { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .body { font-size: 13px; line-height: 1.4; fill: #d1d5db; }
+</style>
+<rect width="1200" height="1680" class="bg" rx="24"/>
+<!-- Header -->
+<rect x="24" y="24" width="1152" height="132" rx="16" fill="#0f172a" stroke="#22d3ee" stroke-width="1.5"/>
+<text x="48" y="62" class="mono small" fill="#22d3ee">worldexams · protocolo canónico v5.2 · contrato determinista para agentes</text>
+<text x="48" y="100" class="sans" font-size="30" font-weight="800" fill="white">Issue = Contrato Ejecutable</text>
+<text x="48" y="128" class="mono" font-size="13" fill="#9ca3af">Caso real: #1128  [JULES] Colombia — sociales-ciudadanas 11 — W32-W40  (9 bundles)  ·  20 preguntas × 9 = 180 Q</text>
+<!-- Top KPI row -->
+<g>
+  <rect x="24" y="172" width="272" height="92" class="card"/>
+  <text x="42" y="200" class="mono small" fill="#00ff88">● current state (medible)</text>
+  <text x="42" y="224" class="sans" font-size="13" font-weight="700" fill="white">Auditoría 2026-08-29</text>
+  <text x="42" y="244" class="mono" font-size="11" fill="#d1d5db">CO 402/402 100% global</text>
+  <text x="42" y="256" class="mono" font-size="11" fill="#fbbf24">P4 = 10/15 preguntas → gap W32-W40</text>
+  <rect x="316" y="172" width="272" height="92" class="card"/>
+  <text x="334" y="200" class="mono small" fill="#22d3ee">● desired state (delta)</text>
+  <text x="334" y="224" class="sans" font-size="13" font-weight="700" fill="white">9 bundles MASTERY v5.2</text>
+  <text x="334" y="244" class="mono" font-size="11" fill="#d1d5db">questions_data/colombia/sociales/…</text>
+  <text x="334" y="256" class="mono" font-size="11" fill="#9ca3af">20 Q × 9 · frontmatter 18 campos</text>
+  <rect x="608" y="172" width="272" height="92" class="card"/>
+  <text x="626" y="200" class="mono small" fill="#a78bfa">● verificable por comando</text>
+  <text x="626" y="224" class="sans" font-size="13" font-weight="700" fill="white">0 ambigüedades</text>
+  <text x="626" y="244" class="mono" font-size="11" fill="#d1d5db">npm run validate → Errores: 0</text>
+  <text x="626" y="256" class="mono" font-size="11" fill="#9ca3af">grep bundle_index / calibration</text>
+  <rect x="900" y="172" width="276" height="92" class="card"/>
+  <text x="918" y="200" class="mono small" fill="#f472b6">● file islands</text>
+  <text x="918" y="224" class="sans" font-size="13" font-weight="700" fill="white">Islas disjuntas</text>
+  <text x="918" y="244" class="mono" font-size="11" fill="#d1d5db">W32-W40 no colisiona con otros</text>
+  <text x="918" y="256" class="mono" font-size="11" fill="#9ca3af">harness-file-islands.py = 0 conflictos</text>
+</g>
+<!-- Flow diagram -->
+<g>
+  <text x="48" y="300" class="mono small" fill="#22d3ee">flujo del contrato → del issue al merge</text>
+  <!-- horizontal pipeline -->
+  <rect x="24" y="312" width="1152" height="96" rx="16" fill="#111114" stroke="rgba(34,211,238,0.25)"/>
+  <!-- 5 stages -->
+  <g>
+    <rect x="40" y="330" width="200" height="60" rx="12" fill="#0a0a0f" stroke="#22d3ee"/>
+    <text x="140" y="352" text-anchor="middle" class="mono small" fill="#22d3ee">1. web research</text>
+    <text x="140" y="372" text-anchor="middle" class="mono" font-size="10" fill="#9ca3af">4 queries obligatorias</text>
+  </g>
+  <text x="252" y="364" class="sans" font-size="18" fill="#22d3ee">→</text>
+  <g>
+    <rect x="272" y="330" width="200" height="60" rx="12" fill="#0a0a0f" stroke="#a78bfa"/>
+    <text x="372" y="352" text-anchor="middle" class="mono small" fill="#a78bfa">2. leer skills</text>
+    <text x="372" y="372" text-anchor="middle" class="mono" font-size="10" fill="#9ca3af">AGENTS + SKILL + CO.md + curriculum.ts</text>
+  </g>
+  <text x="484" y="364" class="sans" font-size="18" fill="#a78bfa">→</text>
+  <g>
+    <rect x="504" y="330" width="200" height="60" rx="12" fill="#0a0a0f" stroke="#00ff88"/>
+    <text x="604" y="352" text-anchor="middle" class="mono small" fill="#00ff88">3. generar bundles</text>
+    <text x="604" y="372" text-anchor="middle" class="mono" font-size="10" fill="#9ca3af">W32-W40 · 20Q  · rango D#-D#</text>
+  </g>
+  <text x="716" y="364" class="sans" font-size="18" fill="#00ff88">→</text>
+  <g>
+    <rect x="736" y="330" width="200" height="60" rx="12" fill="#0a0a0f" stroke="#fbbf24"/>
+    <text x="836" y="352" text-anchor="middle" class="mono small" fill="#fbbf24">4. validar</text>
+    <text x="836" y="372" text-anchor="middle" class="mono" font-size="10" fill="#9ca3af">validate_content.js = 0 errores</text>
+  </g>
+  <text x="948" y="364" class="sans" font-size="18" fill="#fbbf24">→</text>
+  <g>
+    <rect x="968" y="330" width="192" height="60" rx="12" fill="#0a0a0f" stroke="#f472b6"/>
+    <text x="1064" y="352" text-anchor="middle" class="mono small" fill="#f472b6">5. PR + packs</text>
+    <text x="1064" y="372" text-anchor="middle" class="mono" font-size="10" fill="#9ca3af">≥9 files · generate-static-packs</text>
+  </g>
+</g>
+<!-- 12 secciones del issue -->
+<g>
+  <text x="48" y="452" class="mono small" fill="#a78bfa">anatomía: 12 secciones que convierten un issue en contrato</text>
+  <!-- row 1: 4 cards -->
+  <g>
+    <rect x="24" y="464" width="270" height="130" class="card"/>
+    <circle cx="44" cy="486" r="12" fill="#22d3ee" opacity="0.15"/><text x="44" y="490" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#22d3ee">1</text>
+    <text x="68" y="490" class="sans" font-size="12" font-weight="700" fill="white">Current / Desired State</text>
+    <text x="42" y="510" class="mono" font-size="11" fill="#d1d5db">Qué existe (MEDIBLE) vs qué debe</text>
+    <text x="42" y="526" class="mono" font-size="11" fill="#d1d5db">existir (DELTA). Sin narrativa.</text>
+    <text x="42" y="548" class="mono" font-size="10" fill="#9ca3af">Evita que el agente “invente” alcance.</text>
+    <text x="42" y="574" class="mono small" font-size="9" fill="#22d3ee">ej: 402/402 100% global · P4 gap</text>
+  </g>
+  <g>
+    <rect x="312" y="464" width="270" height="130" class="card"/>
+    <circle cx="332" cy="486" r="12" fill="#a78bfa" opacity="0.2"/><text x="332" y="490" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#a78bfa">2</text>
+    <text x="356" y="490" class="sans" font-size="12" font-weight="700" fill="white">Web Research Obligatorio</text>
+    <text x="330" y="510" class="mono" font-size="11" fill="#d1d5db">4+ queries antes de codificar.</text>
+    <text x="330" y="526" class="mono" font-size="11" fill="#d1d5db">DBA/EBC · ejes ICFES por pregunta.</text>
+    <text x="330" y="548" class="mono" font-size="10" fill="#9ca3af">Documentado en PR, no en cabeza del LLM.</text>
+    <text x="330" y="574" class="mono small" font-size="9" fill="#a78bfa">DRIFT TAX ↓ · grounding ↑</text>
+  </g>
+  <g>
+    <rect x="600" y="464" width="270" height="130" class="card"/>
+    <circle cx="620" cy="486" r="12" fill="#00ff88" opacity="0.15"/><text x="620" y="490" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#00ff88">3</text>
+    <text x="644" y="490" class="sans" font-size="12" font-weight="700" fill="white">Skills &amp; Protocolo</text>
+    <text x="618" y="510" class="mono" font-size="11" fill="#d1d5db">Orden de lectura canónico.</text>
+    <text x="618" y="526" class="mono" font-size="11" fill="#d1d5db">AGENTS.md → SKILL → CO.md →</text>
+    <text x="618" y="542" class="mono" font-size="11" fill="#d1d5db">curriculum.ts → CONTENT_ERRORS</text>
+    <text x="618" y="564" class="mono small" font-size="9" fill="#00ff88">Fuente de verdad única versionada</text>
+  </g>
+  <g>
+    <rect x="888" y="464" width="288" height="130" class="card"/>
+    <circle cx="908" cy="486" r="12" fill="#fbbf24" opacity="0.2"/><text x="908" y="490" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#fbbf24">4</text>
+    <text x="932" y="490" class="sans" font-size="12" font-weight="700" fill="white">Reglas críticas (Jules)</text>
+    <text x="906" y="510" class="mono" font-size="11" fill="#d1d5db">Máx 15 bundles · Solo .md · REPLACE</text>
+    <text x="906" y="526" class="mono" font-size="11" fill="#d1d5db">explícito · npm run validate 0 errores.</text>
+    <text x="906" y="548" class="mono" font-size="10" fill="#9ca3af">Sin scripts/logs/dirs temporales.</text>
+    <text x="906" y="574" class="mono small" font-size="9" fill="#fbbf24">Límites que previenen scope drift</text>
+  </g>
+  <!-- row 2 -->
+  <g>
+    <rect x="24" y="610" width="270" height="130" class="card"/>
+    <circle cx="44" cy="632" r="12" fill="#f472b6" opacity="0.15"/><text x="44" y="636" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#f472b6">5</text>
+    <text x="68" y="636" class="sans" font-size="12" font-weight="700" fill="white">Anti-errores (purga)</text>
+    <text x="42" y="656" class="mono" font-size="11" fill="#d1d5db">9 clases de purga 2026-07-28:</text>
+    <text x="42" y="672" class="mono" font-size="10" fill="#d1d5db">ICFES · alignment · week vs semana</text>
+    <text x="42" y="688" class="mono" font-size="10" fill="#d1d5db">id = filename · bundle_index ·</text>
+    <text x="42" y="704" class="mono" font-size="10" fill="#f472b6">calibration · Contexto: (con :)</text>
+    <text x="42" y="720" class="mono small" font-size="9" fill="#f472b6">Memoria institucional codificada</text>
+  </g>
+  <g>
+    <rect x="312" y="610" width="270" height="130" class="card"/>
+    <circle cx="332" cy="632" r="12" fill="#22d3ee" opacity="0.15"/><text x="332" y="636" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#22d3ee">6</text>
+    <text x="356" y="636" class="sans" font-size="12" font-weight="700" fill="white">Configuración &amp; Tabla W</text>
+    <text x="330" y="656" class="mono" font-size="11" fill="#d1d5db">País / código / grado / año /</text>
+    <text x="330" y="672" class="mono" font-size="11" fill="#d1d5db">protocolo v5.2 · Ruta canónica.</text>
+    <text x="330" y="688" class="mono" font-size="10" fill="#d1d5db">W32 medio-ambiente → W40</text>
+    <text x="330" y="704" class="mono" font-size="10" fill="#d1d5db">repaso-p4-integrador (kebab-case)</text>
+    <text x="330" y="720" class="mono small" font-size="9" fill="#22d3ee">9 filas · periodo = ceil(W/10)</text>
+  </g>
+  <g>
+    <rect x="600" y="610" width="270" height="130" class="card"/>
+    <circle cx="620" cy="632" r="12" fill="#a78bfa" opacity="0.2"/><text x="620" y="636" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#a78bfa">7</text>
+    <text x="644" y="636" class="sans" font-size="12" font-weight="700" fill="white">Existing Code Patterns</text>
+    <text x="618" y="656" class="mono" font-size="11" fill="#d1d5db">2 bundles gold-reference oblig.</text>
+    <text x="618" y="672" class="mono" font-size="10" fill="#d1d5db">CO-ING … W02 · CO-MAT … W01</text>
+    <text x="618" y="688" class="mono" font-size="10" fill="#9ca3af">Mismo frontmatter 18 campos +</text>
+    <text x="618" y="704" class="mono" font-size="10" fill="#9ca3af">rango D#-D# + feedback ×4 opciones</text>
+    <text x="618" y="720" class="mono small" font-size="9" fill="#a78bfa">COPIAR forma, no inventar forma</text>
+  </g>
+  <g>
+    <rect x="888" y="610" width="288" height="130" class="card"/>
+    <circle cx="908" cy="632" r="12" fill="#00ff88" opacity="0.15"/><text x="908" y="636" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#00ff88">8</text>
+    <text x="932" y="636" class="sans" font-size="12" font-weight="700" fill="white">Acceptance Criteria</text>
+    <text x="906" y="656" class="mono" font-size="11" fill="#d1d5db">Verificables por comando, no por</text>
+    <text x="906" y="672" class="mono" font-size="11" fill="#d1d5db">opinión. grep / validate / wc -l.</text>
+    <text x="906" y="694" class="mono" font-size="10" fill="#9ca3af">Errores:0 · 20 × Question[D-D]</text>
+    <text x="906" y="710" class="mono" font-size="10" fill="#9ca3af">· bundle_index · ¬## Pregunta</text>
+    <text x="906" y="724" class="mono small" font-size="9" fill="#00ff88">CI es el juez, no el reviewer</text>
+  </g>
+  <!-- row 3 -->
+  <g>
+    <rect x="24" y="756" width="270" height="130" class="card"/>
+    <circle cx="44" cy="778" r="12" fill="#22d3ee" opacity="0.15"/><text x="44" y="782" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#22d3ee">9</text>
+    <text x="68" y="782" class="sans" font-size="12" font-weight="700" fill="white">Files to Modify</text>
+    <text x="42" y="802" class="mono" font-size="11" fill="#d1d5db">Tabla explícita: file | estado</text>
+    <text x="42" y="818" class="mono" font-size="11" fill="#d1d5db">actual | cambio | riesgo LOW.</text>
+    <text x="42" y="840" class="mono" font-size="10" fill="#9ca3af">El agente no decide qué tocar.</text>
+    <text x="42" y="858" class="mono small" font-size="9" fill="#22d3ee">Contrato de islas disjuntas</text>
+  </g>
+  <g>
+    <rect x="312" y="756" width="270" height="130" class="card"/>
+    <circle cx="332" cy="778" r="12" fill="#f472b6" opacity="0.15"/><text x="332" y="782" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#f472b6">10</text>
+    <text x="356" y="782" class="sans" font-size="12" font-weight="700" fill="white">DO NOT Touch</text>
+    <text x="330" y="802" class="mono" font-size="11" fill="#d1d5db">Anti-regresión: globs prohibidos.</text>
+    <text x="330" y="818" class="mono" font-size="10" fill="#d1d5db">ingles/** · .gitcore/features.json</text>
+    <text x="330" y="834" class="mono" font-size="10" fill="#d1d5db">· packs JSON (auto-regenerados).</text>
+    <text x="330" y="858" class="mono small" font-size="9" fill="#f472b6">Un toque fuera = drift instantáneo</text>
+  </g>
+  <g>
+    <rect x="600" y="756" width="270" height="130" class="card"/>
+    <circle cx="620" cy="778" r="12" fill="#fbbf24" opacity="0.2"/><text x="620" y="782" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#fbbf24">11</text>
+    <text x="644" y="782" class="sans" font-size="12" font-weight="700" fill="white">Anti-Hallucination Guard</text>
+    <text x="618" y="802" class="mono" font-size="11" fill="#d1d5db">READ before write · match</text>
+    <text x="618" y="818" class="mono" font-size="11" fill="#d1d5db">patterns · no inventar imports ·</text>
+    <text x="618" y="834" class="mono" font-size="11" fill="#d1d5db">verificar temas en curriculum.ts.</text>
+    <text x="618" y="858" class="mono small" font-size="9" fill="#fbbf24">6 reglas que cierran la imaginación</text>
+  </g>
+  <g>
+    <rect x="888" y="756" width="288" height="130" class="card"/>
+    <circle cx="908" cy="778" r="12" fill="#00ff88" opacity="0.15"/><text x="908" y="782" text-anchor="middle" class="mono" font-size="11" font-weight="800" fill="#00ff88">12</text>
+    <text x="932" y="782" class="sans" font-size="12" font-weight="700" fill="white">Verification &amp; Delivery</text>
+    <text x="906" y="802" class="mono" font-size="11" fill="#d1d5db">Bloques bash copiables + PR guard:</text>
+    <text x="906" y="818" class="mono" font-size="10" fill="#d1d5db">git status · git diff --stat ·</text>
+    <text x="906" y="834" class="mono" font-size="10" fill="#d1d5db">git ls-files · comment [OK] N bundles.</text>
+    <text x="906" y="858" class="mono small" font-size="9" fill="#00ff88">ANTI-EMPTY-PR · sin blocker no hay PR</text>
+  </g>
+</g>
+<!-- Why this matters + next evolution -->
+<g>
+  <rect x="24" y="912" width="1152" height="210" rx="16" fill="#111114" stroke="rgba(167,139,250,0.25)"/>
+  <text x="48" y="942" class="mono small" fill="#a78bfa">por qué funciona — lectura para humanos y agentes</text>
+  <text x="48" y="968" class="sans" font-size="16" font-weight="800" fill="white">El drift no es del modelo. Es de la tubería. El issue lo fija.</text>
+  <text x="48" y="992" class="mono" font-size="12" fill="#d1d5db">En oleadas de 15 agentes en paralelo, una instrucción ambigua se multiplica ×15. El issue-contrato elimina 3 modos de drift:</text>
+  <g>
+   <rect x="48" y="1008" width="350" height="56" rx="10" fill="#1a1a1e" stroke="rgba(34,211,238,0.2)"/>
+   <text x="64" y="1028" class="mono" font-size="11" font-weight="700" fill="#22d3ee">DRIFT DE ALCANCE →</text>
+   <text x="64" y="1046" class="mono" font-size="11" fill="#d1d5db">Files to Modify + DO NOT touch lo cierran.</text>
+   <rect x="418" y="1008" width="350" height="56" rx="10" fill="#1a1a1e" stroke="rgba(0,255,136,0.2)"/>
+   <text x="434" y="1028" class="mono" font-size="11" font-weight="700" fill="#00ff88">DRIFT DE INTERFAZ →</text>
+   <text x="434" y="1046" class="mono" font-size="11" fill="#d1d5db">18 campos + rango D#-D# + calibration.</text>
+   <rect x="788" y="1008" width="340" height="56" rx="10" fill="#1a1a1e" stroke="rgba(251,191,36,0.2)"/>
+   <text x="804" y="1028" class="mono" font-size="11" font-weight="700" fill="#fbbf24">DRIFT DE MEMORIA →</text>
+   <text x="804" y="1046" class="mono" font-size="11" fill="#d1d5db">Skills versionadas, no memoria del LLM.</text>
+  </g>
+  <text x="48" y="1096" class="mono" font-size="11" fill="#9ca3af">Métrica observada: Drift Tax = (tokens re-drift / tokens totales) ×100. Contratos buenos: &lt;15%. Contratos ambiguos: 45-60%. El ahorro no es “un poco”: es 3-4× coste por PR fusionada.</text>
+</g>
+<!-- Vision: next level with Xavier/CodeGraph line:char -->
+<g>
+  <rect x="24" y="1140" width="1152" height="360" rx="16" fill="#0f172a" stroke="#00ff88" stroke-width="1.2"/>
+  <text x="48" y="1170" class="mono small" fill="#00ff88">visión validada: del contrato de archivo al contrato de línea/carácter — con Xavier + CodeGraph</text>
+  <text x="48" y="1198" class="sans" font-size="18" font-weight="800" fill="white">Tu idea: issue = contrato gestionado por GitHub o por el propio sistema de agentes, con precisión línea:campo:cáracter.</text>
+  <text x="48" y="1224" class="mono" font-size="12" fill="#d1d5db">“Tan detallado que el agente solo pide cambios en líneas y variables, dada la línea y el carácter — solo posible usando Xavier y su CodeGraph.”</text>
+  <!-- two columns: validation -->
+  <g>
+    <rect x="48" y="1244" width="540" height="220" rx="12" fill="#111114" stroke="rgba(34,211,238,0.2)"/>
+    <text x="68" y="1270" class="sans" font-size="13" font-weight="800" fill="#22d3ee">✅ VALIDADO — por qué tiene sentido</text>
+    <text x="68" y="1292" class="mono" font-size="11" fill="#d1d5db">• Xavier ya indexa símbolos con tree-sitter (file, start_line, end_line,</text>
+    <text x="68" y="1308" class="mono" font-size="11" fill="#d1d5db">  signature, stable_id v2|project|file|name|kind|parent).</text>
+    <text x="68" y="1324" class="mono" font-size="11" fill="#d1d5db">• .xavier/codegraph.json = fuente de verdad portable; SQLite = &lt;10ms lookup.</text>
+    <text x="68" y="1340" class="mono" font-size="11" fill="#d1d5db">• Issues actuales ya son contratos de ARCHIVO; el siguiente paso</text>
+    <text x="68" y="1356" class="mono" font-size="11" fill="#d1d5db">  natural es contrato de SÍMBOLO (función, variable, tipo) → línea:col.</text>
+    <text x="68" y="1372" class="mono" font-size="11" fill="#d1d5db">• Token saving real: el agente no explora el repo (context build = 0),</text>
+    <text x="68" y="1388" class="mono" font-size="11" fill="#d1d5db">  solo aplica patch. Drift de interfaz → 0.</text>
+    <text x="68" y="1404" class="mono" font-size="11" fill="#d1d5db">• Compatible con file islands: dos issues pueden tocar el mismo</text>
+    <text x="68" y="1420" class="mono" font-size="11" fill="#d1d5db">  archivo si apuntan a símbolos disjuntos (AST-aware).</text>
+    <text x="68" y="1440" class="mono small" font-size="9" fill="#22d3ee">ARQUITECTURA: issue.body → CodeGraph stable_id → patch exacto → validate</text>
+  </g>
+  <g>
+    <rect x="612" y="1244" width="540" height="220" rx="12" fill="#111114" stroke="rgba(251,191,36,0.2)"/>
+    <text x="632" y="1270" class="sans" font-size="13" font-weight="800" fill="#fbbf24">⚠️ CONDICIONES PARA QUE FUNCIONE (no gratis)</text>
+    <text x="632" y="1292" class="mono" font-size="11" fill="#d1d5db">• Requiere CodeGraph sincronizado pre-issue (git delta sync, no full_scan).</text>
+    <text x="632" y="1308" class="mono" font-size="11" fill="#d1d5db">  Si el índice está stale, línea:col es mentira.</text>
+    <text x="632" y="1324" class="mono" font-size="11" fill="#d1d5db">• El generador del issue debe ser también un agente (Xavier-aware):</text>
+    <text x="632" y="1340" class="mono" font-size="11" fill="#d1d5db">  humano especifica intención → agente resuelve símbolo → escribe contrato.</text>
+    <text x="632" y="1356" class="mono" font-size="11" fill="#d1d5db">• No todo issue debe ser línea:col. Usar 3 niveles:</text>
+    <text x="632" y="1372" class="mono" font-size="11" fill="#d1d5db">  L1 archivo (bundles) · L2 símbolo (refactor) · L3 línea:col (hotfix).</text>
+    <text x="632" y="1388" class="mono" font-size="11" fill="#d1d5db">• Añadir `codegraph_sync_commit` al body como prueba de frescura.</text>
+    <text x="632" y="1404" class="mono" font-size="11" fill="#d1d5db">• Verificación: `xavier code query --stable-id … --show-lines` en CI.</text>
+    <text x="632" y="1440" class="mono small" font-size="9" fill="#fbbf24">SIN ESTO: falsa precisión = peor que ambigüedad honesta.</text>
+  </g>
+  <text x="48" y="1488" class="mono" font-size="11" fill="#9ca3af">Conclusión: tu idea no solo es válida — es la evolución natural del pipeline. El worldexams ya demuestra el nivel L1. El nivel L3 es Xavier haciendo de “compilador de issues”.</text>
+</g>
+<!-- Footer -->
+<g>
+  <rect x="24" y="1520" width="1152" height="136" rx="16" fill="#111114" stroke="rgba(255,255,255,0.08)"/>
+  <text x="48" y="1548" class="mono small" fill="#22d3ee">qué se lleva el agente después de leer este contrato</text>
+  <text x="48" y="1572" class="mono" font-size="12" fill="white">1) No toques lo que no está en <tspan fill="#22d3ee">Files to Modify</tspan>  ·  2) No inventes forma: copia <tspan fill="#a78bfa">Existing Code Patterns</tspan>  ·  3) No abras PR si <tspan fill="#00ff88">validate ≠ 0 errores</tspan></text>
+  <text x="48" y="1596" class="mono" font-size="12" fill="white">4) Documenta DBA/EBC + eje ICFES por pregunta  ·  5) Comenta <tspan fill="#fbbf24">[OK] Generados N bundles: …</tspan> con IDs reales  ·  6) Deja los packs para el post-merge</text>
+  <text x="48" y="1628" class="mono" font-size="10" fill="#9ca3af">Plantilla canónica: .github/scripts/generate-jules-issue-matrix.mjs  ·  Skill: skills/worldexams-bundle-generator/SKILL.md  ·  Validador: saberparatodos/scripts/validate_content.js</text>
+  <text x="48" y="1646" class="mono small" font-size="9" fill="#6b7280">diseño: Brahyan Belalcázar @iberi22 — SouthWest AI Labs · CC BY-SA · 2026-08-29 · 1200×1680 · para agentes y humanos</text>
+</g>
+</svg>

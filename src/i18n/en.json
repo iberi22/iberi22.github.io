@@ -1,0 +1,665 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact",
+    "git": "GIT",
+    "github": "GITHUB",
+    "agenda": "Agenda",
+    "simulator": "Simulator (Beta)",
+    "resources": "Resources"
+  },
+  "simulator": {
+    "badge": "100% SERVERLESS · LOCAL-FIRST PRIVACY · SWAL SIMULATION FRAMEWORK",
+    "title": "AI Resource, Spend Simulator & Skill Generator",
+    "subtitle": "Preliminary technical diagnostic tool to gather real data from your environment, iterate over cost vs. velocity parameters, discover untapped LLM capabilities, and prepare for your technical meeting to generate 100% personalized custom skills for your systems.",
+    "sectionResources": "1. Subscriptions, Hardware & Provider Diagnostic",
+    "sectionSimulations": "2. Parametric Scenario Simulation (Top 5 Dynamic Tiers)",
+    "sectionArtifacts": "3. Pragmatic English Prompt, CLI Scripts & Skills Generator",
+    "runSimulation": "Run Parametric Simulation",
+    "exportProfile": "Export JSON",
+    "importProfile": "Import JSON",
+    "saveProfile": "Save Local Profile",
+    "resetDefaults": "Reset",
+    "betaBadge": "BETA PHASE · DIAGNOSTIC & SIMULATION",
+    "freeCommunity": "Local-First Architecture & Diagnostics",
+    "serverless": "100% Serverless · Zero-Leak Browser Privacy",
+    "betaPurposeTitle": "Simulator Purpose & Technical Meeting Prep",
+    "betaPurposeDesc": "The goal of this beta tool is to collect and iterate key technical decision data (local hardware, active subscriptions, monthly spend, workspace depth, and LLM tiers). Test different budget and performance combinations, download your artifacts, and join the weekly technical meet ready to co-design an engineering plan and custom skills anchored to your systems.",
+    "subsTitle": "Your Active Subscriptions & Accounts (Orchestrated as Subagents / CLI)",
+    "subsSub": "Dynamically tunes concurrency limits",
+    "providersTitle": "Model Families and Providers",
+    "providersSub": "Evaluated live by autonomous agents",
+    "hardwareTitle": "Hardware & Local Environment Diagnostic",
+    "diagnosticsTitle": "Workload, Context Depth & Monthly Budget",
+    "contextTitle": "Workspace Paths & Environment Credentials",
+    "copyPrompt": "Copy Master System Prompt",
+    "copySkill": "Copy SKILL.md",
+    "copyEnv": "Copy .env.example",
+    "downloadAll": "Download All Artifacts",
+    "badgeBeta": "🧪 BETA PHASE · DIAGNOSTIC & SIMULATION",
+    "badgeFree": "🎁 Free Technical Diagnostic Tool",
+    "badgeServerless": "🔒 100% Serverless · Total Browser Privacy",
+    "mainTitle": "Resource, Expense & Skill Generator Simulator",
+    "mainSubtitle": "Preliminary diagnostic tool to gather real technical environment data, iterate on cost vs. speed parameters, discover unexploited LLM layer capabilities, and enter technical sessions with a clear plan to generate 100% custom skills tailored to your systems.",
+    "purposeTitle": "🎯 Simulator Purpose & Technical Meet Preparation",
+    "purposeText": "The purpose of this beta tool is to collect and iterate on key technical decision data (local hardware, active subscriptions, monthly spend, repository depth, and LLM layers). With this data, you can test different budget and performance combinations, download artifacts, and arrive at the weekly technical meet prepared to co-design an engineering plan and generate custom skills anchored to your systems.",
+    "resetFeedback": "Values reset to default parameters",
+    "importFeedback": "Profile imported successfully!",
+    "section1Title": "1. Subscriptions, Hardware & Provider Diagnostic",
+    "zeroServerCalls": "0% External Server Calls",
+    "subscriptionsTitle": "🔑 Your Active Subscriptions & Accounts (Subagent Orchestration / CLI)",
+    "concurrencySubtitle": "Dynamically adjusts concurrency limits",
+    "modelFamiliesTitle": "Model Families & Providers",
+    "evaluatedLive": "Evaluated live by subagents",
+    "workloadDiagTitle": "Workload Diagnostic",
+    "primaryDevType": "Primary Development Type",
+    "contextDepthLabel": "Context / Repository Depth",
+    "computeEnv": "Compute Environment",
+    "expensesTitle": "Expenses & Daily Prompts",
+    "currentSpend": "Current Monthly Spend ($/mo)",
+    "budgetLimit": "Monthly Budget ($/mo)",
+    "invalidJsonError": "Invalid JSON file.",
+    "section2Title": "2. Parametric Scenario Simulation (Top 5 Dynamic Tiers)",
+    "section2Subtitle": "Adjusted to your Subscriptions & Hardware",
+    "top1Recommended": "TOP 1 RECOMMENDED",
+    "activeConfigTitle": "Active Selected Configuration",
+    "latency": "Latency",
+    "verification": "Verification",
+    "score": "Score",
+    "costEfficiency": "Cost Efficiency",
+    "devVelocity": "Dev Velocity",
+    "antiDriftQuality": "Quality & Anti-Drift Resilience",
+    "section3Title": "3. Pragmatic English Prompts, CLI Scripts & Skills Generator",
+    "section3Subtitle": "Deterministic English artifacts optimized for maximum LLM reasoning accuracy",
+    "whyEnglishTitle": "Why are all prompts generated strictly in English?",
+    "whyEnglishText": "Foundational models (Claude 3.7/Sonnet, OpenAI o-series/GPT-4o, Gemini 2.5/Pro, DeepSeek R1/V3) have over 85% of their training corpus and reasoning benchmarks in English. Running agent prompts in English increases tool-use success rates and directive adherence by up to 40%, eliminates translation ambiguity, and consumes ~35% fewer BPE tokens.",
+    "tabMasterPrompt": "Master Prompt",
+    "tabWebSearchPrompt": "Web Search Prompt",
+    "tabMetricsPrompt": "Metrics Scanner",
+    "tabCliAuditScript": "CLI Auto-Scan Script",
+    "tabSkill": "Custom SKILL.md",
+    "tabEnv": ".env.example",
+    "copyWebSearch": "Copy Web Search Prompt",
+    "copyMetrics": "Copy Metrics Prompt",
+    "copyCliScript": "Copy Shell Script"
+  },
+  "hero": {
+    "badge": "Senior Full-Stack Developer · 10+ Years in Production",
+    "firstName": "Brahyan",
+    "lastName": "Belalcázar",
+    "tagline": "Production software, refined by a decade of experience.",
+    "taglineExtra": "JavaScript, PHP, web and mobile architectures — from concept to deployment across industrial, tax, publishing, and e-commerce sectors.",
+    "viewProjects": "View Projects",
+    "getInTouch": "Get in Touch",
+    "scroll": "SCROLL"
+  },
+  "about": {
+    "heading": "# about",
+    "title": "Web engineering",
+    "titleAccent": " Full-Stack",
+    "titleSuffix": " with a decade of experience",
+    "bio": "I'm Brahyan Belalcázar, a Full-Stack developer with over 10 years shipping production software across sectors with distinct business models: industrial mining and electricity (Tripro), tax and legal advisory (Restrepo y Londoño), B2B and B2C e-commerce (Siesa Ecommerce), ERP and interactive signage (LogicalSoft), and publishing (Los Tres Editores). Each sector taught me unique architectures, operational constraints, and engineering techniques — enabling me to take complex features to full production functionality. My core stack centers on JavaScript and PHP, mastered at a senior level over the years: from custom WordPress plugin architecture and REST APIs to complete Node.js applications. Today, I combine that track record with AI-assisted engineering to accelerate iteration speed without sacrificing code quality.",
+    "philosophy": "I believe in closing the loop: every feature undergoes simulation, implementation, review, and rigorous testing — always under human engineering control. The open-source code I publish (semantic memory cores, P2P mesh protocols, multi-agent orchestration) serves as my laboratory to validate these techniques:",
+    "philosophyAccent": "iterate fast, verify always, ship to production.",
+    "statProjects": "Core Projects",
+    "statStack": "Primary Stack",
+    "competencies": "Core Competencies",
+    "stackIndex": "Stack Index",
+    "yearsInProduction": "Years in Production",
+    "fullStackLabel": "Full-Stack JS · PHP · Rust · AI",
+    "specialties": {
+      "0x01": {
+        "title": "Full-Stack & Advanced PHP Engineering",
+        "desc": "10+ years in production: custom WordPress plugin architecture, bespoke themes from scratch, REST APIs, hooks/filters, and Node.js architectures."
+      },
+      "0x02": {
+        "title": "AI Harnesses, Orchestration & Skills",
+        "desc": "Deterministic pipelines with autonomous agents (Hermes, GitCore, Gestalt, Jules), custom skill authoring, QA scripts, and multi-provider routing."
+      },
+      "0x03": {
+        "title": "Systems, Rust & Offline-First Mobile",
+        "desc": "High-performance services in Rust, mobile applications with Flutter, encrypted local databases, and WebAssembly runtimes."
+      },
+      "0x04": {
+        "title": "Relational & Vector Databases",
+        "desc": "Schema design in PostgreSQL/MySQL and local semantic search engines with pgvector, SQLite-vec, and HNSW episodic memory."
+      },
+      "0x05": {
+        "title": "VPS Infrastructure, cPanel & Hosting",
+        "desc": "Dedicated/VPS server provisioning on Linux and NixOS, comprehensive cPanel/WHM administration, Nginx/PHP-FPM tuning, and SSL/DNS."
+      },
+      "0x06": {
+        "title": "Security, Hardening & MCP Tools",
+        "desc": "Code audits, malware and vulnerability scanning, proprietary antivirus tools, and inspection servers under the MCP protocol."
+      }
+    },
+    "stackCategories": {
+      "cat1": "Languages & Runtimes",
+      "cat2": "Web, CMS & Frameworks",
+      "cat3": "Databases & Vector Search",
+      "cat4": "AI Harnesses & Agentic Orchestration",
+      "cat5": "Infrastructure, Servers & DevSecOps"
+    }
+  },
+  "projects": {
+    "heading": "# projects",
+    "title": "Building",
+    "titleAccent": "distributed",
+    "titleSuffix": "systems",
+    "subtitle": "From mining and industrial telemetry systems to AI cognitive memory cores — every project closes the loop with simulations and LLM-assisted iteration.",
+    "techStack": "Tech Stack",
+    "timeline": "Timeline & Roadmap",
+    "repository": "Repository",
+    "filter": {
+      "all": "All",
+      "production": "Production & Industry (10+ Yrs)",
+      "opensource": "Open Source & Deep Tech"
+    },
+    "section": {
+      "opensource": "// 01. Deep Tech Cores & Open Source Ecosystem",
+      "production": "// 02. Production Work & Work Experience (10+ Yrs)"
+    },
+    "status": {
+      "production": "Production",
+      "active": "Active",
+      "beta": "Beta",
+      "prototype": "Prototype"
+    },
+    "btn": {
+      "showDetails": "View Architecture & Metrics",
+      "hideDetails": "Hide Details",
+      "viewRepo": "View Repository",
+      "visitDemo": "Visit Production / Web",
+      "readStudy": "Read Study / Article"
+    },
+    "label": {
+      "architecture": "Architecture & Technical Decisions",
+      "stack": "Full Tech Stack",
+      "metrics": "Performance Metrics & Outcomes",
+      "research": "Scientific Studies & Tech News (5D Glass Memory)",
+      "researchDesc": "Global scientific publications and milestones supporting the theoretical viability of this simulation model and roadmap:",
+      "timeline": "Timeline & Key Milestones"
+    },
+    "xavier2": {
+      "name": "Xavier",
+      "tagline": "AI Cognitive Memory Core",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - Present",
+      "description": "Persistent local cognitive memory core for AI agents built in Rust. Containerized Docker microservice providing vector storage, HNSW semantic search index, and unified knowledge graphs.",
+      "architecture": "Native Rust engine with SQLite-vec and pgvector. Cosine similarity vector search with local embeddings without external cloud dependency. High-speed REST and RPC APIs.",
+      "metrics": [
+        "Search latency <10ms on local indices",
+        "Zero cloud lock-in: 100% on-device",
+        "Unified integration with Hermes and Gestalt"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "Architectural design and vector persistence layer in Rust"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Release v0.1 - CRUD operations, local embeddings, and REST endpoints"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "v0.6.0-beta - HNSW indices, Dockerization, and episodic memory"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap: Semantic graph integration and context routing"
+        }
+      ]
+    },
+    "gitcore": {
+      "name": "GitCore",
+      "tagline": "Autonomous Multi-Agent Git/GitHub Orchestrator",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2026 - Present",
+      "description": "Operational harness and deterministic orchestrator for autonomous coding agents (Jules, Claude Code, OpenCode). Automates issue creation with formal specs, micro-fragmentation batches of up to 15 parallel tasks, and collision-free PR validation.",
+      "architecture": "Decoupled architecture in Rust and CLI automation scripts. Disjoint file islands system to prevent merge conflicts during massive parallel executions.",
+      "metrics": [
+        "Up to 15 parallel autonomous tasks",
+        "100% traceability with canonical issues",
+        "0 conflicts in sequential merge"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "Initial issue protocol and agent traceability"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Wave Operations: micro-fragmentation and 15 micro-task batches"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Integration with Hermes Gateway and pre-delegation auditing"
+        },
+        {
+          "date": "2026 Q4",
+          "label": "Roadmap: Multi-repository P2P distributed swarm"
+        }
+      ]
+    },
+    "gestalt": {
+      "name": "Gestalt",
+      "tagline": "Multi-Agent Swarm Orchestrator CLI",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - Present",
+      "description": "Autonomous swarm orchestrator and multi-role agent CLI routing in Rust. Uses SurrealDB for state persistence, role-based task routing, and custom inter-agent communication protocols.",
+      "architecture": "Native Rust CLI with Tokio async integration. Graph and state persistence in SurrealDB. Deterministic sandboxes for testing LLM-generated code.",
+      "metrics": [
+        "Agent execution in isolated sandboxes",
+        "Reactive state persistence in SurrealDB",
+        "Dynamic routing by domain specialty"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "Prototype and state schema in SurrealDB"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Multi-agent coordination layer and dynamic execution from CLI"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Continuous loop integration with Xavier memory"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap: Decentralized swarm intelligence"
+        }
+      ]
+    },
+    "photon-core": {
+      "name": "Photon-Core",
+      "tagline": "5D Optical Memory Simulation (PoC) & Academic Research",
+      "companyOrContext": "University Research & SWAL Lab Roadmap",
+      "period": "2025 - 2026",
+      "description": "Authored university research and intellectual property serving as scientific foundation and roadmap for SouthWest AI Labs to experiment with future ultra-dense volumetric storage capabilities. Proof of concept (PoC) and simulation software in Rust modeling optical physics of femtosecond laser pulses in fused silica, Reed-Solomon ECC, birefringence, and 3D crosstalk mitigation.",
+      "architecture": "Deterministic Rust simulator modeling physical interaction between light and fused silica glass: optical slow-axis delay and optical axis orientation as 2 additional dimensions to spatial axes (X,Y,Z). Includes Rayon parallelism evaluating theoretical encoding rates >470 MB/s and interleaved Reed-Solomon ECC.",
+      "metrics": [
+        "Mathematical simulation & PoC software authored by myself",
+        "Computational encoding throughput >470 MB/s",
+        "3D spatial crosstalk tolerance >30% with Reed-Solomon ECC",
+        "Research foundation for SWAL's physical roadmap"
+      ],
+      "researchLinks": [
+        {
+          "title": "5D Data Storage in Glass (ORC Southampton: 360 TB & billion-year survival)",
+          "source": "University of Southampton Optoelectronics Research Centre"
+        },
+        {
+          "title": "Project Silica: Storing data in glass for thousands of years with ultrafast laser",
+          "source": "Microsoft Research"
+        },
+        {
+          "title": "High-speed ultrafast laser 5D optical data storage in fused silica",
+          "source": "Optica Publishing Group / SPIE"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "Initial mathematical model and photonic voxel definition"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Reed-Solomon ECC integration and 3D crosstalk simulation"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Steganographic data hiding and CLI toolkit release"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap: Deep learning-assisted signal reconstruction"
+        }
+      ]
+    },
+    "edge-mesh": {
+      "name": "edge-mesh",
+      "tagline": "P2P Mesh Network with CRDT & Post-Quantum Crypto",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - Present",
+      "description": "Peer-to-peer (P2P) communication network library featuring Conflict-free Replicated Data Types (CRDTs) and post-quantum cryptographic identity based on ML-DSA-65.",
+      "architecture": "Decentralized peer-to-peer topology without central server. Conflict-free replicated data types (Yjs/Automerge) for deterministic synchronization in hostile network conditions.",
+      "metrics": [
+        "Zero central server dependency",
+        "Post-quantum resistant ML-DSA-65 cryptography",
+        "P2P latency <15ms"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q3",
+          "label": "P2P discovery protocol design"
+        },
+        {
+          "date": "2025 Q4",
+          "label": "CRDT scheme implementation and fork resolution"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Adoption of post-quantum cryptographic standard ML-DSA-65"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap: Mobile SDK for Android and iOS"
+        }
+      ]
+    },
+    "orion": {
+      "name": "OrionHealth",
+      "tagline": "Offline-First Health Ecosystem",
+      "companyOrContext": "HealthTech",
+      "period": "2025 - 2026",
+      "description": "100% offline-first personal health tracking and clinical metrics app. Encrypted local SQLite storage, background synchronization engine, and interactive analytical dashboard.",
+      "architecture": "Flutter & Dart with on-device encrypted SQLite database (SQLCipher). Resilient synchronization with offline data reconciliation and SSI privacy standards.",
+      "metrics": [
+        "100% on-device encrypted data",
+        "Continuous offline operation",
+        "Interactive clinical dashboard"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "Clinical modeling and offline-first Flutter architecture"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Encrypted persistence with SQLite and secure schemas"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Background sync engine and analytics"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap: P2P decentralized synchronization"
+        }
+      ]
+    },
+    "gara-g": {
+      "name": "GARA-G",
+      "tagline": "DePIN Mobility & V2V Mesh Network",
+      "companyOrContext": "Mobility Tech",
+      "period": "2026",
+      "description": "DePIN mobility network and vehicle mesh (V2V) with real-time telemetry, AI co-pilot, and decentralized marketplace for automotive sector.",
+      "architecture": "Rust backbone for automotive telemetry processing and Flutter mobile frontend. Vehicle mesh protocol for traffic alerts without cellular coverage.",
+      "metrics": [
+        "Low-latency vehicle telemetry",
+        "On-device automotive diagnostic AI co-pilot",
+        "Polygon network integration"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "Vehicle telemetry protocol architecture"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "AI co-pilot integration for OBD-II diagnostics"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap: Vehicle-to-vehicle mesh on route"
+        }
+      ]
+    },
+    "tripro-mining": {
+      "name": "Tripro SPA (Chile)",
+      "tagline": "Industrial IoT, Mining Telemetry & Real-Time Dashboards",
+      "companyOrContext": "Industrial Electrical Services & Mining",
+      "period": "2025 - 2026",
+      "description": "Software development and monitoring platforms connecting heavy mining machinery sensors to real-time web dashboards. Building plant-to-cloud data ingestion channels for predictive analytics and web app development with payment gateways.",
+      "architecture": "Modern stack with Astro, Next.js, React, PostgreSQL, and Tailwind CSS. Data pipelines with Python, n8n, and Node.js with Telegram alert bots and automated support issue creation.",
+      "metrics": [
+        "Continuous sensor monitoring in mining plants",
+        "Raw telemetry conversion into predictive analytics",
+        "CGP San Patricio Web App deployed with Flow payment gateway"
+      ],
+      "timeline": [
+        {
+          "date": "Jun 2025 - Oct 2025",
+          "label": "Astro + Flow site, CGP San Patricio Web App, and multi-site n8n/Python support bot"
+        },
+        {
+          "date": "Jan 2026 - May 2026",
+          "label": "Mining sensor IoT telemetry platform & lightweight AI for energy optimization"
+        }
+      ]
+    },
+    "smartax-mobile": {
+      "name": "Restrepo y Londoño / Smartax",
+      "tagline": "API Data Consumption, Google Play Validation & WordPress Architecture",
+      "companyOrContext": "Tax & Legal Advisory Firm",
+      "period": "2021 - 2025",
+      "description": "API integration for data consumption with WordPress CMS and technical preparation of the mobile app to comply with current Google Play Store validation standards and directives for successful publishing. Architecture and development of proprietary PHP plugins for corporate tools.",
+      "architecture": "REST API consumption layer connected to WordPress CMS. Technical update to Android/Google Play security directives, permission management, PDF report rendering, and PHP plugin development for tax calculations.",
+      "metrics": [
+        "Successful validation and approval on Google Play Store",
+        "Smooth REST API integration for content synchronization",
+        "Custom PHP plugins for tax logic and reporting"
+      ],
+      "timeline": [
+        {
+          "date": "Oct 2021 - Sep 2022",
+          "label": "B2B web development, custom PHP plugins, and corporate web administration"
+        },
+        {
+          "date": "Jan 2025 - May 2025",
+          "label": "Data API integration, Google Play policy compliance, and publication process"
+        }
+      ]
+    },
+    "siesa-ecommerce": {
+      "name": "Siesa Ecommerce (E-Solutions)",
+      "tagline": "Enterprise B2B/B2C E-Commerce & Cloud Infrastructure",
+      "companyOrContext": "E-Solutions / Siesa",
+      "period": "2019 - 2020",
+      "description": "Development of scalable features for enterprise B2B and B2C e-commerce platforms. Built a custom logistics calendar module from scratch for dispatch scheduling and Linux server infrastructure management (CentOS 7).",
+      "architecture": "PHP backend with Yii2 framework and reactive Angular frontend. LAMP server administration via Linux terminal, CI/CD pipeline automation with Git, SSL certificates, VPN, and firewall rules management.",
+      "metrics": [
+        "Logistics calendar module in production",
+        "CentOS 7 Linux LAMP server provisioning",
+        "Operational manuals and technical standardization"
+      ],
+      "timeline": [
+        {
+          "date": "Oct 2019 - Jan 2020",
+          "label": "Logistics calendar module development and e-commerce features"
+        },
+        {
+          "date": "Feb 2020 - Apr 2020",
+          "label": "Cloud server provisioning, CI/CD automation, and security hardening"
+        }
+      ]
+    },
+    "logicalsoft-siip": {
+      "name": "LogicalSoft",
+      "tagline": "SIIP Mobile Android App, Retail Analytics & Electron Desktop",
+      "companyOrContext": "ERP, Signage & Retail Analytics",
+      "period": "2015 - 2019",
+      "description": "Full development of SIIP Mobile hybrid app published on Play Store with over 15 operational views (inventory, logistics, and QR access). Built PHP/MySQL RIA web apps for shopping mall evaluation and Electron desktop app with offline support.",
+      "architecture": "PHP and MySQL backend with JavaScript frontend and local IndexedDB storage for commercial surveys. Cross-platform desktop app with Electron, Node.js, and ReactJS. Cloud management on AWS and Google Cloud.",
+      "metrics": [
+        "SIIP Mobile app published on Play Store",
+        "Quick access modules via QR codes",
+        "Offline operation with IndexedDB"
+      ],
+      "timeline": [
+        {
+          "date": "2015 - 2017",
+          "label": "PHP/MySQL RIA web apps, mobile census with IndexedDB, and Electron desktop"
+        },
+        {
+          "date": "2018",
+          "label": "Legacy platform modernization and performance sprint"
+        },
+        {
+          "date": "2019",
+          "label": "SIIP Mobile app development (PHP/JS/WebView) published on Play Store"
+        }
+      ]
+    },
+    "los-tres-editores": {
+      "name": "Los Tres Editores SAS",
+      "tagline": "PostgreSQL Procedures, Java EE Architecture & Debian Servers",
+      "companyOrContext": "Large-Scale Publishing & Printing",
+      "period": "2013 - 2015",
+      "description": "Advanced server-side database programming using stored procedures, functions, and triggers in PostgreSQL. Java EE component development with iReport, dynamic PDF report modules in PHP (FPDF), and Debian Linux server maintenance.",
+      "architecture": "PostgreSQL relational database with business logic encapsulated in stored procedures. Java EE service layer for massive corporate report generation and Moodle LMS customization.",
+      "metrics": [
+        "Query and trigger optimization in PostgreSQL",
+        "Automated generation of massive PDF reports",
+        "Debian server administration and stability"
+      ],
+      "timeline": [
+        {
+          "date": "2013 - 2014",
+          "label": "Technical documentation of legacy systems and PostgreSQL function development"
+        },
+        {
+          "date": "2014 - 2015",
+          "label": "Java EE implementation, FPDF/iReport reporting, and Debian server administration"
+        }
+      ]
+    }
+  },
+  "blog": {
+    "heading": "# blog",
+    "title": "Insights &",
+    "titleAccent": "architecture",
+    "subtitle": "Deep dives into systems architecture, AI infrastructure, and the engineering behind my projects.",
+    "draft": "Draft",
+    "comingSoon": "COMING SOON",
+    "pipelineStatus": "Automated pipeline active / System status: nominal",
+    "readMore": "Read more →"
+  },
+  "contact": {
+    "heading": "# contact",
+    "title": "Let's build",
+    "titleAccent": "something",
+    "titleSuffix": "scalable",
+    "subtitle": "Need a developer with real production experience across multiple business models? I'd love to hear about it.",
+    "emailPlaceholder": "YOUR@EMAIL.COM",
+    "messagePlaceholder": "DESCRIBE YOUR PROJECT OR ARCHITECTURE...",
+    "submit": "INITIALIZE CONTACT",
+    "email": "EMAIL"
+  },
+  "footer": {
+    "tagline": "Senior Full-Stack Developer",
+    "partOf": "Part of",
+    "builtWith": "Built with"
+  },
+  "locale": {
+    "label": "Language",
+    "announcement": "This site speaks your language. Language is not a barrier to building software in community.",
+    "mission": "SouthWest AI Labs is an ideas lab for community-integrated solutions. Our mission: give everyone access to cutting-edge tools for designing information systems that improve quality of life.",
+    "accelerate": "We accelerate systems that bring quality of life to people."
+  },
+  "agenda": {
+    "badge": "NETWORKING & PROFESSIONAL CONNECTION · 1 WEEKLY MEET",
+    "badgeHeader": "PROFESSIONAL NETWORKING & TECHNICAL CONNECTION · 1 MEET / WEEK",
+    "badgeFree": "🤝 1-on-1 Meeting",
+    "noticeTitle": "Professional Connection & Mutual Support in Software Engineering",
+    "noticeTextHtml": "I firmly believe in the power of connecting with fellow engineers, sharing knowledge, and building mutual support networks across the tech ecosystem. I reserve <strong>1 day a week for a 1-on-1 technical session (45-60 min)</strong>, scheduled <strong>1 week in advance</strong> to exchange insights on software architecture, AI systems, and address development challenges.",
+    "title": "Connect, Share Knowledge & Engineering Networks",
+    "subtitle": "A 1-on-1 space (45-60 min) to meet developers, founders, and engineering teams, share practical software engineering knowledge, architecture & AI lessons, and build mutual support networks in tech.",
+    "priceTag": "1-on-1 Session",
+    "priceSub": "1-on-1 Connection + Technical Exchange + Feedback",
+    "track1Badge": "NETWORKING & TECHNICAL EXCHANGE",
+    "track1Title": "Networking & Technical Exchange",
+    "track1Desc": "Open conversation to share production lessons, evaluate architectures, and discuss technical solutions (1 day per week, booked with 1 week advance notice).",
+    "track1Price": "1-on-1 Session",
+    "track2Badge": "TEAMS & ENTERPRISE",
+    "track2Title": "Training & Transition in Generative AI",
+    "track2Desc": "Hands-on workshops for developers and teams: learn to move beyond interactive chat to deterministic orchestration via micro-fragmentation and disjoint file islands.",
+    "track2Price": "Coordinated",
+    "track3Badge": "SETUP & CLI TOOLS",
+    "track3Title": "Harness Setup & CLI Tooling Deployment",
+    "track3Desc": "Installation and configuration of Hermes Gateway, OpenClaw, GitCore, Gestalt, Jules, and agentic CLI tooling tailored to your hardware and infrastructure.",
+    "track3Price": "Hands-on",
+    "modalityLabel": "Modality:",
+    "p1t": "Build Networks & Mutual Support",
+    "p1d": "Connect with engineers, consultants, and companies to share real challenges, battle-tested production lessons, and generate professional synergies.",
+    "p2t": "Technical Exchange & Best Practices",
+    "p2d": "Open discussion on clean architecture, code micro-fragmentation, deterministic prompts, and designing scalable systems.",
+    "p3t": "AI Harnesses, Tooling & Ecosystem",
+    "p3d": "Share and analyze practical use of agentic CLI tools (Hermes, OpenClaw, GitCore, Gestalt, Jules, Ollama) and compute resource optimization.",
+    "fmtTitle": "Meeting Format",
+    "fmtDur": "1-on-1 Technical Meet",
+    "fmtDurV": "45-60 min (Fridays, 1 week advance notice)",
+    "fmtMod": "Format",
+    "fmtModV": "1-on-1 Video Call (Remote via Meet)",
+    "fmtLang": "Languages",
+    "fmtLangV": "English / Español / 中文 +7",
+    "fmtFol": "Focus",
+    "fmtFolV": "Professional networking, technical exchange, and mutual feedback",
+    "topTitle": "Common Topics to Discuss",
+    "top1": "Exchange of production engineering lessons across diverse business models",
+    "top2": "Distributed systems architecture, offline-first apps, and vector databases",
+    "top3": "Transitioning and integrating autonomous AI agents into daily engineering workflows",
+    "top4": "Configuring deterministic agentic harnesses (Hermes, OpenClaw, GitCore, Jules, Ollama/vLLM)",
+    "top5": "Smart multi-provider routing (OpenRouter, Bedrock, Vertex) and token cost optimization",
+    "top6": "Exploring potential collaboration, joint initiatives, and professional advice",
+    "slotsLabel": "Availability",
+    "slot1": "1 day per week (Fridays) · GMT-5",
+    "slot2": "Booked 1 week in advance",
+    "slot3": "Reply within 24h",
+    "methodologyBadge": "Agentic Methodology",
+    "methodologyTitle": "Working Methodology: Local-First Diagnostic & Orchestration",
+    "methodologySub": "An autonomous, serverless workflow running directly in your terminal or browser: zero manual data entry, absolute privacy, and deterministic skill generation.",
+    "m1Label": "01 / AUDIT",
+    "m1t": "1. Autonomous 1-Step Agentic Audit",
+    "m1d": "Your local coding agent (Claude Code, Hermes, Jules) autonomously inspects hardware, repositories, and environment variables without transmitting secrets or filling manual forms.",
+    "m2Label": "02 / ANALYSIS",
+    "m2t": "2. Latency, Routing & Token Budgeting",
+    "m2d": "Quota diagnostics and smart model assignment (lightweight fast models for triage/lints vs. frontier reasoning models for architectural refactoring).",
+    "m3Label": "03 / SKILLS",
+    "m3t": "3. Canonical SKILL.md Generation",
+    "m3d": "Creation of reproducible engineering skills and operational harness prompts ready for autonomous coding agents with zero drift.",
+    "m4Label": "04 / CO-DESIGN",
+    "m4t": "4. Technical Consensus & 1-on-1 Session",
+    "m4d": "Live analysis during the 45-60 min technical session to co-design architectural improvements, optimize pipelines, and address engineering challenges.",
+    "diagCtaTitle": "Pre-Meet Technical Diagnostic & Architecture Skill",
+    "diagCtaDesc": "Prepare for our technical session in 1 second: copy the canonical Markdown (.md) skill for your local agent to run the audit, or read the source code directly on GitHub.",
+    "diagCtaBtn": "View Diagnostic Skill in Resources",
+    "formTitle": "Book Technical Connection & Networking",
+    "formName": "Full Name",
+    "formEmail": "Contact Email",
+    "formProfile": "Profile / Company / Project",
+    "formProfile1": "Software Engineer / Developer",
+    "formProfile2": "Startup / Founder / Software Company",
+    "formProfile3": "Independent Consultant / Tech Lead",
+    "formProfile4": "Community / Research / Open Source",
+    "formService": "Main Topic / Interest",
+    "formService1": "Networking & Architecture Exchange",
+    "formService2": "Training & Generative AI Transition (Teams)",
+    "formService3": "Harness Setup & Deployment (Hermes / OpenClaw / GitCore)",
+    "formService4": "Collaboration or Advisory Exploration",
+    "formInfra": "Stack or technologies you use",
+    "formInfraPh": "e.g., TypeScript, PHP, Rust, Flutter, Python, AI APIs, Docker...",
+    "formMsg": "What would you like to talk about or what project are you building?…",
+    "formMsgPh": "Describe your current setup: architecture, repository depth, target pipelines, or CLI tools you want to configure or train on...",
+    "formPayNote": "Sessions are held 1 day per week, scheduled with at least 1 week advance notice to align calendars.",
+    "formSubmit": "Submit Networking & Connection Request",
+    "formSubmitAlt": "Submit Request",
+    "formSubmitStripe": "Submit Request",
+    "formNote": "Submitting will open your email client with pre-filled specifications ready to send. You can also write directly to iberi22@gmail.com",
+    "meetFooterNote": "1 weekly meet (Scheduled 1 week in advance)",
+    "responseFooterNote": "Response in <24h",
+    "okTitle": "Request Successfully Submitted!",
+    "okText": "We have received your contact details. I will reach out within 24 hours to schedule your session on the calendar with at least 1 week advance notice.",
+    "mailSubject": "Networking & Technical Connection Request",
+    "mailHeader": "PROFESSIONAL NETWORKING & TECHNICAL EXCHANGE REQUEST",
+    "mailArea": "Focus Area / Topics",
+    "mailFooter1": "Modality: 1 weekly networking/advisory session (Fridays), scheduled 1 week in advance.",
+    "mailFooter2": "Tools / Ecosystem: Hermes, OpenClaw, GitCore, Gestalt, Jules, Ollama/vLLM",
+    "fmtLangNote": "Translation platforms supported. If you don't speak Spanish, we meet in English."
+  }
+}

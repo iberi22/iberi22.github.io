@@ -1,0 +1,595 @@
+{
+  "nav": {
+    "about": "আমার সম্পর্কে",
+    "projects": "প্রকল্পসমূহ",
+    "blog": "ব্লগ",
+    "contact": "যোগাযোগ",
+    "git": "GIT",
+    "github": "GITHUB",
+    "agenda": "অ্যাপয়েন্টমেন্ট",
+    "simulator": "রিসোর্স সিমুলেটর",
+    "resources": "রিসোর্স সিমুলেটর"
+  },
+  "hero": {
+    "badge": "সিনিয়র ফুল-স্ট্যাক ডেভেলপার · প্রোডাকশনে ১০+ বছর",
+    "firstName": "ব্রায়ান",
+    "lastName": "বেলালকাজার",
+    "tagline": "এক দশকের অভিজ্ঞতায় সমৃদ্ধ প্রোডাকশন সফটওয়্যার।",
+    "taglineExtra": "জাভাস্ক্রিপ্ট, পিএইচপি, ওয়েব এবং মোবাইল আর্কিটেকচার — ধারণা থেকে শুরু করে মাইনিং, ট্যাক্স, প্রকাশনা এবং ই-কমার্স খাতে স্থাপন।",
+    "viewProjects": "প্রকল্পগুলো দেখুন",
+    "getInTouch": "যোগাযোগ করুন",
+    "scroll": "নিচে স্ক্রোল করুন"
+  },
+  "about": {
+    "heading": "# পরিচিতি",
+    "title": "ওয়েব প্রকৌশল",
+    "titleAccent": " ফুল-স্ট্যাক",
+    "titleSuffix": " এক দশকের অভিজ্ঞতার সাথে",
+    "bio": "আমি ব্রায়ান বেলালাকাজার, মাইনিং, ট্যাক্স, ই-কমার্স, ইআরপি এবং প্রকাশনা খাতে ১০ বছরেরও বেশি প্রোডাকশন অভিজ্ঞতাসম্পন্ন একজন ফুল-স্ট্যাক ডেভেলপার। আমার মূল দক্ষতা জাভাস্ক্রিপ্ট এবং পিএইচপিতে।",
+    "philosophy": "আমি ফিডব্যাক লুপ সম্পূর্ণ করায় বিশ্বাস করি: প্রতিটি ফিচার সিমুলেশন, ইমপ্লিমেন্টেশন, রিভিউ এবং টেস্টিংয়ের মধ্য দিয়ে যায়।",
+    "philosophyAccent": "দ্রুত পুনরাবৃত্তি, সর্বদা যাচাইকরণ, প্রোডাকশনে ডেলিভারি।",
+    "statProjects": "মূল প্রকল্পসমূহ",
+    "statStack": "প্রধান প্রযুক্তি",
+    "competencies": "প্রধান দক্ষতা",
+    "stackIndex": "প্রযুক্তি সূচক",
+    "yearsInProduction": "প্রোডাকশনে বছর",
+    "fullStackLabel": "ফুল-স্ট্যাক JS · PHP · Rust · AI",
+    "specialties": {
+      "0x01": {
+        "title": "ফুল-স্ট্যাক এবং অ্যাডভান্সড PHP প্রকৌশল",
+        "desc": "প্রোডাকশনে ১০+ বছর: কাস্টম ওয়ার্ডপ্রেস প্লাগইন আর্কিটেকচার, কাস্টম থিম, REST API এবং Node.js আর্কিটেকচার।"
+      },
+      "0x02": {
+        "title": "এআই হার্নেস, অর্কেস্ট্রেশন এবং স্কিলস",
+        "desc": "স্বায়ত্তশাসিত এজেন্টের (Hermes, GitCore, Gestalt, Jules) সাথে নির্ণায়ক পাইপলাইন এবং কাস্টম স্কিল নির্মাণ।"
+      },
+      "0x03": {
+        "title": "সিস্টেম, রাস্ট এবং অফলাইন-ফার্স্ট মোবাইল",
+        "desc": "রাস্টে উচ্চ-ক্ষমতাসম্পন্ন পরিষেবা, ফ্লাটার মোবাইল অ্যাপ, এনক্রিপ্টেড লোকাল ডাটাবেস এবং ওয়েব-অ্যাসেম্বলি।"
+      },
+      "0x04": {
+        "title": "রিলেশনাল এবং ভেক্টর ডাটাবেস",
+        "desc": "PostgreSQL/MySQL স্কিমা ডিজাইন এবং pgvector, SQLite-vec এবং HNSW এর মাধ্যমে লোকাল সার্চ ইঞ্জিন।"
+      },
+      "0x05": {
+        "title": "VPS ইনফ্রাস্ট্রাকচার, cPanel এবং হোস্টিং",
+        "desc": "Linux এবং NixOS-এ ডেডিকেটেড/VPS সার্ভার প্রোভিশনিং, cPanel/WHM প্রশাসন এবং Nginx/PHP-FPM টিউনিং।"
+      },
+      "0x06": {
+        "title": "সিকিউরিটি, হার্ডেনিং এবং MCP সরঞ্জাম",
+        "desc": "কোড অডিট, ম্যালওয়্যার স্ক্যানিং, নিজস্ব অ্যান্টিভাইরাস সরঞ্জাম এবং MCP প্রোটোকল পরিদর্শনের সার্ভার।"
+      }
+    },
+    "stackCategories": {
+      "cat1": "ভাষা ও রানটাইম",
+      "cat2": "ওয়েব, সিএমএস ও ফ্রেমওয়ার্ক",
+      "cat3": "ডাটাবেস ও ভেক্টর অনুসন্ধান",
+      "cat4": "এআই সরঞ্জাম ও এজেন্ট অর্কেস্ট্রেশন",
+      "cat5": "ইনফ্রাস্ট্রাকচার, সার্ভার ও DevSecOps"
+    }
+  },
+  "projects": {
+    "heading": "# প্রকল্পসমূহ",
+    "title": "বিতরণকৃত",
+    "titleAccent": "সিস্টেম",
+    "titleSuffix": "নির্মাণ",
+    "subtitle": "মাইনিং টেলিমোট্রি থেকে এআই মেমরি কোর — প্রতিটি প্রজেক্ট সিমুলেশনের মাধ্যমে লুপ সম্পূর্ণ করে।",
+    "techStack": "প্রযুক্তি স্ট্যাক",
+    "timeline": "টাইমলাইন এবং রোডম্যাপ",
+    "repository": "কোড রিপোজিটরি",
+    "filter": {
+      "all": "সবকটি",
+      "production": "প্রোডাকশন ও ইন্ডাস্ট্রি (১০+ বছর)",
+      "opensource": "ওপেন সোর্স ও ডিপ টেক"
+    },
+    "section": {
+      "opensource": "// 01. ডিপ টেক কোর এবং ওপেন সোর্স ইকোসিস্টেম",
+      "production": "// 02. প্রোডাকশন অভিজ্ঞতা এবং কাজের অভিজ্ঞতা (১০+ বছর)"
+    },
+    "status": {
+      "production": "প্রোডাকশনে",
+      "active": "সক্রিয়",
+      "beta": "বিটা",
+      "prototype": "প্রোটোটাইপ"
+    },
+    "btn": {
+      "showDetails": "আর্কিটেকচার ও মেট্রিক্স দেখুন",
+      "hideDetails": "বিস্তারিত লুকান",
+      "viewRepo": "রিপোজিটরি দেখুন",
+      "visitDemo": "প্রোডাকশন / ওয়েব দেখুন",
+      "readStudy": "গবেষণা / প্রবন্ধ পড়ুন"
+    },
+    "label": {
+      "architecture": "আর্কিটেকচার ও কারিগরি সিদ্ধান্ত",
+      "stack": "সম্পূর্ণ প্রযুক্তি স্ট্যাক",
+      "metrics": "পারফরম্যান্স মেট্রিক্স ও ফলাফল",
+      "research": "বৈজ্ঞানিক গবেষণা ও সংবাদ (5D গ্লাস মেমরি)",
+      "researchDesc": "এই সিমুলেশন মডেলের তত্ত্বগত সম্ভাব্যতা সমর্থনকারী বৈজ্ঞানিক প্রকাশনা:",
+      "timeline": "টাইমলাইন এবং মূল মাইলফলক"
+    },
+    "xavier2": {
+      "name": "Xavier",
+      "tagline": "এআই কগনিটিভ মেমরি কোর",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - বর্তমান",
+      "description": "রাস্টে তৈরি এআই এজেন্টদের জন্য স্থায়ী লোকাল মেমরি কোর। ডকারে সংকুচিত মাইক্রোসার্ভিস যা ভেক্টর স্টোরেজ, HNSW সার্চ সূচক প্রদান করে।",
+      "architecture": "SQLite-vec এবং pgvector সহ রাস্ট ইঞ্জিন। বাহ্যিক ক্লাউডের উপর নির্ভরতা ছাড়া লোকাল এম্বেডিং সহ ভেক্টর অনুসন্ধান।",
+      "metrics": [
+        "লোকাল ইনডেক্সে অনুসন্ধান বিলম্ব <10ms",
+        "জিরো ক্লাউড লক-ইন: ১০০% ডিভাইসে",
+        "Hermes এবং Gestalt এর সাথে একীভূতকরণ"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "আর্কিটেকচারাল ডিজাইন এবং ভেক্টর সংরেকশন স্তর"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "রিলিজ v0.1 - CRUD অপারেশন এবং REST এন্ডপয়েন্ট"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "v0.6.0-beta - HNSW ইনডেক্স এবং ডকারাইজেশন"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "রোডম্যাপ: সেমান্টিক গ্রাফ একীকরণ"
+        }
+      ]
+    },
+    "gitcore": {
+      "name": "GitCore",
+      "tagline": "স্বায়ত্তশাসিত মাল্টি-এজেন্ট Git/GitHub অর্কেস্ট্রেটর",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2026 - বর্তমান",
+      "description": "স্বায়ত্তশাসিত কোটিং এজেন্টদের জন্য অর্কেস্ট্রেটর। সমস্যা তৈরি এবং ১৫টি সমান্তরাল কাজের স্বয়ংক্রিয়করণ পরিচালনা করে।",
+      "architecture": "রাস্টে ডি-কাপল্ড আর্কিটেকচার এবং সিএলআই স্ক্রিপ্ট। সংঘাত প্রতিরোধ করার জন্য আলাদা ফাইল আইল্যান্ড সিস্টেম।",
+      "metrics": [
+        "১৫টি পর্যন্ত সমান্তরাল স্বায়ত্তশাসিত কাজ",
+        "১০০% ট্র্যাকিং সুবিধা",
+        "ধারাবাহিক মার্জে ০ সংঘাত"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "প্রাথমিক প্রোটোকল এবং ট্রেসেবিলিটি"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "ওয়েভ অপারেশনস: ক্ষুদ্র-বিভাজন এবং ১৫টি কাজ"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Hermes Gateway এর সাথে একীকরণ"
+        },
+        {
+          "date": "2026 Q4",
+          "label": "রোডম্যাপ: মাল্টি-রিপোজিটরি P2P বিতরণ করা ঝাঁক"
+        }
+      ]
+    },
+    "gestalt": {
+      "name": "Gestalt",
+      "tagline": "মাল্টি-এজেন্ট সোয়ার্ম অর্কেস্ট্রেটর সিএলআই",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - বর্তমান",
+      "description": "রাস্টে তৈরি সিএলআই ভিত্তিক এআই সোয়ার্ম অর্কেস্ট্রেটর। স্টেট সংরক্ষণের জন্য SurrealDB ব্যবহার করে।",
+      "architecture": "নেটিভ রাস্ট সিএলআই, SurrealDB ডাটাবেস এবং কোড পরীক্ষার জন্য স্যান্ডবক্স।",
+      "metrics": [
+        "সংরক্ষিত স্যান্ডবক্সে এজেন্ট পরিচালনা",
+        "SurrealDB তে রিয়্যাক্টিভ স্টেট স্থায়িত্ব",
+        "বিশেষজ্ঞতা দ্বারা গতিশীল রাউটিং"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "প্রোটোটাইপ এবং SurrealDB স্টেট স্কিমা"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "বহু-এজেন্ট সমন্বয় স্তর এবং সিএলআই নিষ্पादन"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Xavier মেমরির সাথে ধারাবাহিক লুপ একীকরণ"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "রোডম্যাপ: বিকেন্দ্রীভূত ঝাঁক বুদ্ধিমত্তা"
+        }
+      ]
+    },
+    "photon-core": {
+      "name": "Photon-Core",
+      "tagline": "5D অপটিক্যাল মেমরি সিমুলেশন (PoC) এবং গবেষণা",
+      "companyOrContext": "বিশ্ববিদ্যালয় গবেষণা এবং SWAL রোডম্যাপ",
+      "period": "2025 - 2026",
+      "description": "5D অপটিক্যাল ডাটা স্টোরেজ সিমুলেশন প্রযুক্তি যা রাস্টে তৈরি এবং অপটিক্যাল ফিজিক্সের মডেল তৈরি করে।",
+      "architecture": "আলো এবং কাচের মধ্যবর্তী মিথস্ক্রিয়ার মডেল তৈরি করে এমন রাস্ট সিমুলেটর। >470 MB/s এনকোডিং গতি।",
+      "metrics": [
+        "গাণিতিক সিমুলেশন এবং নিজস্ব PoC সফটওয়্যার",
+        "কম্পিউটেশনাল এনকোডিং গতি >470 MB/s",
+        "Reed-Solomon ECC সহ 3D স্প্যাশিয়াল ক্রসটক সহনশীলতা >30%",
+        "SWAL এর ভৌত রোডম্যাপের জন্য গবেষণার ভিত্তি"
+      ],
+      "researchLinks": [
+        {
+          "title": "গ্লাসে 5D ডাটা স্টোরেজ (ORC সাউদাম্পটন)",
+          "source": "সাউদাম্পটন বিশ্ববিদ্যালয়"
+        },
+        {
+          "title": "প্রজেক্ট সিলিকা: হাজার বছরের জন্য গ্লাসে ডাটা সংরক্ষণ",
+          "source": "মাইক্রোসফট রিসার্চ"
+        },
+        {
+          "title": "ফিউজড সিলিকায় হাই-স্পিড 5D অপটিক্যাল ডাটা স্টোরেজ",
+          "source": "Optica Publishing Group / SPIE"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "প্রাথমিক গাণিতিক মডেল এবং ফোটোনিক ভক্সেল সংজ্ঞা"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Reed-Solomon ECC একীকরণ এবং 3D সিমুলেশন"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "স্টেগানোগ্রাফিক ডাটা লুকানো এবং সিএলআই সরঞ্জাম"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "রোডম্যাপ: ডিপ লার্নিং-সহায়তা প্রাপ্ত সিগন্যাল পুনর্গঠন"
+        }
+      ]
+    },
+    "edge-mesh": {
+      "name": "edge-mesh",
+      "tagline": "CRDT এবং পোস্ট-কোয়ান্টাম ক্রিপ্টো সহ P2P মেস নেটওয়ার্ক",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - বর্তমান",
+      "description": "দ্বন্দ্বমুক্ত প্রতিকৃতি ডাটা টাইপ (CRDT) এবং পোস্ট-কোয়ান্টাম ক্রিপ্টোগ্রাফি ML-DSA-65 ভিত্তিক P2P নেটওয়ার্ক লাইব্রেরি।",
+      "architecture": "কেন্দ্রীয় সার্ভার ছাড়া বিকেন্দ্রীভূত P2P ট্রপোলজি।",
+      "metrics": [
+        "কেন্দ্রীয় সার্ভারের উপর শূন্য নির্ভরতা",
+        "পোস্ট-কোয়ান্টাম প্রতিরোধী ML-DSA-65 ক্রিপ্টোগ্রাফি",
+        "P2P লেটেন্সি <15ms"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q3",
+          "label": "P2P ডিসকভারি প্রোটোকল ডিজাইন"
+        },
+        {
+          "date": "2025 Q4",
+          "label": "CRDT স্কিম বাস্তবায়ন"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "পোস্ট-কোয়ান্টাম মানদণ্ড ML-DSA-65 গ্রহণ"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "রোডম্যাপ: অ্যান্ড্রয়েড এবং আইওএস এর জন্য মোবাইল এসডিকে"
+        }
+      ]
+    },
+    "orion": {
+      "name": "OrionHealth",
+      "tagline": "অফলাইন-ফার্স্ট স্বাস্থ্য ইকোসিস্টেম",
+      "companyOrContext": "HealthTech",
+      "period": "2025 - 2026",
+      "description": "১০০% অফলাইন-ফার্স্ট ব্যক্তিগত স্বাস্থ্য ট্র্যাকিং অ্যাপ। এনক্রিপ্টেড লোকাল SQLite স্টোরেজ এবং অ্যানালিটিক্যাল ড্যাশবোর্ড।",
+      "architecture": "অন-ডিভাইস এনক্রিপ্টেড ডাটাবেস (SQLCipher) সহ ফ্লাটার এবং ডার্ট।",
+      "metrics": [
+        "১০০% অন-ডিভাইস এনক্রিপ্টেড ডাটা",
+        "কানেকশন ছাড়া নিরবচ্ছিন্ন পরিচালনা",
+        "ইন্টারেক্টিভ ক্লিনিকাল ড্যাশবোর্ড"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "ক্লিনিকাল মডেলিং এবং অফলাইন ফ্লাটার আর্কিটেকচার"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "SQLite এর সাথে এনক্রিপ্টেড স্থায়িত্ব"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "ব্যাকগ্রাউন্ড সিঙ্ক ইঞ্জিন এবং অ্যানালিটিক্স"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "রোডম্যাপ: P2P বিকেন্দ্রীভূত সিঙ্ক্রোনাইজেশন"
+        }
+      ]
+    },
+    "gara-g": {
+      "name": "GARA-G",
+      "tagline": "DePIN গতিশীলতা এবং V2V মেস নেটওয়ার্ক",
+      "companyOrContext": "Mobility Tech",
+      "period": "2026",
+      "description": "রিয়েল-টাইম টেলিমোট্রি এবং এআই কো-পাইলট সহ গতিশীলতা DePIN নেটওয়ার্ক এবং যানবাহন মেস (V2V)।",
+      "architecture": "অটোমোটিভ টেলিমোট্রি প্রসেসিংয়ের জন্য রাস্ট ব্যাকবোন এবং ফ্লাটার অ্যাপ।",
+      "metrics": [
+        "কম বিলম্বযুক্ত যানবাহন টেলিমোট্রি",
+        "অন-ডিভাইস এআই ডায়াগনস্টিক কো-পাইলট",
+        "Polygon নেটওয়ার্ক একীকরণ"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "যানবাহন টেলিমোট্রি প্রোটোকল আর্কিটেকচার"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "OBD-II ডায়াগনস্টিকের জন্য এআই কো-পাইলট একীকরণ"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "রোডম্যাপ: পথে যানবাহনের মধ্যে মেস নেটওয়ার্ক"
+        }
+      ]
+    },
+    "tripro-mining": {
+      "name": "Tripro SPA (চিলি)",
+      "tagline": "ইন্ডাস্ট্রিয়াল IoT, মাইনিং টেলিমোট্রি ও ড্যাশবোর্ড",
+      "companyOrContext": "শিল্প বৈদ্যুতিক সেবা এবং খনি",
+      "period": "2025 - 2026",
+      "description": "খনি মেশিনারির সেন্সরগুলোকে রিয়েল-টাইম ওয়েব ড্যাশবোর্ডের সাথে সংযুক্ত করার সফটওয়্যার তৈরি করা হয়েছে।",
+      "architecture": "Astro, Next.js, React, PostgreSQL এবং Tailwind CSS সহ আধুনিক স্ট্যাক।",
+      "metrics": [
+        "খনি প্ল্যান্টে সেন্সরগুলির নিরবচ্ছিন্ন নজরদারি",
+        "পূর্বাভাসমূলক বিশ্লেষণে কাঁচা উপাত্তের রূপান্তর",
+        "Flow পেমেন্ট গেটওয়ে সহ CGP San Patricio ওয়েব অ্যাপ"
+      ],
+      "timeline": [
+        {
+          "date": "জুন 2025 - অক্টোবর 2025",
+          "label": "Astro + Flow সাইট এবং সাপোর্ট বোট"
+        },
+        {
+          "date": "জানুয়ারী 2026 - মে 2026",
+          "label": "মাইনিং সেন্সর IoT প্ল্যাটফর্ম এবং শক্তি অপটিমাইজেশন"
+        }
+      ]
+    },
+    "smartax-mobile": {
+      "name": "Restrepo y Londoño / Smartax",
+      "tagline": "এপিআই ডাটা ব্যবহার, গুগল প্লে অনুমোদন ও ওয়ার্ডপ্রেস",
+      "companyOrContext": "ট্যাক্স এবং আইনি পরামর্শকারী প্রতিষ্ঠান",
+      "period": "2021 - 2025",
+      "description": "ওয়ার্ডপ্রেসের সাথে এপিআই ডাটা ব্যবহারের সংহতকরণ এবং গুগল প্লে স্টোরের নীতি অনুসরণের জন্য মোবাইল অ্যাপের কারিগরি প্রস্তুতি।",
+      "architecture": "ওয়ার্ডপ্রেসের সাথে সংযুক্ত REST এপিআই স্তর এবং অ্যান্ড্রয়েড সিকিউরিটি আপডেট।",
+      "metrics": [
+        "গুগল প্লে স্টোরে সফল যাচাইকরণ এবং অনুমোদন",
+        "কন্টেন্ট সিঙ্ক্রোনাইজেশনের জন্য নিরবচ্ছিন্ন REST এপিআই",
+        "ট্যাক্স লজিক এবং রিপোর্টিংয়ের জন্য কাস্টম PHP প্লাগইন"
+      ],
+      "timeline": [
+        {
+          "date": "অক্টোবর 2021 - সেপ্টেম্বর 2022",
+          "label": "B2B ওয়েব ডেভেলপমেন্ট, কাস্টম PHP প্লাগইন এবং ওয়েব প্রশাসন"
+        },
+        {
+          "date": "জানুয়ারী 2025 - মে 2025",
+          "label": "ডাটা এপিআই একীকরণ, গুগল প্লে নীতি অনুসরণ এবং প্রকাশনা"
+        }
+      ]
+    },
+    "siesa-ecommerce": {
+      "name": "Siesa Ecommerce (E-Solutions)",
+      "tagline": "এন্টারপ্রাইজ B2B/B2C ই-কমার্স এবং ক্লাউড ইনফ্রাস্ট্রাকচার",
+      "companyOrContext": "E-Solutions / Siesa",
+      "period": "2019 - 2020",
+      "description": "B2B এবং B2C ই-কমার্স প্ল্যাটফর্মের জন্য পরিমাপযোগ্য সুবিধার বিকাশ। লজিস্টিকস ক্যালেন্ডার মডিউল এবং লিনাক্স সার্ভার প্রশাসন।",
+      "architecture": "Yii2 ফ্রেমওয়ার্কের সাথে PHP ব্যাকএন্ড এবং Angular ফ্রন্টএন্ড। লিনাক্স সার্ভার প্রশাসন এবং Git CI/CD অটোমেশন।",
+      "metrics": [
+        "প্রোডাকশনে লজিস্টিকস ক্যালেন্ডার মডিউল",
+        "CentOS 7 লিনাক্স LAMP সার্ভার প্রোভিশনিং",
+        "পরিচালন সংক্রান্ত নির্দেশিকা এবং কারিগরি মানকীকরণ"
+      ],
+      "timeline": [
+        {
+          "date": "অক্টোবর 2019 - জানুয়ারী 2020",
+          "label": "লজিস্টিকস ক্যালেন্ডার মডিউল বিকাশ"
+        },
+        {
+          "date": "ফেব্রুয়ারী 2020 - এপ্রিল 2020",
+          "label": "ক্লাউড সার্ভার প্রোভিশনিং এবং CI/CD অটোমেশন"
+        }
+      ]
+    },
+    "logicalsoft-siip": {
+      "name": "LogicalSoft",
+      "tagline": "SIIP মোবাইল অ্যান্ড্রয়েড অ্যাপ, রিটেইল অ্যানালিটিক্স ও ইলেকট্রন",
+      "companyOrContext": "ইআরপি, সাইনেজ এবং রিটেইল অ্যানালিটিক্স",
+      "period": "2015 - 2019",
+      "description": "প্লে স্টোরে প্রকাশিত ১৫টিরও বেশি কার্যকরী ডিসপ্লে সহ SIIP Móvil হাইব্রিড অ্যাপ বিকাশ। PHP/MySQL RIA অ্যাপ এবং Electron ডেস্কটপ অ্যাপ।",
+      "architecture": "PHP/MySQL ব্যাকএন্ড এবং IndexedDB লোকাল স্টোরেজ। Electron, Node.js এবং ReactJS সহ ক্রস-প্ল্যাটফর্ম ডেস্কটপ অ্যাপ।",
+      "metrics": [
+        "প্লে স্টোরে প্রকাশিত SIIP Móvil অ্যাপ",
+        "কিউআর কোডের মাধ্যমে দ্রুত অ্যাক্সেস মডিউল",
+        "IndexedDB এর সাথে অফলাইন পরিচালনা"
+      ],
+      "timeline": [
+        {
+          "date": "2015 - 2017",
+          "label": "PHP/MySQL RIA ওয়েব অ্যাপস এবং Electron ডেস্কটপ"
+        },
+        {
+          "date": "2018",
+          "label": "পুরানো প্ল্যাটফর্ম আধুনিকীকরণের স্প্রিন্ট"
+        },
+        {
+          "date": "2019",
+          "label": "প্লে স্টোরে প্রকাশিত SIIP Móvil অ্যাপের বিকাশ"
+        }
+      ]
+    },
+    "los-tres-editores": {
+      "name": "Los Tres Editores SAS",
+      "tagline": "PostgreSQL প্রসিডিউর, Java EE আর্কিটেকচার ও ডেবিয়ান",
+      "companyOrContext": "বৃহৎ পরিমানের প্রকাশনা ও মুদ্রণ",
+      "period": "2013 - 2015",
+      "description": "PostgreSQL এ স্টোরড প্রসিডিউর, ফাংশন এবং ট্রিগারগুলির মাধ্যমে উন্নত ডাটাবেস প্রোগ্রামিং। Java EE উপাদান এবং ডেবিয়ান সার্ভার পরিচালনা।",
+      "architecture": "PostgreSQL রিলেশনাল ডাটাবেস যা প্রসিডিউরে ব্যবসায়িক যুক্তি ধারণ করে। জাভা ইই সার্ভিসেস।",
+      "metrics": [
+        "PostgreSQL এ কোয়েরি এবং ট্রিগার অপটিমাইজেশন",
+        "স্বয়ংক্রিয় বিপুল পরিমাণ পিডিএফ রিপোর্ট তৈরি",
+        "ডেবিয়ান সার্ভার প্রশাসন ও স্থায়িত্ব"
+      ],
+      "timeline": [
+        {
+          "date": "2013 - 2014",
+          "label": "পুরানো সিস্টেমের টেকনিক্যাল ডকুমেন্টেশন ও PostgreSQL ফাংশন বিকাশ"
+        },
+        {
+          "date": "2014 - 2015",
+          "label": "জাভা ইই বাস্তবায়ন, FPDF/iReport রিপোর্ট এবং ডেবিয়ান প্রশাসন"
+        }
+      ]
+    },
+    "filterAll": "Todos",
+    "filterProduction": "Producción e Industria (10+ Años)",
+    "filterOpenSource": "Open Source y Deep Tech",
+    "secDeepTech": "// 01. Núcleos Deep Tech y Ecosistema Open Source",
+    "secProduction": "// 02. Experiencias Laborales y Software en Producción (10+ Años)",
+    "hideDetails": "Ocultar Detalles",
+    "viewDetails": "Ver Arquitectura y Métricas",
+    "archTitle": "Arquitectura y Decisiones Técnicas",
+    "stackTitle": "Stack Técnico Completo",
+    "metricsTitle": "Métricas de Rendimiento y Resultados",
+    "viewRepo": "Ver Repositorio",
+    "visitProd": "Visitar Producción / Web",
+    "researchTitle": "Estudios Científicos y Noticias del Avance Tecnológico (Memoria 5D en Vidrio)",
+    "researchDesc": "Publicaciones científicas globales que respaldan la viabilidad del modelo:",
+    "readResearch": "Leer Estudio / Noticia",
+    "timelineTitle": "Cronograma e Hitos Clave"
+  },
+  "blog": {
+    "heading": "# ব্লগ",
+    "title": "চিন্তাভাবনা ও",
+    "titleAccent": "আর্কিটেকচার",
+    "subtitle": "সিস্টেম আর্কিটেকচার, এআই ইনফ্রাস্ট্রাকচার এবং আমার প্রকল্পগুলির পেছনের কারিগরি বিষয় নিয়ে গভীর প্রবন্ধ।",
+    "draft": "খসড়া",
+    "comingSoon": "শীঘ্রই আসছে",
+    "pipelineStatus": "স্বয়ংক্রিয় পাইপলাইন সক্রিয় / সিস্টেমের অবস্থা: স্বাভাবিক",
+    "readMore": "আরও পড়ুন →"
+  },
+  "contact": {
+    "heading": "# যোগাযোগ",
+    "title": "আসুন কিছু",
+    "titleAccent": "স্কেলেবল",
+    "titleSuffix": "তৈরি করি",
+    "subtitle": "প্রোডাকশন অভিজ্ঞতাসম্পন্ন একজন ডেভেলপার খুঁজছেন? আপনার সাথে কথা বলতে পেরে ভালো লাগবে।",
+    "emailPlaceholder": "YOUR@EMAIL.COM",
+    "messagePlaceholder": "আপনার প্রজেক্ট বা আর্কিটেকচার বর্ণনা করুন...",
+    "submit": "যোগাযোগ শুরু করুন",
+    "email": "ইমেইল"
+  },
+  "footer": {
+    "tagline": "সিনিয়র ফুল-স্ট্যাক ডেভেলপার",
+    "partOf": "এর অংশ",
+    "builtWith": "তৈরি করা হয়েছে"
+  },
+  "locale": {
+    "label": "ভাষা",
+    "announcement": "এই সাইটটি আপনার ভাষায় কথা বলে। কমিউনিটিতে সফটওয়্যার তৈরির ক্ষেত্রে ভাষা কোনো বাধা নয়।",
+    "mission": "SouthWest AI Labs হলো কমিউনিটি-সংযুক্ত সমাধানের একটি আইডিয়া ল্যাব। আমাদের মিশন: জীবনের মান উন্নতকারী তথ্য সিস্টেম ডিজাইন করার জন্য সবাইকে অত্যাধুনিক সরঞ্জামের অ্যাক্সেস দেওয়া।",
+    "accelerate": "আমরা মানুষের জীবনে মান নিশ্চিতকারী সিস্টেমগুলোকে ত্বরান্বিত করি।"
+  },
+  "agenda": {
+    "badge": "কারিগরি পরামর্শ",
+    "title": "কারিগরি সেশন বুক করুন",
+    "subtitle": "আপনার ইঞ্জিনিয়ারিং পাইপলাইনগুলো অপটিমাইজ করতে আপনার উন্নয়ন সম্পদ — এআই, অটোমেশন এবং ইনফ্রাস্ট্রাকচারের বিশ্লেষণ এবং একীকরণ।",
+    "p1t": "সম্পদ অডিট",
+    "p1d": "আপনার বর্তমান সরঞ্জাম, এআই এজেন্ট, রিপোজিটরি এবং প্রক্রিয়ার পূর্ণাঙ্গ ম্যাপিং।",
+    "p2t": "এআই অর্কেস্ট্রেশন পরিকল্পনা",
+    "p2d": "রিভিউ এবং সত্যতা যাচাইযোগ্য মানদণ্ডসহ স্বায়ত্তশাসিত এজেন্টদের কাজের ধারায় সংহত করার সুনির্দিষ্ট প্রোটোকল।",
+    "p3t": "আর্কিটেকচার ও স্থায়িত্ব",
+    "p3d": "পুনর্ব্যবহারযোগ্য ডিজাইন সিস্টেম, শেয়ার্ড লাইব্রেরি এবং জ্যান্ত ডকুমেন্টেশন।",
+    "fmtTitle": "সেশনের ধরন",
+    "fmtDur": "সময়কাল",
+    "fmtDurV": "৬০ মিনিট (রিমোট)",
+    "fmtMod": "ধরণ",
+    "fmtModV": "ভিডিও কল + সেশন পরবর্তী ডায়াগনস্টিক ডকুমেন্ট",
+    "fmtLang": "ভাষাসমূহ",
+    "fmtLangV": "বাংলা / English / Español +7",
+    "fmtFol": "অনুসরণ",
+    "fmtFolV": "প্রথম পরিচিতিমূলক সেশন বিনামূল্যে",
+    "topTitle": "সাধারণ বিষয়সমূহ",
+    "top1": "শুরু থেকে এআই এজেন্ট-সহায়তায় ডেভেলপমেন্ট পাইপলাইন তৈরি করুন",
+    "top2": "বিক্ষিপ্ত সম্পদ (রিপো, টুলস) অডিট ও একীভূতকরণ করুন",
+    "top3": "লোকাল-ফার্স্ট ও গোপনীয়তা: ক্লাউড ছাড়াই নিজস্ব হার্ডওয়্যারে এআই চালান",
+    "top4": "বিদ্যমান ডেভেলপমেন্ট টিমের গতি বৃদ্ধি করা",
+    "top5": "মডুলার আর্কিটেকচার: ডিজাইন সিস্টেম, শেয়ার্ড লাইব্রেরি",
+    "top6": "ডিজিটাল পণ্যের কারিগরি সম্ভাব্যতা মূল্যায়ন",
+    "slotsLabel": "উপলব্ধতা",
+    "slot1": "সোম-শুক্র · বিকেল (GMT-5)",
+    "slot2": "<24h এ উত্তর দেওয়া হয়",
+    "slot3": "প্রতি সপ্তাহে সীমিত আসন",
+    "formTitle": "আপনার সেশন বুক করুন",
+    "formName": "আপনার নাম",
+    "formEmail": "আপনার ইমেইল",
+    "formMsg": "সংক্ষেপে বলুন: প্রজেক্ট, টিম, আপনি কী অপটিমাইজ করতে চান…",
+    "formSubmit": "অনুরোধ পাঠান",
+    "formNote": "আপনার ইমেইল ক্লায়েন্ট পাঠানোর জন্য তৈরি থাকবে। আপনি সরাসরি iberi22@gmail.com এও লিখতে পারেন",
+    "okTitle": "অনুরোধ প্রস্তুত!",
+    "okText": "আপনার ইমেইল ক্লায়েন্ট পরীক্ষা করুন এবং বার্তা পাঠান। আমি ২৪ ঘন্টার মধ্যে উত্তর দেব।",
+    "priceTag": "$20 USD",
+    "priceSub": "Base Diagnostic + Multi-Agent Council Validation + Skills Package",
+    "track1Title": "Express Technical Diagnostic ($20 USD)",
+    "track1Desc": "AI provider audit, local hardware vs. cloud balance, and formal action roadmap validated by multi-agent council + 60-min 1-on-1 session.",
+    "track2Title": "Training & Transition in Generative AI",
+    "track2Desc": "Hands-on workshops for developers and teams: learn to move beyond interactive chat to deterministic orchestration via micro-fragmentation and disjoint file islands.",
+    "track3Title": "Harness Setup & CLI Tooling Deployment",
+    "track3Desc": "Installation and configuration of Hermes Gateway, OpenClaw, GitCore, Gestalt, Jules, and agentic CLI tooling tailored to your hardware and infrastructure.",
+    "methodologyTitle": "Methodology: Local-First Data Gathering & Simulation",
+    "methodologySub": "A 100% serverless workflow running strictly in your browser, guaranteeing absolute data privacy, client-side database persistence, and algorithmic simulation of the Top 5 configurations.",
+    "m1t": "1. Local-First Multi-Tool Gathering",
+    "m1d": "Input and scan of available resources (providers, .env paths, rate limits, local hardware vs. cloud) processed 100% in your browser database without leaking sensitive data.",
+    "m2t": "2. Top 5 Configuration Simulations",
+    "m2d": "Running simulations to optimize the two most critical assets of any project: Cost (USD/tokens) vs. Development Speed (parallelism and delivery).",
+    "m3t": "3. Generation of Skills, Prompts & .env",
+    "m3d": "Automatic generation of a fine-tuned master agent prompt and customized skills templates adapted to your available providers and quota limits.",
+    "m4t": "4. Lead Architect & Multi-Agent Council Review",
+    "m4d": "Final technical synthesis by Brahyans Belalcázar cross-validated with formal multi-agent advisory consensus.",
+    "formProfile": "Organization / Profile Type",
+    "formProfile1": "Startup / Software Company",
+    "formProfile2": "Independent Developer / Consultant",
+    "formProfile3": "Enterprise / Digital Transformation",
+    "formProfile4": "Academic / Research Project",
+    "formService": "Service of Interest",
+    "formService1": "Technical Diagnostic & Report ($20 USD)",
+    "formService2": "Training & Generative AI Transition (Teams)",
+    "formService3": "Harness Setup & Deployment (Hermes / OpenClaw / GitCore)",
+    "formService4": "End-to-End Architecture Advisory",
+    "formInfra": "Current Providers & Hardware",
+    "formInfraPh": "e.g., Gemini/OpenAI API, Ubuntu Linux VPS, Local Mac Studio, AWS...",
+    "formPayNote": "For the Base Diagnostic ($20 USD), payment is processed securely via Stripe after registering specifications.",
+    "formSubmitAlt": "Submit Training / Setup Request",
+    "formSubmitStripe": "Pay $20 USD with Stripe ↗",
+    "fmtLangNote": "অনুবাদ প্ল্যাটফর্ম সমর্থিত। আপনি স্প্যানিশ না জানলে, মিটিং ইংরেজিতে হবে।"
+  },
+  "simulator": {
+    "badge": "100% SERVERLESS · LOCAL-FIRST PRIVACY · SWAL SIMULATION FRAMEWORK",
+    "title": "Agentic Resource & Scenario Simulator",
+    "subtitle": "Calculate the Top 5 Optimal Agent Architectures based on your hardware, cloud providers, rate limits, and monthly budget. Generate custom Master Prompts, SKILL.md templates, and sanitized .env files with zero backend storage.",
+    "sectionResources": "1. Multi-Tool Resource Input Engine",
+    "sectionSimulations": "2. Scenario Simulation & Scoring (Top 5 Architectures)",
+    "sectionArtifacts": "3. Custom Skills, Master System Prompt & .env Generator",
+    "runSimulation": "Run Parametric Simulation",
+    "exportProfile": "Export Profile (JSON)",
+    "importProfile": "Import Profile (JSON)",
+    "resetDefaults": "Reset Defaults",
+    "copyPrompt": "Copy Master System Prompt",
+    "copySkill": "Copy SKILL.md",
+    "copyEnv": "Copy .env.example",
+    "downloadAll": "Download All Artifacts"
+  }
+}

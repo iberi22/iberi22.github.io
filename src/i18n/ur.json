@@ -1,0 +1,595 @@
+{
+  "nav": {
+    "about": "میرے بارے میں",
+    "projects": "منصوبے",
+    "blog": "بلاگ",
+    "contact": "رابطہ",
+    "git": "GIT",
+    "github": "GITHUB",
+    "agenda": "ملاقات طے کریں",
+    "simulator": "وسائل کا سمیلیٹر",
+    "resources": "وسائل کا سمیلیٹر"
+  },
+  "hero": {
+    "badge": "سینئر فل اسٹیک ڈویلپر · پروڈکشن میں 10+ سال",
+    "firstName": "براہین",
+    "lastName": "بیلالکازار",
+    "tagline": "ایک دہائی کے تجربے سے صقل شدہ پروڈکشن سافٹ ویئر۔",
+    "taglineExtra": "جاوا اسکرپٹ، پی ایچ پی، ویب اور موبائل آرکیٹیکچر — خیال سے لے کر کان کنی، ٹیکس، اشاعت اور ای کامرس میں تعیناتی تک۔",
+    "viewProjects": "منصوبے دیکھیں",
+    "getInTouch": "رابطہ قائم کریں",
+    "scroll": "نیچے اسکرول کریں"
+  },
+  "about": {
+    "heading": "# تعارف",
+    "title": "ویب انجینئرنگ",
+    "titleAccent": " فل اسٹیک",
+    "titleSuffix": " ایک دہائی کے تجربے کے ساتھ",
+    "bio": "میں براہین بیلالکازار ہوں، ایک فل اسٹیک ڈویلپر جس کے پاس کان کنی، ٹیکس، ای کامرس، ای آر پی اور اشاعت کے شعبوں میں 10 سال سے زیادہ کا پروڈکشن تجربہ ہے۔ میری بنیادی مہارت جاوا اسکرپٹ اور پی ایچ پی میں ہے۔",
+    "philosophy": "میں فیڈ بیک لوپ کو مکمل کرنے پر یقین رکھتا ہوں: ہر فیچر سمیولیشن، عمل درآمد، جائزہ اور ٹیسٹنگ سے گزرتا ہے۔",
+    "philosophyAccent": "تیز رفتار تکرار، ہمیشہ توثیق، پروڈکشن میں ترسیل۔",
+    "statProjects": "اہم منصوبے",
+    "statStack": "بنیادی ٹیکنالوجیز",
+    "competencies": "بنیادی صلاحیتیں",
+    "stackIndex": "تکنیکی اشاریہ",
+    "yearsInProduction": "پروڈکشن میں سال",
+    "fullStackLabel": "Full-Stack JS · PHP · Rust · AI",
+    "specialties": {
+      "0x01": {
+        "title": "فل اسٹیک اور اعلیٰ درجے کی PHP انجینئرنگ",
+        "desc": "پروڈکشن میں 10+ سال: کسٹم ورڈپریس پلگ ان آرکیٹیکچر، کسٹم تھیمز، REST APIs اور Node.js آرکیٹیکچر۔"
+      },
+      "0x02": {
+        "title": "اے آئی ہارنس، آرکیسٹریشن اور ہنر",
+        "desc": "خودمختار ایجنٹوں (Hermes, GitCore, Gestalt, Jules) کے ساتھ حتمی پائپ لائنز اور کسٹم مہارتوں کی تخلیق۔"
+      },
+      "0x03": {
+        "title": "سسٹمز، رسٹ اور آف لائن فرسٹ موبائل",
+        "desc": "رسٹ میں اعلیٰ کارکردگی والی خدمات، فلٹر موبائل ایپس، انکرپٹڈ لوکل ڈیٹا بیسز اور ویب اسمبلی۔"
+      },
+      "0x04": {
+        "title": "ریلیشنل اور ویکٹوریئل ڈیٹا بیسز",
+        "desc": "PostgreSQL/MySQL میں اسکیما ڈیزائن اور pgvector، SQLite-vec اور HNSW کے ساتھ لوکل سرچ انجن۔"
+      },
+      "0x05": {
+        "title": "VPS انفراسٹرکچر، cPanel اور ہوسٹنگ",
+        "desc": "Linux اور NixOS پر وقف/VPS سرورز، cPanel/WHM انتظامیہ اور Nginx/PHP-FPM ٹیوننگ۔"
+      },
+      "0x06": {
+        "title": "سیکیورٹی، ہارڈننگ اور MCP ٹولز",
+        "desc": "کوڈ آڈٹ، مالویئر اسکیننگ، اینٹی وائرس ٹولز اور MCP پروٹوکول معائنہ سرورز۔"
+      }
+    },
+    "stackCategories": {
+      "cat1": "زبانیں اور رن ٹائمز",
+      "cat2": "ویب، سی ایم ایس اور فریم ورکس",
+      "cat3": "ڈیٹا بیس اور ویکٹوریئل تلاش",
+      "cat4": "اے آئی ٹولز اور ایجنٹ آرکیسٹریشن",
+      "cat5": "انفراسٹرکچر، سرورز اور DevSecOps"
+    }
+  },
+  "projects": {
+    "heading": "# منصوبے",
+    "title": "تقسیم شدہ",
+    "titleAccent": "سسٹمز",
+    "titleSuffix": "کی تعمیر",
+    "subtitle": "مائننگ ٹیلی میٹری سے لے کر اے آئی میموری کور تک — ہر پروجیکٹ سمیولیشن اور تکرار کے ساتھ لوپ مکمل کرتا ہے۔",
+    "techStack": "ٹیکنالوجی اسٹیک",
+    "timeline": "ٹائم لائن اور روڈ میپ",
+    "repository": "کوڈ ریپوزٹری",
+    "filter": {
+      "all": "تمام",
+      "production": "پروڈکشن اور صنعت (10+ سال)",
+      "opensource": "اوپن سورس اور ڈیپ ٹیک"
+    },
+    "section": {
+      "opensource": "// 01. ڈیپ ٹیک کور اور اوپن سورس ایکو سسٹم",
+      "production": "// 02. پروڈکشن اور کام کا تجربہ (10+ سال)"
+    },
+    "status": {
+      "production": "پروڈکشن میں",
+      "active": "فعال",
+      "beta": "بیٹا",
+      "prototype": "پروٹو ٹائپ"
+    },
+    "btn": {
+      "showDetails": "آرکیٹیکچر اور میٹرکس دیکھیں",
+      "hideDetails": "تفصیلات چھپائیں",
+      "viewRepo": "ریپوزٹری دیکھیں",
+      "visitDemo": "پروڈکشن / ویب سائٹ دیکھیں",
+      "readStudy": "تحقیق / مضمون پڑھیں"
+    },
+    "label": {
+      "architecture": "آرکیٹیکچر اور تکنیکی فیصلے",
+      "stack": "مکمل تکنیکی اسٹیک",
+      "metrics": "کارکردگی کی پیمائش اور نتائج",
+      "research": "سائنسی مطالعہ اور خبریں (5D گلاس میموری)",
+      "researchDesc": "اس سمیولیشن ماڈل کی نظریاتی صلاحیت کی توثیق کرنے والے سائنسی مقالے:",
+      "timeline": "ٹائم لائن اور اہم سنگ میل"
+    },
+    "xavier2": {
+      "name": "Xavier",
+      "tagline": "اے آئی کاگنیٹو میموری کور",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - موجودہ",
+      "description": "رسٹ میں بنایا گیا اے آئی ایجنٹوں کے لیے مسلسل مقامی کاگنیٹو میموری کور۔ ڈوکر میں محفوظ مائیکرو سروس جو ویکٹوریئل اسٹوریج اور HNSW انڈیکس فراہم کرتی ہے۔",
+      "architecture": "SQLite-vec اور pgvector کے ساتھ رسٹ انجن۔ خارجی کلاؤڈ پر منحصر ہوئے بغیر لوکل ایمبیڈنگز کے ساتھ ویکٹوریئل تلاش۔",
+      "metrics": [
+        "مقامی انڈیکسز پر تلاش کی تاخیر <10ms",
+        "کلاؤڈ پر زیرو انحصار: 100% ڈیوائس پر",
+        "Hermes اور Gestalt کے ساتھ یکجا مربوط کاری"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "آرکیٹیکچرل ڈیزائن اور ویکٹوریئل لیئر"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "ریلیز v0.1 - CRUD آپریشنز اور REST اینڈ پوائنٹس"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "v0.6.0-beta - HNSW انڈیکس اور ڈوکرائزیشن"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "روڈ میپ: سیمانٹک گراف کا انضمام"
+        }
+      ]
+    },
+    "gitcore": {
+      "name": "GitCore",
+      "tagline": "خودمختار ملٹی ایجنٹ Git/GitHub آرکیسٹریٹر",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2026 - موجودہ",
+      "description": "خودمختار کوڈنگ ایجنٹوں کے لیے آرکیسٹریٹر۔ باضابطہ تصریحات کے ساتھ مسائل کی تخلیق اور 15 متوازی کاموں کی خودکاری۔",
+      "architecture": "رسٹ میں الگ تھلگ آرکیٹیکچر اور سی ایل آئی اسکرپٹس۔ مرج تنازعات کو روکنے کے لیے علیحدہ فائل آئلینڈ سسٹم۔",
+      "metrics": [
+        "15 متوازی خودمختار کاموں تک",
+        "100% ٹریسیبلٹی",
+        "تسلسل مرج میں 0 تنازعات"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "ابتدائی پروٹوکول اور ٹریسیبلٹی"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "ویو آپریشنز: مائیکرو فرگمنٹیشن اور 15 کام"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Hermes Gateway کے ساتھ انضمام"
+        },
+        {
+          "date": "2026 Q4",
+          "label": "روڈ میپ: ملٹی ریپوزٹری P2P تقسیم شدہ نیٹ ورک"
+        }
+      ]
+    },
+    "gestalt": {
+      "name": "Gestalt",
+      "tagline": "ملٹی ایجنٹ سوارم آرکیسٹریٹر سی ایل آئی",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - موجودہ",
+      "description": "رسٹ میں تیار کردہ سی ایل آئی پر مبنی اے آئی سوارم آرکیسٹریٹر۔ ریاست کے تسلسل کے لیے SurrealDB کا استعمال کرتا ہے۔",
+      "architecture": "نیٹو رسٹ سی ایل آئی، SurrealDB میں گراف اور اسٹیٹ اسٹور۔ کوڈ ٹیسٹنگ کے لیے سینڈ باکس۔",
+      "metrics": [
+        "محفوظ سینڈ باکس میں ایجنٹ کا عمل درآمد",
+        "SurrealDB میں ریاستی تسلسل",
+        "تخصص کے مطابق متحرک روٹنگ"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "پروٹو ٹائپ اور SurrealDB اسٹیٹ اسکیما"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "ملٹی ایجنٹ کوآرڈینیشن لیئر اور سی ایل آئی کے ذریعے عمل"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "Xavier میموری کے ساتھ مسلسل لوپ انضمام"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "روڈ میپ: غیر مرکزی سوارم انٹیلی جنس"
+        }
+      ]
+    },
+    "photon-core": {
+      "name": "Photon-Core",
+      "tagline": "5D آپٹیکل میموری سمیولیشن (PoC) اور تحقیق",
+      "companyOrContext": "یونیورسٹی ریسرچ اور SWAL روڈ میپ",
+      "period": "2025 - 2026",
+      "description": "5D آپٹیکل ڈیٹا اسٹوریج سمیولیشن ٹیکنالوجی جو رسٹ میں تیار کی گئی ہے اور آپٹیکل فزکس کی ماڈلنگ کرتی ہے۔",
+      "architecture": "روشنی اور شیشے کے درمیان تعامل کا ماڈل بنانے والا رسٹ سمیلیٹر۔ >470 MB/s انکوڈنگ کی رفتار۔",
+      "metrics": [
+        "ریاضیاتی سمیولیشن اور سائنسی سافٹ ویئر",
+        "کمپیوٹیشنل انکوڈنگ اسپیڈ >470 MB/s",
+        "Reed-Solomon ECC کے ساتھ 3D اسپیشل کراس ٹاک برداشت >30%",
+        "SWAL کے فزیکل روڈ میپ کے لیے تحقیقی بنیاد"
+      ],
+      "researchLinks": [
+        {
+          "title": "گلاس میں 5D ڈیٹا اسٹوریج (ORC ساؤتھمپٹن)",
+          "source": "یونیورسٹی آف ساؤتھمپٹن"
+        },
+        {
+          "title": "پروجیکٹ سلیکا: ہزاروں سالوں کے لیے گلاس میں ڈیٹا محفوظ کرنا",
+          "source": "مائیکروسافٹ ریسرچ"
+        },
+        {
+          "title": "فیوزڈ سلیکا میں ہائی اسپیڈ 5D آپٹیکل ڈیٹا اسٹوریج",
+          "source": "Optica Publishing Group / SPIE"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "ابتدائی ریاضیاتی ماڈل اور فوٹونک ووکسیل کی تعریف"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "Reed-Solomon ECC کا انضمام اور 3D سمیولیشن"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "اسٹیگنوگرافک ڈیٹا کو چھپانا اور سی ایل آئی ٹولز"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "روڈ میپ: ڈیپ لرننگ کی مدد سے سگنل کی بحالی"
+        }
+      ]
+    },
+    "edge-mesh": {
+      "name": "edge-mesh",
+      "tagline": "CRDT اور پوسٹ کوانٹم کرپٹو کے ساتھ P2P میش نیٹ ورک",
+      "companyOrContext": "SouthWest AI Labs",
+      "period": "2025 - موجودہ",
+      "description": "تنازعات سے پاک ریپلیکیٹڈ ڈیٹا ٹائپس (CRDTs) اور پوسٹ کوانٹم کرپٹوگرافی ML-DSA-65 پر مبنی پی 2 پی نیٹ ورک لائبریری۔",
+      "architecture": "مرکزی سرور کے بغیر غیر مرکزی P2P ٹوپولوجی۔",
+      "metrics": [
+        "مرکزی سرورز پر زیرو انحصار",
+        "پوسٹ کوانٹم مزاحم ML-DSA-65 کرپٹوگرافی",
+        "P2P تاخیر <15ms"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q3",
+          "label": "P2P ڈسکوری پروٹوکول ڈیزائن"
+        },
+        {
+          "date": "2025 Q4",
+          "label": "CRDT اسکیموں کا تطبیق"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "پوسٹ کوانٹم معیاری ML-DSA-65 کا تبادلہ"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "روڈ میپ: اینڈرائیڈ اور آئی او ایس کے لیے موبائل ایس ڈی کے"
+        }
+      ]
+    },
+    "orion": {
+      "name": "OrionHealth",
+      "tagline": "آف لائن فرسٹ ہیلتھ ایکو سسٹم",
+      "companyOrContext": "HealthTech",
+      "period": "2025 - 2026",
+      "description": "100% آف لائن فرسٹ ذاتی صحت کی ٹریکنگ ایپ۔ انکرپٹڈ لوکل SQLite اسٹوریج اور ڈیش بورڈ۔",
+      "architecture": "آن ڈیوائس انکرپٹڈ ڈیٹا بیس (SQLCipher) کے ساتھ فلٹر اور ڈارٹ۔",
+      "metrics": [
+        "100% آن ڈیوائس انکرپٹڈ ڈیٹا",
+        "کنکشن کے بغیر مسلسل کام",
+        "انٹرایکٹو کلینیکل ڈیش بورڈ"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q4",
+          "label": "کلینیکل ماڈلنگ اور آف لائن فلٹر آرکیٹیکچر"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "SQLite کے ساتھ انکرپٹڈ اسٹوریج"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "بیک گراؤنڈ سنک انجن اور اینالیٹکس"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "روڈ میپ: P2P غیر مرکزی مطابقت پذیری"
+        }
+      ]
+    },
+    "gara-g": {
+      "name": "GARA-G",
+      "tagline": "DePIN موبیلٹی اور V2V میش نیٹ ورک",
+      "companyOrContext": "Mobility Tech",
+      "period": "2026",
+      "description": "ریئل ٹائم ٹیلی میٹری اور اے آئی کو پائلٹ کے ساتھ موبیلٹی DePIN نیٹ ورک اور گاڑیوں کا میش (V2V)۔",
+      "architecture": "آٹوموٹو ٹیلی میٹری پروسیسنگ کے لیے رسٹ بیک بون اور فلٹر موبائل ایپ۔",
+      "metrics": [
+        "کم تاخیر والی آٹوموٹو ٹیلی میٹری",
+        "آن ڈیوائس اے آئی التشخیص کو پائلٹ",
+        "Polygon نیٹ ورک کا انضمام"
+      ],
+      "timeline": [
+        {
+          "date": "2026 Q1",
+          "label": "گاڑیوں کا ٹیلی میٹری پروٹوکول آرکیٹیکچر"
+        },
+        {
+          "date": "2026 Q2",
+          "label": "OBD-II تشخیص کے لیے اے آئی کو پائلٹ انضمام"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "روڈ میپ: راستے میں گاڑیوں کے درمیان میش نیٹ ورک"
+        }
+      ]
+    },
+    "tripro-mining": {
+      "name": "Tripro SPA (چلی)",
+      "tagline": "انڈسٹریل IoT، مائننگ ٹیلی میٹری اور ڈیش بورڈز",
+      "companyOrContext": "صنعتی برقی خدمات اور کان کنی",
+      "period": "2025 - 2026",
+      "description": "بھاری کان کنی کی مشینری کے سینسرز کو ریئل ٹائم ویب ڈیش بورڈز کے ساتھ جوڑنے والا سافٹ ویئر تیار کیا۔",
+      "architecture": "Astro, Next.js, React, PostgreSQL اور Tailwind CSS کے ساتھ جدید اسٹیک۔",
+      "metrics": [
+        "کان کنی کے پلانٹس میں سینسرز کی مسلسل نگرانی",
+        "پیشگوئی کے تجزیے میں ڈیٹا کی منتقلی",
+        "Flow پیمنٹ گیٹ وے کے ساتھ CGP San Patricio ویب ایپ"
+      ],
+      "timeline": [
+        {
+          "date": "جون 2025 - اکتوبر 2025",
+          "label": "Astro + Flow سائٹ اور سپورٹ بوٹ"
+        },
+        {
+          "date": "جنوری 2026 - مئی 2026",
+          "label": "کان کنی سینسر IoT پلیٹ فارم اور اے آئی انرجی آپٹیمائزیشن"
+        }
+      ]
+    },
+    "smartax-mobile": {
+      "name": "Restrepo y Londoño / Smartax",
+      "tagline": "اے پی آئی ڈیٹا، گوگل پلے منظوری اور ورڈپریس",
+      "companyOrContext": "ٹیکس اور قانونی مشاورت کی فرم",
+      "period": "2021 - 2025",
+      "description": "ورڈپریس کے ساتھ ڈیٹا کی رسائی کے لیے API کا انضمام اور گوگل پلے اسٹور کی پالیسیوں کی تعمیل کے لیے موبائل ایپ کی تیاری۔",
+      "architecture": "ورڈپریس کے ساتھ جڑی REST API لیئر اور اینڈرائیڈ سیکیورٹی اپ ڈیٹس۔",
+      "metrics": [
+        "گوگل پلے اسٹور پر کامیاب توثیق اور منظوری",
+        "مواد کی مطابقت پذیری کے لیے بلا تعطل REST API انضمام",
+        "ٹیکس لاجک اور رپورٹنگ کے لیے کسٹم PHP پلگ انز"
+      ],
+      "timeline": [
+        {
+          "date": "اکتوبر 2021 - ستمبر 2022",
+          "label": "B2B ویب ڈویلپمنٹ، کسٹم PHP پلگ انز اور ویب انتظامیہ"
+        },
+        {
+          "date": "جنوری 2025 - مئی 2025",
+          "label": "ڈیٹا API انضمام، گوگل پلے پالیسیوں پر عمل اور اشاعت"
+        }
+      ]
+    },
+    "siesa-ecommerce": {
+      "name": "Siesa Ecommerce (E-Solutions)",
+      "tagline": "انٹرپرائز B2B/B2C ای کامرس اور کلاؤڈ انفراسٹرکچر",
+      "companyOrContext": "E-Solutions / Siesa",
+      "period": "2019 - 2020",
+      "description": "B2B اور B2C ای کامرس پلیٹ فارمز کے لیے تیار کردہ سہولیات کی ترقی۔ لاجسٹکس کیلنڈر ماڈیول اور لینکس سرور انتظامیہ۔",
+      "architecture": "Yii2 فریم ورک کے ساتھ PHP بیک اینڈ اور Angular فرنٹ اینڈ۔ لینکس سرور انتظامیہ اور Git CI/CD آٹومیشن۔",
+      "metrics": [
+        "پروڈکشن میں لاجسٹکس کیلنڈر ماڈیول",
+        "CentOS 7 لینکس LAMP سرور پروویژننگ",
+        "عملی ہدایات اور تکنیکی معیار"
+      ],
+      "timeline": [
+        {
+          "date": "اکتوبر 2019 - جنوری 2020",
+          "label": "لوجسٹک کیلنڈر ماڈیول کی ترقی"
+        },
+        {
+          "date": "فروری 2020 - اپریل 2020",
+          "label": "کلاؤڈ سرور پروویژننگ اور CI/CD آٹومیشن"
+        }
+      ]
+    },
+    "logicalsoft-siip": {
+      "name": "LogicalSoft",
+      "tagline": "SIIP موبائل اینڈرائیڈ ایپ، ریٹیل اینالیٹکس اور الیکٹران",
+      "companyOrContext": "ای آر پی، سائن ایج اور ریٹیل اینالیٹکس",
+      "period": "2015 - 2019",
+      "description": "پلے اسٹور پر شائع شدہ 15 سے زیادہ عملی مناظر کے ساتھ SIIP Móvil ہائبرڈ ایپ کی ترقی۔ PHP/MySQL RIA ایپس اور Electron ڈیسک ٹاپ ایپ۔",
+      "architecture": "PHP/MySQL بیک اینڈ اور IndexedDB لوکل اسٹوریج۔ Electron, Node.js اور ReactJS کے ساتھ کراس پلیٹ فارم ڈیسک ٹاپ ایپ۔",
+      "metrics": [
+        "پلے اسٹور پر شائع شدہ SIIP Móvil ایپ",
+        "کیو آر کوڈز کے ذریعے فوری رسائی کے ماڈیولز",
+        "IndexedDB کے ساتھ آف لائن آپریشن"
+      ],
+      "timeline": [
+        {
+          "date": "2015 - 2017",
+          "label": "PHP/MySQL RIA ویب ایپس اور Electron ڈیسک ٹاپ"
+        },
+        {
+          "date": "2018",
+          "label": "پرانے پلیٹ فارم کی جدید کاری کا اسپرنٹ"
+        },
+        {
+          "date": "2019",
+          "label": "پلے اسٹور پر شائع شدہ SIIP Móvil ایپ کی ترقی"
+        }
+      ]
+    },
+    "los-tres-editores": {
+      "name": "Los Tres Editores SAS",
+      "tagline": "PostgreSQL پروسیجرز، Java EE آرکیٹیکچر اور ڈیبین",
+      "companyOrContext": "بڑے پیمانے پر اشاعت اور پرنٹنگ",
+      "period": "2013 - 2015",
+      "description": "PostgreSQL میں محفوظ شدہ طریقہ کار، فنکشنز اور ٹریگرز کے ذریعے ایڈوانسڈ ڈیٹا بیس پروگرامنگ۔ Java EE اجزاء اور ڈیبین سرورز کی دیکھ بھال۔",
+      "architecture": "PostgreSQL ریلیشنل ڈیٹا بیس جو کاروباری لاجک پر مشتمل ہے۔ جاوا ای ای سروسز۔",
+      "metrics": [
+        "PostgreSQL میں سوالات اور ٹریگرز کا بہترین استعمال",
+        "خودکار بڑے پیمانے پر پی ڈی ایف رپورٹس کی تیاری",
+        "ڈیبین سرور انتظامیہ اور استحکام"
+      ],
+      "timeline": [
+        {
+          "date": "2013 - 2014",
+          "label": "پرانے سسٹمز کی تکنیکی دستاویزی کاری اور PostgreSQL فنکشن کی ترقی"
+        },
+        {
+          "date": "2014 - 2015",
+          "label": "جاوا ای ای کا تطبیق، FPDF/iReport رپورٹس اور ڈیبین انتظامیہ"
+        }
+      ]
+    },
+    "filterAll": "Todos",
+    "filterProduction": "Producción e Industria (10+ Años)",
+    "filterOpenSource": "Open Source y Deep Tech",
+    "secDeepTech": "// 01. Núcleos Deep Tech y Ecosistema Open Source",
+    "secProduction": "// 02. Experiencias Laborales y Software en Producción (10+ Años)",
+    "hideDetails": "Ocultar Detalles",
+    "viewDetails": "Ver Arquitectura y Métricas",
+    "archTitle": "Arquitectura y Decisiones Técnicas",
+    "stackTitle": "Stack Técnico Completo",
+    "metricsTitle": "Métricas de Rendimiento y Resultados",
+    "viewRepo": "Ver Repositorio",
+    "visitProd": "Visitar Producción / Web",
+    "researchTitle": "Estudios Científicos y Noticias del Avance Tecnológico (Memoria 5D en Vidrio)",
+    "researchDesc": "Publicaciones científicas globales que respaldan la viabilidad del modelo:",
+    "readResearch": "Leer Estudio / Noticia",
+    "timelineTitle": "Cronograma e Hitos Clave"
+  },
+  "blog": {
+    "heading": "# بلاگ",
+    "title": "خیالات اور",
+    "titleAccent": "آرکیٹیکچر",
+    "subtitle": "سسٹم آرکیٹیکچر، اے آئی انفراسٹرکچر اور میرے منصوبوں کے پیچھے انجینئرنگ پر تفصیلی مضامین۔",
+    "draft": "ڈرافٹ",
+    "comingSoon": "عنقریب آرہا ہے",
+    "pipelineStatus": "خودکار پائپ لائن فعال / سسٹم کی حالت: معمول کے مطابق",
+    "readMore": "مزید پڑھیں ←"
+  },
+  "contact": {
+    "heading": "# رابطہ",
+    "title": "آئیے کچھ",
+    "titleAccent": "اسکیلیبل",
+    "titleSuffix": "بناتے ہیں",
+    "subtitle": "کیا آپ کو پروڈکشن کے تجربے کے ساتھ ایک ڈویلپر کی ضرورت ہے؟ مجھے آپ سے بات کر کے خوشی ہوگی۔",
+    "emailPlaceholder": "YOUR@EMAIL.COM",
+    "messagePlaceholder": "اپنے پروجیکٹ یا آرکیٹیکچر کی وضاحت کریں...",
+    "submit": "رابطہ شروع کریں",
+    "email": "ای میل"
+  },
+  "footer": {
+    "tagline": "سینئر فل اسٹیک ڈویلپر",
+    "partOf": "کا حصہ",
+    "builtWith": "کے ساتھ بنایا گیا"
+  },
+  "locale": {
+    "label": "زبان",
+    "announcement": "یہ سائٹ آپ کی زبان بولتی ہے۔ کمیونٹی میں سافٹ ویئر بنانے کے لیے زبان کوئی رکاوٹ نہیں ہے۔",
+    "mission": "SouthWest AI Labs کمیونٹی سے مربوط حل کے لیے خیالات کی لیبارٹری ہے۔ ہمارا مشن: زندگی کے معیار کو بہتر بنانے والے انفارمیشن سسٹمز کو ڈیزائن کرنے کے لیے سب کو جدید ترین ٹولز تک رسائی فراہم کرنا۔",
+    "accelerate": "ہم ان سسٹمز کو تیز تر بناتے ہیں جو لوگوں کی زندگی میں معیار لاتے ہیں۔"
+  },
+  "agenda": {
+    "badge": "تکنیکی مشاورت",
+    "title": "تکنیکی سیشن بک کریں",
+    "subtitle": "اپنی انجینئرنگ پائپ لائنوں کو بہتر بنانے کے لیے اپنے ترقیاتی وسائل — اے آئی، آٹومیشن اور انفراسٹرکچر کا تجزیہ اور انضمام۔",
+    "p1t": "وسائل کا آڈٹ",
+    "p1d": "آپ کے موجودہ ٹولز، اے آئی ایجنٹوں، ریپوزٹریز اور عمل کا مکمل نقشہ۔",
+    "p2t": "اے آئی آرکیسٹریشن کا منصوبہ",
+    "p2d": "جائزوں اور توثیق کے معیار کے ساتھ خودمختار ایجنٹوں کو آپ کے کام میں ضم کرنے کے لیے ٹھوس پروٹوکول۔",
+    "p3t": "آرکیٹیکچر اور بہتری",
+    "p3d": "قابلِ استعمال ڈیزائن سسٹمز، مشترکہ لائبریریاں اور دستاویزات۔",
+    "fmtTitle": "سیشن کا فارمیٹ",
+    "fmtDur": "دورانیہ",
+    "fmtDurV": "60 منٹ (آن لائن)",
+    "fmtMod": "طریقہ کار",
+    "fmtModV": "ویڈیو کال + تشخیص کا دستاویزی خاکہ",
+    "fmtLang": "زبانیں",
+    "fmtLangV": "اردو / English / Español +7",
+    "fmtFol": "پیروی",
+    "fmtFolV": "پہلا تعارفی سیشن مفت",
+    "topTitle": "عام موضوعات",
+    "top1": "شروعات سے اے آئی ایجنٹ کی مدد سے ڈویلپمنٹ پائپ لائن ترتیب دیں",
+    "top2": "بکھرے ہوئے وسائل کا آڈٹ اور انضمام کریں",
+    "top3": "لوکل فرسٹ اور پرائیویسی: کلاؤڈ کے بغیر اپنے ہارڈویئر پر اے آئی چلائیں",
+    "top4": "موجودہ ڈویلپمنٹ ٹیموں کی کارکردگی میں بہتری",
+    "top5": "ماڈیولر آرکیٹیکچر: ڈیزائن سسٹمز، مشترکہ لائبریریاں",
+    "top6": "ڈیجیٹل پروڈکٹس کی تکنیکی امکانات کا اندازہ",
+    "slotsLabel": "دستیابی",
+    "slot1": "پیر–جمعہ · دوپہر (GMT-5)",
+    "slot2": "<24 گھنٹے میں جواب",
+    "slot3": "فی ہفتہ محدود نشستیں",
+    "formTitle": "اپنا سیشن بک کریں",
+    "formName": "آپ کا نام",
+    "formEmail": "آپ کا ای میل",
+    "formMsg": "مختصر طور پر اپنے کیس کے بارے میں بتائیں: پروجیکٹ، ٹیم، آپ کیا بہتر بنانا چاہتے ہیں…",
+    "formSubmit": "درخواست بھیجیں",
+    "formNote": "آپ کا ای میل کلائنٹ بھیجنے کے لیے تیار ہو جائے گا۔ آپ براہ راست iberi22@gmail.com پر بھی لکھ سکتے ہیں",
+    "okTitle": "درخواست تیار ہے!",
+    "okText": "اپنا ای میل کلائنٹ چیک کریں اور پیغام بھیجیں۔ میں 24 گھنٹے کے اندر جواب دوں گا۔",
+    "priceTag": "$20 USD",
+    "priceSub": "Base Diagnostic + Multi-Agent Council Validation + Skills Package",
+    "track1Title": "Express Technical Diagnostic ($20 USD)",
+    "track1Desc": "AI provider audit, local hardware vs. cloud balance, and formal action roadmap validated by multi-agent council + 60-min 1-on-1 session.",
+    "track2Title": "Training & Transition in Generative AI",
+    "track2Desc": "Hands-on workshops for developers and teams: learn to move beyond interactive chat to deterministic orchestration via micro-fragmentation and disjoint file islands.",
+    "track3Title": "Harness Setup & CLI Tooling Deployment",
+    "track3Desc": "Installation and configuration of Hermes Gateway, OpenClaw, GitCore, Gestalt, Jules, and agentic CLI tooling tailored to your hardware and infrastructure.",
+    "methodologyTitle": "Methodology: Local-First Data Gathering & Simulation",
+    "methodologySub": "A 100% serverless workflow running strictly in your browser, guaranteeing absolute data privacy, client-side database persistence, and algorithmic simulation of the Top 5 configurations.",
+    "m1t": "1. Local-First Multi-Tool Gathering",
+    "m1d": "Input and scan of available resources (providers, .env paths, rate limits, local hardware vs. cloud) processed 100% in your browser database without leaking sensitive data.",
+    "m2t": "2. Top 5 Configuration Simulations",
+    "m2d": "Running simulations to optimize the two most critical assets of any project: Cost (USD/tokens) vs. Development Speed (parallelism and delivery).",
+    "m3t": "3. Generation of Skills, Prompts & .env",
+    "m3d": "Automatic generation of a fine-tuned master agent prompt and customized skills templates adapted to your available providers and quota limits.",
+    "m4t": "4. Lead Architect & Multi-Agent Council Review",
+    "m4d": "Final technical synthesis by Brahyans Belalcázar cross-validated with formal multi-agent advisory consensus.",
+    "formProfile": "Organization / Profile Type",
+    "formProfile1": "Startup / Software Company",
+    "formProfile2": "Independent Developer / Consultant",
+    "formProfile3": "Enterprise / Digital Transformation",
+    "formProfile4": "Academic / Research Project",
+    "formService": "Service of Interest",
+    "formService1": "Technical Diagnostic & Report ($20 USD)",
+    "formService2": "Training & Generative AI Transition (Teams)",
+    "formService3": "Harness Setup & Deployment (Hermes / OpenClaw / GitCore)",
+    "formService4": "End-to-End Architecture Advisory",
+    "formInfra": "Current Providers & Hardware",
+    "formInfraPh": "e.g., Gemini/OpenAI API, Ubuntu Linux VPS, Local Mac Studio, AWS...",
+    "formPayNote": "For the Base Diagnostic ($20 USD), payment is processed securely via Stripe after registering specifications.",
+    "formSubmitAlt": "Submit Training / Setup Request",
+    "formSubmitStripe": "Pay $20 USD with Stripe ↗",
+    "fmtLangNote": "ترجمہ پلیٹ فارمز دستیاب ہیں۔ اگر آپ ہسپانوی نہیں بولتے تو میٹنگ انگریزی میں ہوگی۔"
+  },
+  "simulator": {
+    "badge": "100% SERVERLESS · LOCAL-FIRST PRIVACY · SWAL SIMULATION FRAMEWORK",
+    "title": "Agentic Resource & Scenario Simulator",
+    "subtitle": "Calculate the Top 5 Optimal Agent Architectures based on your hardware, cloud providers, rate limits, and monthly budget. Generate custom Master Prompts, SKILL.md templates, and sanitized .env files with zero backend storage.",
+    "sectionResources": "1. Multi-Tool Resource Input Engine",
+    "sectionSimulations": "2. Scenario Simulation & Scoring (Top 5 Architectures)",
+    "sectionArtifacts": "3. Custom Skills, Master System Prompt & .env Generator",
+    "runSimulation": "Run Parametric Simulation",
+    "exportProfile": "Export Profile (JSON)",
+    "importProfile": "Import Profile (JSON)",
+    "resetDefaults": "Reset Defaults",
+    "copyPrompt": "Copy Master System Prompt",
+    "copySkill": "Copy SKILL.md",
+    "copyEnv": "Copy .env.example",
+    "downloadAll": "Download All Artifacts"
+  }
+}

@@ -1,0 +1,350 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Nav from '../../components/Nav.svelte';
+import Footer from '../../components/Footer.svelte';
+import { baseUrl, siteUrl } from '../../lib/baseUrl';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+// Reading time: prefer frontmatter value, else estimate from body (~200 wpm)
+const bodyText = typeof post.body === 'string' ? post.body : '';
+const bodyWords = bodyText.split(/\s+/).length;
+const readingTime = post.data.readingTime ?? Math.max(1, Math.round(bodyWords / 200));
+const canonicalHref = post.data.canonical ?? siteUrl(`blog/${post.id}/`);
+const ogImage = post.data.ogImage ?? post.data.image ?? `https://iberi22.github.io/portfolio-iberi22/og/${post.id}.png`;
+const ogImageFallback = "https://iberi22.github.io/portfolio-iberi22/og/default.png";
+const metaDescription = post.data.description ?? (post.data.excerpt || post.data.title + ' — Arquitectura, orquestación agéntica y desarrollo de software por Brahyan Belalcázar.');
+const isPaywalled = post.data.paywalled ?? false;
+const paywallSelector = post.data.paywallSelector ?? ".paywall";
+---
+
+<Layout
+  title={`${post.data.title} | Brahyan Belalcázar (iberi22)`}
+  description={metaDescription}
+  image={ogImage}
+  imageAlt={post.data.title}
+  article={true}
+  publishDate={post.data.date}
+  modifiedDate={post.data.date}
+  articlePath={`blog/${post.id}/`}
+  articleTitle={post.data.title}
+  tags={post.data.tags}
+  section={post.data.tags[0] ?? "Engineering"}
+  paywalled={isPaywalled}
+  paywallSelector={paywallSelector}
+>
+  <Nav client:load />
+  <main class="min-h-screen px-6 pt-32 pb-24">
+    <article class="max-w-4xl mx-auto">
+      <div class="mb-12 border-b border-white/10 pb-8">
+        <a href={baseUrl('blog/')} class="text-accent text-xs font-mono tracking-widest uppercase mb-6 inline-flex items-center gap-1 hover:underline">
+          ← Volver a artículos
+        </a>
+        <div class="flex items-center gap-4 text-xs font-mono text-text-muted mb-4 mt-2">
+          <span>{post.data.date}</span>
+          <span>·</span>
+          <span>{readingTime} min de lectura</span>
+          <span>·</span>
+          <span>Arquitectura Agéntica</span>
+        </div>
+        <h1 class="text-3xl md:text-5xl font-bold text-text-primary mb-6 leading-tight">
+          {post.data.title}
+        </h1>
+        <div class="flex flex-wrap gap-2">
+          {post.data.tags.map((tag) => (
+            <span class="text-xs font-mono px-3 py-1 rounded bg-white/5 text-accent border border-accent/20">
+              #{tag}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <div class:list={["markdown-body prose prose-invert max-w-none text-text-primary", isPaywalled && "paywall-root"]} data-paywalled={isPaywalled ? "true" : undefined}>
+        <div class={isPaywalled ? "paywall" : undefined} data-paywall-content={isPaywalled ? "" : undefined}>
+          <Content />
+        </div>
+        {isPaywalled && (
+          <div id="paywall-cta" class="hidden mt-10 p-8 rounded-2xl border border-cyan-500/20 bg-gradient-to-br from-cyan-500/10 to-violet-500/10 text-center" data-paywall-cta>
+            <div class="text-xs font-mono tracking-widest uppercase text-cyan-300 mb-3">Contenido premium — Flexible Sampling 10/mes gratis</div>
+            <h3 class="text-xl font-bold text-white mb-2">¿Quieres seguir leyendo sin límites?</h3>
+            <p class="text-sm text-zinc-400 mb-6">Has usado tus 10 lecturas gratis este mes. Suscríbete para acceso ilimitado + plantillas canónicas + skills auditables.</p>
+            <a href={baseUrl('agenda/')} class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-cyan-500 text-black text-sm font-mono font-bold hover:bg-cyan-400 transition-colors">Suscribirse →</a>
+            <div class="mt-4 text-xs font-mono text-zinc-500">¿Ya tienes acceso? <button id="paywall-unlock" type="button" class="underline hover:text-cyan-300">Desbloquear con código</button> <span class="mx-2">·</span> <button id="paywall-continue" type="button" class="underline hover:text-zinc-300">Seguir leyendo (lead-in)</button></div>
+          </div>
+        )}
+      </div>
+
+      <!-- Social Share Bar — Mejorado: Web Share API + WhatsApp/Telegram + LinkedIn/X -->
+      <div class="mt-14 p-6 rounded-xl border border-white/10 bg-bg-surface-dark/80 backdrop-blur flex flex-col gap-4">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <span class="text-accent font-mono font-bold text-sm tracking-widest uppercase">Compartir artículo:</span>
+          <span class="text-text-muted text-xs font-mono hidden sm:block">{canonicalHref}</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <!-- X (Twitter) -->
+          <a
+            href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.data.title + ' por @iberi22 — ' + metaDescription.slice(0, 110))}&url=${encodeURIComponent(canonicalHref)}&via=iberi22&hashtags=${encodeURIComponent(post.data.tags.slice(0,3).join(','))}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg bg-black border border-white/15 text-white text-xs font-mono font-bold hover:border-accent hover:text-accent transition-all duration-200 cursor-pointer shadow-sm hover:shadow-accent/20"
+            title="Compartir en X (Twitter)"
+            aria-label="Compartir en X"
+          >
+            <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+            <span>X</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(canonicalHref)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0077B5]/10 border border-[#0077B5]/40 text-[#0077B5] hover:bg-[#0077B5] hover:text-white text-xs font-mono font-bold transition-all duration-200 cursor-pointer shadow-sm"
+            title="Compartir en LinkedIn"
+            aria-label="Compartir en LinkedIn"
+          >
+            <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.45 1.45 0 0 0 1.45-1.45 1.45 1.45 0 0 0-1.45-1.45 1.45 1.45 0 0 0-1.45 1.45 1.45 1.45 0 0 0 1.45 1.45m1.37 9.74v-8.37H5.09v8.37z"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+
+          <!-- WhatsApp -->
+          <a
+            href={`https://wa.me/?text=${encodeURIComponent(post.data.title + ' — ' + canonicalHref)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#25D366]/10 border border-[#25D366]/30 text-[#25D366] hover:bg-[#25D366] hover:text-white text-xs font-mono font-bold transition-all duration-200 cursor-pointer"
+            title="Compartir por WhatsApp"
+            aria-label="Compartir por WhatsApp"
+          >
+            <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M19.05 4.91A9.82 9.82 0 0 0 12.02 2C6.48 2 2 6.5 2 12.05c0 1.77.46 3.5 1.34 5.02L2 22l5.08-1.33A9.93 9.93 0 0 0 12.02 22c5.54 0 10.02-4.5 10.02-10.05 0-2.69-1.05-5.2-2.99-7.04Zm-7.03 14.6a8.2 8.2 0 0 1-4.19-1.14l-.3-.18-3.02.79.8-2.94-.2-.3a8.3 8.3 0 0 1-1.27-4.69c0-4.6 3.74-8.34 8.35-8.34 2.23 0 4.32.87 5.89 2.44a8.28 8.28 0 0 1 2.45 5.88c0 4.6-3.74 8.34-8.34 8.35h-.01Zm6.25-6.25c-.34-.17-2.02-1-2.33-1.11-.31-.11-.54-.17-.77.17-.23.34-.88 1.11-1.08 1.34-.2.23-.4.26-.74.09-.34-.17-1.44-.53-2.74-1.69-1.02-.9-1.7-2.02-1.9-2.36-.2-.34-.02-.52.15-.69.15-.15.34-.4.51-.6.17-.2.23-.34.34-.57.11-.23.06-.43-.03-.6-.09-.17-.77-1.86-1.06-2.55-.28-.67-.56-.58-.77-.59h-.66c-.23 0-.6.09-.91.43-.31.34-1.19 1.16-1.19 2.83s1.22 3.29 1.39 3.51c.17.23 2.4 3.66 5.98 5.13.83.36 1.48.58 1.99.74.83.26 1.59.23 2.19.14.67-.1 2.02-.83 2.31-1.63.29-.8.29-1.48.2-1.63-.09-.14-.31-.23-.65-.4Z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <!-- Telegram -->
+          <a
+            href={`https://t.me/share/url?url=${encodeURIComponent(canonicalHref)}&text=${encodeURIComponent(post.data.title)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#229ED9]/10 border border-[#229ED9]/30 text-[#229ED9] hover:bg-[#229ED9] hover:text-white text-xs font-mono font-bold transition-all duration-200 cursor-pointer"
+            title="Compartir en Telegram"
+            aria-label="Compartir en Telegram"
+          >
+            <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m3.72 7.05-1.24 5.85c-.09.43-.32.54-.65.34l-1.8-1.33-1.07 1.03c-.12.12-.22.22-.45.22l.64-1.83 3.3-2.98c.14-.12-.03-.19-.22-.07l-4.08 2.57-1.76-.55c-.38-.12-.39-.38.08-.56l6.88-2.65c.32-.12.6.07.35.96Z"/>
+            </svg>
+            <span>Telegram</span>
+          </a>
+
+          <!-- Facebook -->
+          <a
+            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(canonicalHref)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1877F2]/10 border border-[#1877F2]/30 text-[#1877F2] hover:bg-[#1877F2] hover:text-white text-xs font-mono font-bold transition-all duration-200 cursor-pointer"
+            title="Compartir en Facebook"
+            aria-label="Compartir en Facebook"
+          >
+            <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13.5 21v-7h2.3l.35-2.67h-2.65v-1.7c0-.77.21-1.29 1.32-1.29h1.41V5.95A19 19 0 0 0 13.88 5c-2.03 0-3.42 1.24-3.42 3.52v1.96H8.16V13.15h2.3V21h3.04Z"/>
+            </svg>
+            <span>Facebook</span>
+          </a>
+
+          <!-- Web Share API (mobile) -->
+          <button
+            id="web-share-btn"
+            class="hidden items-center gap-2 px-4 py-2 rounded-lg bg-accent/10 border border-accent/30 text-accent hover:bg-accent hover:text-black text-xs font-mono font-bold transition-all duration-200 cursor-pointer"
+            title="Compartir nativo"
+            aria-label="Compartir nativo"
+          >
+            <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12s-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+            </svg>
+            <span>Share</span>
+          </button>
+
+          <!-- Copiar -->
+          <button
+            id="copy-link-btn"
+            class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-text-muted hover:text-white hover:border-white/30 text-xs font-mono transition-all duration-200 cursor-pointer"
+            title="Copiar enlace"
+            aria-label="Copiar enlace"
+          >
+            <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            <span id="copy-text">Copiar</span>
+          </button>
+        </div>
+      </div>
+
+      <script define:vars={{ title: post.data.title, canonicalHref, metaDescription }}>
+        const copyBtn = document.getElementById('copy-link-btn');
+        const copyText = document.getElementById('copy-text');
+        const shareBtn = document.getElementById('web-share-btn');
+        if (shareBtn && navigator.share) {
+          shareBtn.classList.remove('hidden');
+          shareBtn.classList.add('flex');
+          shareBtn.addEventListener('click', async () => {
+            try { await navigator.share({ title, text: metaDescription, url: canonicalHref }); } catch(e) {}
+          });
+        }
+        if (copyBtn && copyText) {
+          copyBtn.addEventListener('click', async () => {
+            const url = canonicalHref || window.location.href;
+            try {
+              await navigator.clipboard.writeText(url);
+              copyText.textContent = '¡Copiado!';
+              copyBtn.classList.add('border-accent', 'text-accent');
+            } catch(e) {
+              const ta = document.createElement('textarea');
+              ta.value = url; document.body.appendChild(ta); ta.select();
+              try { document.execCommand('copy'); copyText.textContent = '¡Copiado!'; } catch(_){}
+              document.body.removeChild(ta);
+            }
+            setTimeout(() => {
+              copyText.textContent = 'Copiar';
+              copyBtn.classList.remove('border-accent', 'text-accent');
+            }, 2000);
+          });
+        }
+      </script>
+
+      <div class="mt-16 pt-8 border-t border-white/10 flex justify-between items-center">
+        <a href={baseUrl('blog/')} class="btn-secondary text-sm">
+          ← Ver todos los artículos
+        </a>
+        <a href={baseUrl('agenda/')} class="btn-primary text-sm">
+          Agendar sesión técnica →
+        </a>
+      </div>
+    </article>
+  </main>
+  <Footer client:load />
+</Layout>
+
+<style is:global>
+  .markdown-body h1,
+  .markdown-body h2,
+  .markdown-body h3,
+  .markdown-body h4 {
+    color: var(--color-text-primary);
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  .markdown-body h2 {
+    font-size: 1.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.5rem;
+    color: var(--color-accent);
+  }
+  .markdown-body h3 {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+  }
+  .markdown-body p {
+    color: #d1d5db;
+    line-height: 1.8;
+    margin-bottom: 1.25rem;
+  }
+  .markdown-body ul,
+  .markdown-body ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.25rem;
+    color: #d1d5db;
+  }
+  .markdown-body li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+  }
+  .markdown-body pre {
+    background: #0d0d0e !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1.25rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    font-family: var(--font-fira);
+    font-size: 0.875rem;
+  }
+  .markdown-body code {
+    font-family: var(--font-fira);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.875em;
+    color: #67e8f9;
+  }
+  .markdown-body pre code {
+    background: transparent;
+    padding: 0;
+    color: inherit;
+  }
+  .markdown-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+    overflow-x: auto;
+    display: table;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .markdown-body th {
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--color-accent);
+    font-weight: 700;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: var(--font-fira);
+  }
+  .markdown-body td {
+    padding: 0.75rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #d1d5db;
+    line-height: 1.6;
+  }
+  .markdown-body tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+  .markdown-body tr:hover {
+    background-color: rgba(16, 185, 129, 0.05);
+  }
+  .markdown-body hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 2.5rem 0;
+  }
+  .markdown-body a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .markdown-body blockquote {
+    border-left: 3px solid var(--color-accent);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+</style>

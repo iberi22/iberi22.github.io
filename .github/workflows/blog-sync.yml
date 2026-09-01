@@ -1,0 +1,53 @@
+name: Blog Sync
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+jobs:
+  sync-blog:
+    if: contains(github.event.issue.labels.*.name, 'blog-post') && github.event.issue.state == 'open'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate blog post
+        id: generate
+        env:
+          TITLE: ${{ github.event.issue.title }}
+          BODY: ${{ github.event.issue.body }}
+          DATE: ${{ github.event.issue.created_at }}
+          LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
+        run: |
+          # Extract tags from labels (exclude 'blog-post' label itself)
+          TAGS=$(echo "$LABELS" | tr ',' '\n' | grep -v 'blog-post' | tr '\n' ',' | sed 's/,$//')
+          SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-//;s/-$//')
+          DATE_FORMATTED=$(echo "$DATE" | cut -d'T' -f1)
+
+          cat > "src/content/blog/${SLUG}.md" << 'ENDOFFRONTMATTER'
+          ---
+          title: '"$TITLE"'
+          excerpt: ''
+          date: '"$DATE_FORMATTED"'
+          tags: ['"$(echo $TAGS | sed "s/,/','/g")"']
+          draft: false
+          published: true
+          ---
+
+          '"$BODY"'
+          ENDOFFRONTMATTER
+
+          echo "slug=${SLUG}" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        run: |
+          git config --local user.email "bot@swal.io"
+          git config --local user.name "SWAL Bot"
+          git add src/content/blog/
+          git commit -m "blog: sync ${{ steps.generate.outputs.slug }} from issue #${{ github.event.issue.number }}"
+          git push

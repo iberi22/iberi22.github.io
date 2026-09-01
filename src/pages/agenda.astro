@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.svelte';
+import AgendaSection from '../components/AgendaSection.svelte';
+import Footer from '../components/Footer.svelte';
+
+const description =
+  'Sesiones de asesoría técnica: análisis y unificación de recursos de desarrollo con IA para optimizar tus proyectos de software de forma sostenible. Reserva tu sesión.';
+---
+
+<Layout title="Agenda una sesión técnica — iberi22" description={description}>
+  <Nav client:load />
+  <main class="pt-16">
+    <AgendaSection client:load />
+  </main>
+  <Footer client:load />
+</Layout>

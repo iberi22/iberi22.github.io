@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.svelte';
+import Footer from '../components/Footer.svelte';
+import { getCollection } from 'astro:content';
+import { baseUrl } from '../lib/baseUrl';
+
+const posts = await getCollection('blog');
+const sortedPosts = posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+---
+
+<Layout>
+  <Nav client:load />
+  <main class="min-h-screen px-6 pt-32 pb-24">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-16">
+        <span class="text-accent text-sm tracking-widest mb-4 block"># blog &amp; arquitectura</span>
+        <h1 class="section-title mb-6">
+          Artículos &amp; <span class="text-accent">Sistemas</span>
+        </h1>
+        <p class="text-text-secondary text-lg max-w-2xl leading-relaxed">
+          Análisis técnicos, arquitecturas de sistemas, infraestructura de IA y metodologías de ingeniería agéntica en producción.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {sortedPosts.map((post) => (
+          <a
+            href={baseUrl(`blog/${post.id}/`)}
+            class="glass-card p-8 group transition-all duration-300 block hover:-translate-y-1 hover:border-accent/40"
+          >
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs text-text-muted font-mono">{post.data.date}</span>
+              {post.data.draft && (
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-yellow-500/10 text-yellow-400 border border-yellow-400/20">
+                  DRAFT
+                </span>
+              )}
+            </div>
+
+            <h2 class="text-xl font-bold mb-3 text-text-primary group-hover:text-accent transition-colors leading-snug">
+              {post.data.title}
+            </h2>
+
+            <p class="text-sm text-text-muted leading-relaxed mb-6">
+              {post.data.excerpt}
+            </p>
+
+            <div class="flex flex-wrap gap-2 mt-auto">
+              {post.data.tags.map((tag) => (
+                <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-white/5 text-text-muted border border-white/5">
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            <div class="mt-6 text-accent text-xs font-mono uppercase tracking-widest flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+              Leer artículo →
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </main>
+  <Footer client:load />
+</Layout>

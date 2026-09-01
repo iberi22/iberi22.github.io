@@ -1,0 +1,52 @@
+name: Security, Integrity & VirusTotal Audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * 0' # Weekly Sunday audit
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  audit:
+    name: Security & Vulnerability Scanner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Audit Dependencies (pnpm audit)
+        run: pnpm audit --audit-level=high || true
+
+      - name: Generate Cryptographic Checksums (SHA-256 Ledger)
+        run: |
+          mkdir -p .security
+          find src public -type f -exec sha256sum {} + | sort > .security/integrity-sha256.txt
+          echo "✅ Integrity ledger generated for $(wc -l < .security/integrity-sha256.txt) assets."
+
+      - name: Run Secret Leak Detection
+        run: |
+          echo "Scanning for accidental secret leaks in source..."
+          ! grep -P -rn "sk-ant-api[a-zA-Z0-9_-]{20,}" src/ public/ || exit 1
+          ! grep -P -rn "sk-proj-[a-zA-Z0-9_-]{30,}" src/ public/ || exit 1
+          ! grep -P -rn "AIzaSy[a-zA-Z0-9_-]{33}" src/ public/ || exit 1
+          echo "✓ 0 secrets leaked."

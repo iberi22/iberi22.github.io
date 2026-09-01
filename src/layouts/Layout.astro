@@ -1,0 +1,225 @@
+---
+import '../styles/global.css';
+import { baseUrl, siteUrl, canonicalFromPath } from '../lib/baseUrl';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  imageWidth?: string;
+  imageHeight?: string;
+  article?: boolean;
+  publishDate?: string;
+  modifiedDate?: string;
+  articlePath?: string;
+  articleTitle?: string;
+  tags?: string[];
+  section?: string;
+  paywalled?: boolean;
+  paywallSelector?: string;
+}
+
+const {
+  title = "Brahyan Belalcázar — iberi22 | Full-Stack Engineer & AI Orchestration",
+  description = "Brahyan Belalcázar — iberi22. Full-Stack Engineer & AI Orchestration Specialist. Software en producción con tubería de desarrollo orquestada por IA.",
+  image = "https://iberi22.github.io/portfolio-iberi22/og/default.png",
+  imageAlt = "Brahyan Belalcázar — iberi22 | Portfolio, arquitectura y sistemas agénticos",
+  imageWidth = "1200",
+  imageHeight = "630",
+  article = false,
+  publishDate,
+  modifiedDate,
+  articlePath,
+  articleTitle,
+  tags = [],
+  section = "Engineering",
+  paywalled = false,
+  paywallSelector = ".paywall",
+} = Astro.props;
+
+const canonicalUrl = canonicalFromPath(Astro.url.pathname);
+
+const siteRoot = siteUrl();
+const blogRoot = siteUrl('blog/');
+
+const breadcrumbLd = article && articlePath ? {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": siteRoot },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": blogRoot },
+    { "@type": "ListItem", "position": 3, "name": articleTitle || title, "item": canonicalUrl.toString() },
+  ],
+} : null;
+
+const wikidataEntities = {
+  ai: { "@type": "Thing", "name": "Artificial intelligence", "sameAs": "https://www.wikidata.org/wiki/Q11660" },
+  swArch: { "@type": "Thing", "name": "Software architecture", "sameAs": "https://www.wikidata.org/wiki/Q627503" },
+  swEng: { "@type": "Thing", "name": "Software engineering", "sameAs": "https://www.wikidata.org/wiki/Q193424" },
+  rust: { "@type": "Thing", "name": "Rust (programming language)", "sameAs": "https://www.wikidata.org/wiki/Q457774" },
+  llm: { "@type": "Thing", "name": "Large language model", "sameAs": "https://www.wikidata.org/wiki/Q116375277" },
+  agent: { "@type": "Thing", "name": "Intelligent agent", "sameAs": "https://www.wikidata.org/wiki/Q1995222" },
+  github: { "@type": "Thing", "name": "GitHub", "sameAs": "https://www.wikidata.org/wiki/Q364" },
+};
+
+// Tag → Wikidata concept mapping for `about` (primary topics)
+const tagToEntity: Record<string, keyof typeof wikidataEntities> = {
+  'AI': 'ai', 'Rust': 'rust', 'Architecture': 'swArch', 'Systems': 'swEng',
+  'AI Agents': 'agent', 'Multi-Agent': 'agent', 'LLM': 'llm', 'Jules': 'agent',
+  'GitOps': 'swEng', 'DevOps': 'swEng', 'Security': 'swEng', 'Vector-DB': 'ai',
+};
+
+const articleTags: string[] = tags;
+const aboutNames = Array.from(new Set(articleTags.map((t) => tagToEntity[t]).filter(Boolean))) as (keyof typeof wikidataEntities)[];
+const mentionNames = Array.from(new Set(articleTags.map((t) => tagToEntity[t])) as (keyof typeof wikidataEntities)[]);
+
+const paywallHasPart = paywalled ? { "hasPart": { "@type": "WebPageElement", "isAccessibleForFree": false, "cssSelector": paywallSelector } } : {};
+const paywallAccessible = paywalled ? { "isAccessibleForFree": false } : {};
+
+const jsonLd = article ? {
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": title,
+  "description": description,
+  "image": image,
+  ...(paywalled ? { "isAccessibleForFree": false } : {}),
+  ...(paywalled ? { "hasPart": { "@type": "WebPageElement", "isAccessibleForFree": false, "cssSelector": paywallSelector } } : {}),
+  "author": {
+    "@type": "Person",
+    "name": "Brahyan Belalcázar",
+    "url": siteRoot
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Brahyan Belalcázar"
+  },
+  "url": canonicalUrl.toString(),
+  "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl.toString() },
+  "datePublished": publishDate || "2026-08-28",
+  ...(modifiedDate ? { "dateModified": modifiedDate } : {}),
+  "inLanguage": "es",
+  ...(aboutNames.length ? { "about": aboutNames.map((n) => wikidataEntities[n]) } : {}),
+  ...(mentionNames.length ? { "mentions": mentionNames.map((n) => wikidataEntities[n]) } : {}),
+} : {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Brahyan Belalcázar",
+  "alternateName": "iberi22",
+  "url": "https://iberi22.github.io/portfolio-iberi22/",
+  "jobTitle": "Full-Stack Engineer & AI Orchestration Architect",
+  "sameAs": [
+    "https://github.com/iberi22",
+    "https://linkedin.com/in/brahyan-belalcazar",
+    "https://x.com/iberi22"
+  ]
+};
+---
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href={baseUrl('favicon.svg')} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl.toString()} />
+    <meta name="theme-color" content="#121212" />
+
+    <!-- Paywall metering (Flexible Sampling) — client-side, Googlebot sees full HTML + isAccessibleForFree schema -->
+    {paywalled && <script is:inline src={baseUrl('scripts/paywall-meter.js')} defer></script>}
+    {paywalled && <link rel="stylesheet" href={baseUrl('scripts/paywall.css')} />}
+
+    <!-- Google Search Console verification (replace content with property token) -->
+    <meta name="google-site-verification" content="REPLACE_WITH_GSC_TOKEN" />
+
+    <!-- RSS / Atom syndication feed -->
+    <link rel="alternate" type="application/rss+xml" title="iberi22 Engineering Blog" href={siteUrl('rss.xml')} />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content={article ? "article" : "website"} />
+    <meta property="og:url" content={canonicalUrl.toString()} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content={imageWidth} />
+    <meta property="og:image:height" content={imageHeight} />
+    <meta property="og:image:alt" content={imageAlt} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:site_name" content="Brahyan Belalcázar — iberi22" />
+    <meta property="og:locale" content="es_ES" />
+    {article && publishDate && <meta property="article:published_time" content={new Date(publishDate).toISOString()} />}
+    {article && modifiedDate && <meta property="article:modified_time" content={new Date(modifiedDate).toISOString()} />}
+    {article && <meta property="article:author" content="Brahyan Belalcázar" />}
+    {article && <meta property="article:section" content={section} />}
+    {article && tags.map((tag) => <meta property="article:tag" content={tag} />)}
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl.toString()} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image:alt" content={imageAlt} />
+    <meta name="twitter:creator" content="@iberi22" />
+    <meta name="twitter:site" content="@iberi22" />
+
+    <!-- AI Agent & Human Friendly Standards -->
+    <meta name="ai-agent-ready" content="true" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="agent-protocol" content="SWAL-Gestalt-Xavier-v3" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    {breadcrumbLd && (
+      <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
+    )}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" />
+    </noscript>
+    <script is:inline>
+      (function() {
+        // Auto-detect system dark/light theme
+        function applyTheme() {
+          const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.classList.toggle('theme-dark', isDark);
+          document.documentElement.classList.toggle('theme-light', !isDark);
+        }
+        applyTheme();
+        try {
+          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
+        } catch(e) {}
+
+        // Auto-detect locale and set direction before render
+        try {
+          const rtlLangs = ['ar', 'ur'];
+          const top10 = ['en', 'es', 'zh', 'hi', 'ar', 'fr', 'pt', 'bn', 'ru', 'ur'];
+          let stored = localStorage.getItem('portfolio_lang') || localStorage.getItem('swal-locale');
+          if (!stored) {
+            const navLangs = (navigator.languages || [navigator.language]).map(l => l.split('-')[0].toLowerCase());
+            stored = navLangs.find(l => top10.includes(l)) || 'en';
+          }
+          if (top10.includes(stored)) {
+            document.documentElement.lang = stored;
+            if (rtlLangs.includes(stored)) {
+              document.documentElement.setAttribute('dir', 'rtl');
+              document.documentElement.classList.add('rtl');
+            } else {
+              document.documentElement.setAttribute('dir', 'ltr');
+              document.documentElement.classList.remove('rtl');
+            }
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
