@@ -124,6 +124,13 @@ const jsonLd = article ? {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl.toString()} />
+    <script is:inline>
+      // Redirect legacy /portfolio-iberi22/* to /* when served from root (user page)
+      if (location.pathname.startsWith('/portfolio-iberi22/')) {
+        const target = location.pathname.replace(/^\/portfolio-iberi22/, '') || '/';
+        location.replace(target + location.search + location.hash);
+      }
+    </script>
     <meta name="theme-color" content="#121212" />
 
     <!-- Paywall metering (Flexible Sampling) — client-side, Googlebot sees full HTML + isAccessibleForFree schema -->
