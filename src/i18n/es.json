@@ -157,6 +157,22 @@
       "t2": "Núcleo del motor de sincronización y analíticas en panel de control",
       "t3": "Hoja de ruta: Sincronización descentralizada en la nube GA"
     },
+    "worldexams": {
+      "tagline": "Plataforma Offline-First de Preparación de Exámenes",
+      "description": "Plataforma de alto rendimiento para preparación y simulacros de exámenes estandarizados (Saber 11 / Saber Pro) construida con Astro, Svelte y Cloudflare Workers. Simuladores de examen 100% offline y métricas instantáneas.",
+      "t0": "Motor de simulación de exámenes y modelado de datos de bancos de preguntas",
+      "t1": "Test-runner interactivo en Svelte y almacenamiento offline con IndexedDB",
+      "t2": "Lanzamiento v1.0.0 - Despliegue en producción de SaberParaTodos",
+      "t3": "Hoja de ruta: Feedback personalizado y análisis de debilidades por IA"
+    },
+    "shelf": {
+      "tagline": "POS e Inventario P2P Descentralizado con Criptografía Post-Cuántica",
+      "description": "Plataforma descentralizada de punto de venta e inventario offline-first. Combina redes mesh WebRTC, sincronización CRDT sin conflictos (Yjs) y criptografía post-cuántica NIST (ML-KEM-768 y ML-DSA-65).",
+      "t0": "Núcleo CRUD de POS e inventarios, escáner de códigos de barra y PWA",
+      "t1": "Red mesh WebRTC P2P y sincronización de estado Yjs CRDT",
+      "t2": "Bóveda cifrada con KDF post-cuántico NIST y sobres firmados",
+      "t3": "Hoja de ruta: Ruteo mesh multitienda e impresoras térmicas Bluetooth"
+    },
     "gos": {
       "tagline": "Descubrimiento Culinario PWA",
       "description": "Estándar PWA monorepo para exploración culinaria y reseñas offline-first. Cuenta con un sistema de diseño integrado, descubrimiento de restaurantes, escaneo de menús automatizado y reseñas de la comunidad construido con Flutter & PWA.",

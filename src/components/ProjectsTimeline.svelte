@@ -15,6 +15,7 @@
     demoUrl?: string;
     color: string;
     researchUrls?: { url: string }[];
+    isFlagship?: boolean;
   }
 
   const baseProjects: BaseProject[] = [
@@ -24,6 +25,7 @@
       version: 'v0.6.0-beta',
       category: 'opensource',
       status: 'active',
+      isFlagship: true,
       tech: ['Rust', 'Docker', 'SQLite-vec', 'pgvector', 'HNSW', 'SurrealDB', 'REST API'],
       github: 'https://github.com/iberi22/xavier',
       color: 'var(--color-accent)'
@@ -84,6 +86,39 @@
       color: 'var(--color-accent-light)'
     },
     {
+      id: 'worldexams',
+      name: 'WorldExams (SaberParaTodos)',
+      version: 'v1.0.0',
+      category: 'opensource',
+      status: 'active',
+      tech: ['Astro 6', 'Svelte 5', 'TypeScript', 'Tailwind CSS', 'Cloudflare Workers', 'Offline-First'],
+      github: 'https://github.com/iberi22/worldexams',
+      demoUrl: 'https://saberparatodos.space',
+      color: 'var(--color-accent)'
+    },
+    {
+      id: 'shelf',
+      name: 'Shelf',
+      version: 'v0.4.0',
+      category: 'opensource',
+      status: 'active',
+      tech: ['React 19', 'TypeScript', 'Yjs', 'CRDT', 'P2P WebRTC', 'Post-Quantum Crypto', 'PWA'],
+      github: 'https://github.com/iberi22/shelf',
+      demoUrl: 'https://estante-inventario.vercel.app',
+      color: 'var(--color-secondary)'
+    },
+    {
+      id: 'gos',
+      name: 'GOS (Gastronomic Open Standard)',
+      version: 'v0.3.0',
+      category: 'opensource',
+      status: 'active',
+      tech: ['Astro', 'JSON Schema', 'Flutter PWA', 'Offline-First', 'Design System'],
+      github: 'https://github.com/iberi22/gastronomic-open-standard-GOS',
+      color: 'var(--color-accent-light)'
+    },
+    /* OCULTO TEMPORALMENTE: GARA-G
+    {
       id: 'gara-g',
       name: 'GARA-G',
       version: 'v0.3.0',
@@ -93,6 +128,7 @@
       github: 'https://github.com/iberi22/gara-g',
       color: 'var(--color-accent)'
     },
+    */
     {
       id: 'tripro-mining',
       name: 'Tripro SPA (Chile)',
@@ -273,6 +309,11 @@
               <div class="flex-1">
                 <div class="flex items-center gap-3 mb-2 flex-wrap">
                   <h3 class="text-2xl font-bold text-text-primary">{project.name}</h3>
+                  {#if project.isFlagship}
+                    <span class="px-2.5 py-0.5 rounded text-[11px] font-mono font-bold bg-accent/20 border border-accent text-accent shadow-sm shadow-accent/30 tracking-wider">
+                      ★ PROYECTO ESTRELLA
+                    </span>
+                  {/if}
                   <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-bg-surface border border-white/10 text-text-muted">
                     {project.period}
                   </span>

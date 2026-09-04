@@ -383,6 +383,99 @@
         }
       ]
     },
+    "worldexams": {
+      "name": "WorldExams (SaberParaTodos)",
+      "tagline": "Offline-First Standardized Exam Preparation Platform",
+      "companyOrContext": "EdTech & Open Source",
+      "period": "2025 - Present",
+      "description": "High-performance standardized examination platform (ICFES Saber 11 / Saber Pro) built with Astro, Svelte, and Cloudflare Workers. Features offline-first exam simulators, instant scoring analytics, and localized country runtime modules.",
+      "architecture": "Astro 6 content runtime paired with Svelte 5 reactive widgets. Edge deployment on Cloudflare Workers and Pages with client-side IndexedDB caching for 100% offline exam execution.",
+      "metrics": [
+        "100% offline-first exam simulation",
+        "Sub-100ms question navigation & state save",
+        "Multi-country tenant runtime architecture"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q3",
+          "label": "Exam simulation engine & question banking data modeling"
+        },
+        {
+          "date": "2025 Q4",
+          "label": "Svelte interactive test-runner & offline IndexedDB storage"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "v1.0.0 Release - SaberParaTodos production deployment"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap: AI-powered personalized question feedback"
+        }
+      ]
+    },
+    "shelf": {
+      "name": "Shelf",
+      "tagline": "Decentralized P2P POS & Inventory with Post-Quantum Crypto",
+      "companyOrContext": "Retail & Edge Computing",
+      "period": "2025 - Present",
+      "description": "Offline-first, peer-to-peer point of sale (POS) and inventory management platform. Combines WebRTC mesh synchronization, CRDT conflict resolution (Yjs), and NIST post-quantum cryptography (ML-KEM-768 & ML-DSA-65).",
+      "architecture": "React 19 with Yjs CRDTs for multi-device zero-conflict synchronization over WebRTC mesh. Post-quantum cryptographic security layer for at-rest vault encryption and signed envelope transport.",
+      "metrics": [
+        "Zero-cloud dependency: works 100% offline",
+        "NIST Post-Quantum Cryptography (ML-KEM-768 & ML-DSA-65)",
+        "Instant peer-to-peer sync via WebRTC"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q3",
+          "label": "POS & inventory core CRUD, barcode scanning, and offline PWA"
+        },
+        {
+          "date": "2025 Q4",
+          "label": "P2P WebRTC mesh networking & Yjs CRDT state sync integration"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "NIST post-quantum cryptographic vault derivation & signed envelopes"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap: Multi-location store mesh routing & hardware thermal printers"
+        }
+      ]
+    },
+    "gos": {
+      "name": "GOS (Gastronomic Open Standard)",
+      "tagline": "Gastronomic Open Standard & Culinary Knowledge Platform",
+      "companyOrContext": "Open Standard & FoodTech",
+      "period": "2025 - Present",
+      "description": "Open standard and offline-first PWA ecosystem for structured culinary knowledge, standardized recipe schemas, and culinary exploration with integrated design system.",
+      "architecture": "JSON Schema standardized data definitions, Astro static and dynamic documentation generation, and Flutter/PWA cross-platform mobile exploration clients.",
+      "metrics": [
+        "Standardized culinary schema specification",
+        "Offline-first recipe browsing and search",
+        "Cross-platform responsive PWA interface"
+      ],
+      "timeline": [
+        {
+          "date": "2025 Q2",
+          "label": "Culinary JSON schema specification & design system foundation"
+        },
+        {
+          "date": "2025 Q4",
+          "label": "Offline-first PWA shell and catalog data indexing"
+        },
+        {
+          "date": "2026 Q1",
+          "label": "v0.3.0 Release - Community standard and explorer client"
+        },
+        {
+          "date": "2026 Q3",
+          "label": "Roadmap: AI nutritional analysis & kitchen inventory integration"
+        }
+      ]
+    },
     "gara-g": {
       "name": "GARA-G",
       "tagline": "DePIN Mobility & V2V Mesh Network",
