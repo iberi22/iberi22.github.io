@@ -1,6 +1,6 @@
 ---
 title: '1 Año Usando Google Jules: De la Experimentación al Desarrollo Autónomo por Oleadas Paralelas'
-excerpt: 'Retrospectiva técnica tras 12 meses orquestando agentes de código con Google Jules, Gemini Pro, Antigravity y GitCore: orígenes, lecciones de arquitectura, métricas empíricas de 81 repositorios y sprints autónomos de 30 minutos.'
+excerpt: 'Retrospectiva desde el primer push de Jules (11 jun 2025, beta pública) hasta el 28 ago 2026: GitCore, oleadas de 15 tareas y métricas de 81 repositorios. Antigravity llegó el 18 nov 2025.'
 date: '2026-08-28'
 tags: ['Jules', 'AI Agents', 'Gemini Pro', 'GitCore', 'Hermes', 'Architecture', 'DevOps']
 draft: false
@@ -9,23 +9,23 @@ published: true
 
 # 1 Año Usando Google Jules: De la Experimentación al Desarrollo Autónomo por Oleadas Paralelas
 
-El **17 de agosto de 2025**, como muchos otros estudiantes de ingeniería y entusiastas del software, aproveché una promoción académica para canjear mi cuenta de **Google AI Pro**. En aquel momento, la interacción cotidiana con inteligencia artificial consistía principalmente en consultar la app móvil de Gemini, alternar con la versión de escritorio y probar interfaces emergentes como **Google Antigravity**.
+El **11 de junio de 2025, a las 02:05 UTC**, Jules hizo el primer push en mis repositorios. El commit es `e08ea510` en el repo privado `news4humans`. El pull request #1 se mergeó a las 03:50 UTC de ese día. Jules estaba en beta pública desde el Google I/O del 20 de mayo. El primer commit con una feature (`5685b7ad`, almacenamiento local) llegó 22 minutos después, en el mismo pull request.
 
-Hoy, doce meses y más de **11,200 commits** después en 81 repositorios activos, el flujo de trabajo evolucionó radicalmente: pasamos de pedir sugerencias en un chat a operar una **fábrica de software asíncrona y determinista** capaz de despachar **oleadas de hasta 15 micro-tareas paralelas** a [Google Jules](https://jules.google), coordinadas por **Hermes** y verificadas por la máquina de estados de [GitCore](https://github.com/iberi22/GitCore).
+Al **28 de agosto de 2026**, con **11,240 commits** contados en 81 repositorios, el flujo ya no es un chat: es una **fábrica de software asíncrona y determinista** que despacha **oleadas de hasta 15 micro-tareas paralelas** a [Google Jules](https://jules.google), coordinadas por **Hermes** y verificadas por la máquina de estados de [GitCore](https://github.com/iberi22/GitCore).
 
-Esta es la retrospectiva técnica de un año completo en las trincheras del desarrollo agéntico: la evolución de las herramientas, las soluciones de ingeniería para evitar colisiones de contexto, las métricas reales recopiladas y las lecciones aprendidas.
+Esta es la retrospectiva técnica de ese tramo: la evolución de las herramientas, las soluciones para evitar colisiones de contexto, las métricas del cierre y las lecciones aprendidas.
 
 ---
 
 ## 1. El Inicio: Filosofía Minimalista y Primeras Herramientas
 
-Para agosto del año pasado yo ya venía experimentando activamente con agentes de código en mi entorno local. Sin embargo, **el 17 de agosto de 2025 marcó un punto de inflexión definitivo**: fue la fecha en que activé mi cuenta de Google AI Pro y descubrí por primera vez servicios agénticos en la nube, iniciando mi uso de Gemini en el móvil, en la PC y explorando herramientas como **Google Antigravity**.
+Para junio de 2025 yo ya venía experimentando con agentes de código en local. El corte fue ese primer push de Jules, no un IDE. **Google Antigravity no existía**: salió el **18 de noviembre de 2025**, el mismo día que Gemini 3, como IDE con agentes. Las oleadas de esta nota las despacha Jules.
 
-Aquel momento representó **mi primera incursión en agentes asíncronos distribuidos**. Siendo completamente honesto, Antigravity no pretendía ser el IDE más sofisticado ni un reemplazo completo de entornos maduros; sin embargo, **cumple con creces el estándar fundamental de ejecutar agentes de codificación de manera directa**. Mi postura técnica siempre ha sido minimalista:
+Mi postura técnica sigue siendo minimalista:
 
 > **Principio de Fricción Mínima:** *Entre menos herramientas, extensiones y configuraciones intermedias acumules, más productivo eres. Menos tiempo perdido debatiendo qué editor usar y más tiempo enfocado en resolver el problema.*
 
-Bajo esta premisa de apostar por el *Top 3* de herramientas de mayor impacto en el ecosistema, no tardé en descubrir los primeros servicios experimentales que Google estaba gestando en fase beta: **Google Jules** y [Google Stitch](https://stitch.google.com).
+En esa primavera Google Labs tenía dos cosas distintas. **Jules** es el agente asíncrono: clona el repo en una VM y devuelve un pull request. Estuvo en beta pública del 20 de mayo al 6 de agosto de 2025. [Google Stitch](https://stitch.withgoogle.com) genera interfaz, no parches de un repositorio. Salió el mismo 20 de mayo.
 
 Éramos plenamente conscientes de que operábamos como *early adopters* ("conejillos de indias") en una tecnología naciente. Pero también era evidente la visión de fondo: **Google no estaba intentando crear otro autocompletador de código local, sino apalancar la infraestructura en la nube más grande del planeta para el desarrollo de software.**
 
@@ -35,7 +35,7 @@ Bajo esta premisa de apostar por el *Top 3* de herramientas de mayor impacto en 
 
 Cualquier ingeniero que haya intentado delegar trabajo a 4 o 5 agentes corriendo simultáneamente en una misma máquina local se estrella contra el mismo muro físico: **las colisiones de archivos y la sobrescritura de estado.** Dos agentes editando el mismo archivo en local destruyen el espacio de trabajo.
 
-La solución de ingeniería más elegante y pragmática no fue inventar un sistema de archivos virtual exótico, sino conectarse al pipeline de colaboración distribuida que la industria ya utiliza y tiene resuelto: **GitHub**.
+En ese tramo la salida no fue un sistema de archivos virtual, sino el pipeline que la industria ya tenía resuelto: **GitHub**.
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
@@ -53,10 +53,12 @@ La solución de ingeniería más elegante y pragmática no fue inventar un siste
 
 Al transformar el flujo en **Issue → Tarea de Agente Aislada → Pull Request**, cada instancia de Jules se ejecuta en un contenedor efímero e independiente respaldado por los datacenters de Google, eliminando cualquier interferencia entre agentes.
 
-### De 15 Tareas a la Optimización de Hitos
-En las primeras semanas, el límite de **15 tareas concurrentes** parecía inmenso. Mi objetivo fue exprimirlas al máximo: estructuraba las especificaciones de tal manera que un solo agente pudiera completar hitos enteros y andamiajes de arquitectura (*scaffoldings*). 
+Ese aislamiento es el de este tramo: una rama y un pull request por agente. Gestalt VFS, para que varios agentes editen el mismo archivo, es posterior. El artículo del cierre lo cuenta.
 
-Aunque en esa época contábamos con modelos como Gemini 2.0 y 2.5 (que requerían instrucciones más rigurosas que las generaciones actuales), su **ventana de contexto de más de 1M de tokens** permitía alimentar bases de código enteras, diagramas de tipos y pruebas de concepto (PoC) complejas sin desbordamiento.
+### El techo de 15 tareas concurrentes
+Ese número no existía el 11 de junio. Llegó el **6 de agosto de 2025**, cuando Jules salió de beta. En Google AI Pro el cupo quedó en **15 tareas concurrentes**. El plan gratis quedó en 3. Desde entonces las oleadas se arman contra ese techo: un agente cierra un hito acotado, no un subsistema entero.
+
+En esa salida Jules usaba **Gemini 2.5 Pro**. La ventana de más de 1M de tokens alcanzaba para un crate o un módulo con sus tipos y sus pruebas, si el issue no pretendía ser el sistema completo.
 
 ---
 
@@ -88,20 +90,21 @@ La revelación fue inmediata: **organizar una oleada de agentes es exactamente i
 
 ---
 
-## 4. Métricas Empíricas de 1 Año (17 Ago 2025 – 28 Ago 2026)
+## 4. Métricas al cierre (28 de agosto de 2026)
 
-Para cuantificar el impacto real del arnés y las oleadas de Jules, ejecutamos un escaneo exhaustivo sobre los 81 repositorios de nuestro workspace durante este primer año:
+Los conteos de commits son un escaneo del workspace a la fecha de esta nota. No son el recuento desde el 11 de junio, y las horas no salen de `git log`.
 
-| Métrica del Ecosistema | Valor Registrado |
+| Métrica del Ecosistema | Valor |
 | :--- | :--- |
-| **Periodo de Operación** | 17 de Agosto 2025 – 28 de Agosto 2026 (12 Meses) |
-| **Repositorios Activos Analizados** | **81 repositorios** |
-| **Commits Totales Procesados** | **11,240 commits** |
-| **Commits de Oleadas Autónomas (Jules/Agentes)** | **1,391 commits directos** |
-| **Features Formales en `features.json`** | **1,723 especificaciones trackeadas** |
-| **Pull Requests Auditados & Mergeados** | **1,000+ PRs** |
-| **Horas de Desarrollo Manual Ahorradas** | **~6,250 horas estimadas** |
-| **Multiplicador de Productividad** | **6.5x – 8.0x** (1 ingeniero = squad de 6 a 8 devs) |
+| **Primer push de Jules** | 11 de junio de 2025, 02:05 UTC (`news4humans`, PR #1) |
+| **Cierre de este corte** | 28 de agosto de 2026 (443 días desde el primer push) |
+| **Repositorios en el escaneo** | **81 repositorios** |
+| **Commits en esos repositorios** | **11,240 commits** |
+| **Commits de oleadas (Jules y otros agentes)** | **1,391 commits** |
+| **Features en `features.json`** | **1,723 especificaciones** |
+| **Pull requests mergeados** | **1,000+ PRs** |
+| **Horas equivalentes de trabajo manual** | **~6,250 h, estimación, fuera del escaneo** |
+| **Multiplicador** | **6.5x – 8.0x, estimación** |
 
 ### Top Repositorios con Mayor Actividad Agéntica
 
@@ -111,7 +114,7 @@ Para cuantificar el impacto real del arnés y las oleadas de Jules, ejecutamos u
 4. **[WorldExams](https://github.com/iberi22/worldexams):** 844 commits totales / 85 commits de Jules *(Plataforma de evaluación global)*.
 5. **[Gestalt](https://github.com/iberi22/gestalt):** 635 commits totales / 200 commits de Jules *(Orquestador multi-agente en Rust)*.
 6. **[Shelf](https://estante-inventario.vercel.app):** 628 commits totales / 48 commits de Jules *(Inventario local-first en React 19)*.
-7. **[Synapse Trading](https://github.com/iberi22/synapse-trading):** 569 commits totales / 78 commits de Jules *(Infraestructura financiera de alta frecuencia)*.
+7. **[Synapse Trading](https://github.com/iberi22/synapse-trading):** 569 commits totales / 78 commits de Jules *(Bot de trading cripto sobre Binance Futures)*.
 8. **[GitCore](https://github.com/iberi22/GitCore):** 391 commits totales / 19 commits de Jules *(Motor y arnés de automatización)*.
 
 ---
@@ -173,7 +176,7 @@ Jules no opera en el vacío. La articulación de todo el ecosistema depende de t
 
 ## 7. Áreas de Mejora y Siguientes Pasos
 
-Tras 365 días de operación continua, estas son las 4 áreas clave donde el flujo se está optimizando:
+Desde el primer push, el 11 de junio de 2025, estas son las 4 áreas donde el flujo se está optimizando:
 
 1. **Aserción Semántica en CI:** Integrar validación de compatibilidad de tipos entre ramas de una misma oleada antes de ejecutar el merge a `main`.
 2. **Alertas Tempranas de Timeout:** Detección predictiva cuando un agente supera 15 minutos en tareas de compilación pesada.
