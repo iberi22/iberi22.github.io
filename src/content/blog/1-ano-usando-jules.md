@@ -9,9 +9,9 @@ published: true
 
 # 1 Año Usando Google Jules: De la Experimentación al Desarrollo Autónomo por Oleadas Paralelas
 
-El **11 de junio de 2025, a las 02:05 UTC**, Jules hizo el primer push en mis repositorios. El commit es `e08ea510` en el repo privado `news4humans`. El pull request #1 se mergeó a las 03:50 UTC de ese día. Jules estaba en beta pública desde el Google I/O del 20 de mayo. El primer commit con una feature (`5685b7ad`, almacenamiento local) llegó 22 minutos después, en el mismo pull request.
+El **11 de junio de 2025, a las 02:05 UTC**, Jules hizo el primer push en mi cuenta. El pull request se mergeó a las 03:50 UTC de ese día. Jules estaba en beta pública desde el Google I/O del 20 de mayo. El primer cambio con una feature llegó 22 minutos después, en el mismo pull request.
 
-Al **28 de agosto de 2026**, con **11,240 commits** contados en 81 repositorios, el flujo ya no es un chat: es una **fábrica de software asíncrona y determinista** que despacha **oleadas de hasta 15 micro-tareas paralelas** a [Google Jules](https://jules.google), coordinadas por **Hermes** y verificadas por la máquina de estados de [GitCore](https://github.com/iberi22/GitCore).
+Al **28 de agosto de 2026**, con **11,240 commits** contados en 81 repositorios, el flujo ya no es un chat: es una **fábrica de software asíncrona y determinista** que despacha **oleadas de hasta 15 micro-tareas paralelas** a [Google Jules](https://jules.google), coordinadas por **Hermes** y verificadas por la máquina de estados de **GitCore**.
 
 Esta es la retrospectiva técnica de ese tramo: la evolución de las herramientas, las soluciones para evitar colisiones de contexto, las métricas del cierre y las lecciones aprendidas.
 
@@ -96,7 +96,7 @@ Los conteos de commits son un escaneo del workspace a la fecha de esta nota. No 
 
 | Métrica del Ecosistema | Valor |
 | :--- | :--- |
-| **Primer push de Jules** | 11 de junio de 2025, 02:05 UTC (`news4humans`, PR #1) |
+| **Primer push de Jules** | 11 de junio de 2025, 02:05 UTC |
 | **Cierre de este corte** | 28 de agosto de 2026 (443 días desde el primer push) |
 | **Repositorios en el escaneo** | **81 repositorios** |
 | **Commits en esos repositorios** | **11,240 commits** |
@@ -106,16 +106,16 @@ Los conteos de commits son un escaneo del workspace a la fecha de esta nota. No 
 | **Horas equivalentes de trabajo manual** | **~6,250 h, estimación, fuera del escaneo** |
 | **Multiplicador** | **6.5x – 8.0x, estimación** |
 
-### Top Repositorios con Mayor Actividad Agéntica
+### Repositorios públicos con más actividad agéntica
+
+La lista de abajo es solo código público. Los totales de la tabla mezclan ese código con otro trabajo que no está publicado. Ese otro trabajo no lleva nombre, enlace ni conteo.
 
 1. **[Xavier](https://github.com/iberi22/xavier):** 1,922 commits totales / 255 commits de Jules *(Memoria cognitiva vectorial en Rust)*.
 2. **[OrionHealth](https://github.com/iberi22/OrionHealth):** 1,243 commits totales / 61 commits de Jules *(Salud offline-first en Flutter)*.
-3. **[GARA-G](https://github.com/iberi22/gara-g):** 860 commits totales / 111 commits de Jules *(Red de movilidad DePIN)*.
-4. **[WorldExams](https://github.com/iberi22/worldexams):** 844 commits totales / 85 commits de Jules *(Plataforma de evaluación global)*.
-5. **[Gestalt](https://github.com/iberi22/gestalt):** 635 commits totales / 200 commits de Jules *(Orquestador multi-agente en Rust)*.
-6. **[Shelf](https://estante-inventario.vercel.app):** 628 commits totales / 48 commits de Jules *(Inventario local-first en React 19)*.
-7. **[Synapse Trading](https://github.com/iberi22/synapse-trading):** 569 commits totales / 78 commits de Jules *(Bot de trading cripto sobre Binance Futures)*.
-8. **[GitCore](https://github.com/iberi22/GitCore):** 391 commits totales / 19 commits de Jules *(Motor y arnés de automatización)*.
+3. **[WorldExams](https://github.com/iberi22/worldexams):** 844 commits totales / 85 commits de Jules *(Práctica de exámenes, offline-first)*.
+4. **[Gestalt](https://github.com/iberi22/gestalt):** 635 commits totales / 200 commits de Jules *(Orquestador multi-agente en Rust)*.
+
+El inventario local-first está en [Shelf](https://estante-inventario.vercel.app).
 
 ---
 
@@ -168,8 +168,8 @@ Jules no opera en el vacío. La articulación de todo el ecosistema depende de t
 └──────────────────┘      └──────────────┘      └──────────────────┘
 ```
 
-1. **[GitCore](https://github.com/iberi22/GitCore):** El arnés maestro que gobierna el contrato **1 Issue → 1 Rama → 1 PR**, actualiza `features.json` y corre los linters pre-merge.
-2. **Hermes:** El dispatcher de alta velocidad que gestiona el ciclo de vida de los agentes, la rotación de credenciales y los límites de cuota.
+1. **GitCore:** El arnés maestro que gobierna el contrato **1 Issue → 1 Rama → 1 PR**, actualiza `features.json` y corre los linters pre-merge.
+2. **Hermes:** El dispatcher que gestiona el ciclo de vida de los agentes y los límites de cuota.
 3. **[Xavier](https://github.com/iberi22/xavier):** Memoria cognitiva persistente con búsqueda semántica vectorial. Alimenta a los issues con decisiones arquitectónicas tomadas meses atrás.
 
 ---
