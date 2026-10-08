@@ -30,6 +30,18 @@ describe('i18n Top 10 World Languages Integrity', () => {
     }
   });
 
+  it('should contain blog chrome keys in every language', () => {
+    const blogKeys = ['heading', 'title', 'readMore', 'readingSuffix', 'back', 'backAll', 'share', 'copy', 'copied', 'readArticle', 'listingTitle', 'bookSession'];
+    for (const [langCode, dict] of Object.entries(languages)) {
+      expect(dict, `Language ${langCode} must have blog section`).toHaveProperty('blog');
+      for (const key of blogKeys) {
+        expect(dict.blog, `Language ${langCode} blog must contain key "${key}"`).toHaveProperty(key);
+        expect(typeof dict.blog[key]).toBe('string');
+        expect(dict.blog[key].length).toBeGreaterThan(0);
+      }
+    }
+  });
+
   it('should contain hero and footer sections in every language', () => {
     for (const [langCode, dict] of Object.entries(languages)) {
       expect(dict, `Language ${langCode} must have hero section`).toHaveProperty('hero');

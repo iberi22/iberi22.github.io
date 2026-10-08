@@ -10,6 +10,13 @@ import Footer from '../components/Footer.svelte';
 import { getCollection } from 'astro:content';
 
 const rawPosts = await getCollection('blog');
+const localeEntries = await getCollection('blogLocales');
+const localeBySlug: Record<string, Record<string, { title: string; excerpt: string }>> = {};
+for (const entry of localeEntries) {
+  const slug = entry.data.entry;
+  localeBySlug[slug] ??= {};
+  localeBySlug[slug][entry.data.locale] = { title: entry.data.title, excerpt: entry.data.excerpt };
+}
 const posts = rawPosts.map((p) => ({
   slug: p.id,
   title: p.data.title,
@@ -17,6 +24,7 @@ const posts = rawPosts.map((p) => ({
   date: p.data.date,
   tags: p.data.tags,
   draft: p.data.draft,
+  locales: localeBySlug[p.id] ?? {},
 }));
 ---
 

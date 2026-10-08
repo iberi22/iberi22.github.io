@@ -1,8 +1,19 @@
 <script lang="ts">
-  import { t } from '../i18n/index';
+  import { onMount } from 'svelte';
+  import { t, getCurrentLocale } from '../i18n/index';
   import { baseUrl } from '../lib/baseUrl';
 
-  let { posts = [] }: { posts?: Array<{ slug: string; title: string; excerpt: string; date: string; tags: string[]; draft: boolean }> } = $props();
+  type LocaleCopy = { title: string; excerpt: string };
+  let { posts = [] }: { posts?: Array<{ slug: string; title: string; excerpt: string; date: string; tags: string[]; draft: boolean; locales?: Record<string, LocaleCopy> }> } = $props();
+  let locale = $state('es');
+
+  onMount(() => {
+    locale = getCurrentLocale();
+  });
+
+  function localized(post: { title: string; excerpt: string; locales?: Record<string, LocaleCopy> }, field: 'title' | 'excerpt') {
+    return post.locales?.[locale]?.[field] ?? post[field];
+  }
 
   let sortedPosts = $derived([...posts].sort((a, b) => (a.draft === b.draft ? 0 : a.draft ? 1 : -1)));
 
@@ -46,10 +57,10 @@
           </div>
 
           <h3 class="text-xl font-bold mb-4 text-text-primary group-hover:text-accent transition-colors">
-            {post.title}
+            {localized(post, 'title')}
           </h3>
           <p class="text-sm text-text-muted leading-relaxed mb-8">
-            {post.excerpt}
+            {localized(post, 'excerpt')}
           </p>
 
           <div class="flex flex-wrap gap-2">

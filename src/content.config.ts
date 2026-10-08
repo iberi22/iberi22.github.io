@@ -22,4 +22,14 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const blogLocales = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog-locales' }),
+  schema: z.object({
+    title: z.string(),
+    excerpt: z.string(),
+    locale: z.enum(['en', 'zh', 'hi', 'ar', 'fr', 'pt', 'bn', 'ru', 'ur']),
+    entry: z.string(),
+  }),
+});
+
+export const collections = { blog, blogLocales };

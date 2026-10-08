@@ -7,8 +7,6 @@ draft: false
 published: true
 ---
 
-# 1 Año Usando Google Jules: De la Experimentación al Desarrollo Autónomo por Oleadas Paralelas
-
 El **11 de junio de 2025, a las 02:05 UTC**, Jules hizo el primer push en mi cuenta. El pull request se mergeó a las 03:50 UTC de ese día. Jules estaba en beta pública desde el Google I/O del 20 de mayo. El primer cambio con una feature llegó 22 minutos después, en el mismo pull request.
 
 Al **28 de agosto de 2026**, con **11,240 commits** contados en 81 repositorios, el flujo ya no es un chat: es una **fábrica de software asíncrona y determinista** que despacha **oleadas de hasta 15 micro-tareas paralelas** a [Google Jules](https://jules.google), coordinadas por **Hermes** y verificadas por la máquina de estados de **GitCore**.
