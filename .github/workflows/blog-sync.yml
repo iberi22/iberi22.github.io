@@ -6,7 +6,9 @@ on:
 
 jobs:
   sync-blog:
-    if: contains(github.event.issue.labels.*.name, 'blog-post') && github.event.issue.state == 'open'
+    # Only issues opened by the repository owner become posts: a labelled issue from anyone else could be
+    # edited later to inject content into the public site.
+    if: contains(github.event.issue.labels.*.name, 'blog-post') && github.event.issue.state == 'open' && github.event.issue.author_association == 'OWNER'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -24,30 +26,29 @@ jobs:
           DATE: ${{ github.event.issue.created_at }}
           LABELS: ${{ join(github.event.issue.labels.*.name, ',') }}
         run: |
-          # Extract tags from labels (exclude 'blog-post' label itself)
-          TAGS=$(echo "$LABELS" | tr ',' '\n' | grep -v 'blog-post' | tr '\n' ',' | sed 's/,$//')
-          SLUG=$(echo "$TITLE" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-//;s/-$//')
-          DATE_FORMATTED=$(echo "$DATE" | cut -d'T' -f1)
-
-          cat > "src/content/blog/${SLUG}.md" << 'ENDOFFRONTMATTER'
-          ---
-          title: '"$TITLE"'
-          excerpt: ''
-          date: '"$DATE_FORMATTED"'
-          tags: ['"$(echo $TAGS | sed "s/,/','/g")"']
-          draft: false
-          published: true
-          ---
-
-          '"$BODY"'
-          ENDOFFRONTMATTER
-
-          echo "slug=${SLUG}" >> $GITHUB_OUTPUT
+          python3 - <<'PY'
+          import json, os, re
+          title = os.environ["TITLE"]
+          body = os.environ.get("BODY") or ""
+          date = os.environ["DATE"].split("T")[0]
+          tags = [t for t in os.environ.get("LABELS", "").split(",") if t and t != "blog-post"]
+          slug = re.sub(r"-+", "-", re.sub(r"[^a-z0-9]", "-", title.lower())).strip("-") or "post"
+          # json.dumps gives valid, escaped YAML scalars for title and tags
+          front = ["---", f"title: {json.dumps(title, ensure_ascii=False)}", "excerpt: ''", f"date: '{date}'",
+                   f"tags: {json.dumps(tags, ensure_ascii=False)}", "draft: false", "published: true", "---", ""]
+          with open(f"src/content/blog/{slug}.md", "w", encoding="utf-8") as f:
+              f.write("\n".join(front) + "\n" + body + "\n")
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"slug={slug}\n")
+          PY
 
       - name: Commit and push
+        env:
+          SLUG: ${{ steps.generate.outputs.slug }}
+          ISSUE: ${{ github.event.issue.number }}
         run: |
           git config --local user.email "bot@swal.io"
           git config --local user.name "SWAL Bot"
           git add src/content/blog/
-          git commit -m "blog: sync ${{ steps.generate.outputs.slug }} from issue #${{ github.event.issue.number }}"
+          git commit -m "blog: sync ${SLUG} from issue #${ISSUE}"
           git push
