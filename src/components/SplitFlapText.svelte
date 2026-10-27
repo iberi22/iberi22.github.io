@@ -27,11 +27,15 @@
     return s;
   }
 
-  let displayText = $state(getInitialScramble(text));
-  let isFlapping = $state(true);
+  // Server-rendered HTML carries the real text so crawlers, link previews and no-JS readers never see
+  // the scramble; the animation only starts once the component runs in the browser.
+  let displayText = $state(text);
+  let isFlapping = $state(false);
 
   function runFlap(targetText: string) {
-    if (typeof window === 'undefined' || !targetText) {
+    const reducedMotion =
+      typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+    if (typeof window === 'undefined' || !targetText || reducedMotion) {
       displayText = targetText;
       isFlapping = false;
       return;
@@ -97,12 +101,9 @@
   });
 </script>
 
-<span
-  class={`split-flap-root ${className}`}
-  class:flapping={isFlapping}
-  aria-label={text}
->
-  {displayText}
+<span class={`split-flap-root ${className}`} class:flapping={isFlapping}>
+  <span class="sr-only">{text}</span>
+  <span aria-hidden="true">{displayText}</span>
 </span>
 
 <style>

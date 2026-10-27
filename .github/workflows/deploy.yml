@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Weekly rebuild so the GitHub activity charts stay current (Mondays 11:00 UTC).
+    - cron: "0 11 * * 1"
 
 permissions:
   contents: read
@@ -34,6 +37,13 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Refresh GitHub stats
+        # Public data only. On failure the committed snapshot in src/data/github-stats.json is used.
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/fetch-github-stats.mjs
 
       - name: Run Tests
         run: pnpm test

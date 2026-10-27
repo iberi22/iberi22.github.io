@@ -36,7 +36,7 @@
             const formData = new FormData(form);
             const email = formData.get('email');
             const message = formData.get('message');
-            window.location.href = `mailto:iberi22@gmail.com?subject=Contacto desde Portfolio&body=${encodeURIComponent(message + '\n\nDe: ' + email)}`;
+            window.location.href = `mailto:iberi22@gmail.com?subject=${encodeURIComponent('Contact from portfolio')}&body=${encodeURIComponent(message + '\n\nFrom: ' + email)}`;
           }}
           class="space-y-6"
         >

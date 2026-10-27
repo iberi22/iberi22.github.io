@@ -1,5 +1,14 @@
 <script lang="ts">
   import { t, tArray } from '../i18n/index';
+  import githubStats from '../data/github-stats.json';
+
+  // Latest published release or version tag per public repo, refreshed by scripts/fetch-github-stats.mjs.
+  const releaseInfo: Record<string, { version: string | null }> = githubStats.projects;
+
+  function releaseFor(github?: string): string | null {
+    const repo = github?.replace('https://github.com/iberi22/', '');
+    return repo ? releaseInfo[repo]?.version ?? null : null;
+  }
 
   let selectedCategory = $state<'all' | 'production' | 'opensource'>('all');
   let expandedProject = $state<string | null>('xavier2');
@@ -7,7 +16,6 @@
   interface BaseProject {
     id: string;
     name: string;
-    version: string;
     category: 'production' | 'opensource';
     status: 'live' | 'beta' | 'active' | 'production';
     tech: string[];
@@ -22,7 +30,6 @@
     {
       id: 'xavier2',
       name: 'Xavier',
-      version: 'v0.6.0-beta',
       category: 'opensource',
       status: 'active',
       isFlagship: true,
@@ -33,17 +40,14 @@
     {
       id: 'gitcore',
       name: 'GitCore',
-      version: 'v3.8.0',
       category: 'opensource',
       status: 'active',
       tech: ['Rust', 'Agent Orchestration', 'Git/GitHub API', 'Jules Waves', 'Automated QA', 'Shell'],
-      github: 'https://github.com/iberi22/GitCore',
       color: 'var(--color-secondary)'
     },
     {
       id: 'gestalt',
       name: 'Gestalt',
-      version: 'v0.4.0',
       category: 'opensource',
       status: 'active',
       tech: ['Rust', 'SurrealDB', 'Tokio Async', 'CLI Tools', 'Multi-Agent Protocols'],
@@ -53,7 +57,6 @@
     {
       id: 'photon-core',
       name: 'Photon-Core',
-      version: 'v1.0.0-poc',
       category: 'opensource',
       status: 'active',
       tech: ['Rust', 'Physics Sim', 'Reed-Solomon ECC', 'Steganography', 'Rayon Parallelism', 'Optical Voxel Math'],
@@ -68,7 +71,6 @@
     {
       id: 'edge-mesh',
       name: 'edge-mesh',
-      version: 'v0.5.0',
       category: 'opensource',
       status: 'beta',
       tech: ['Rust', 'TypeScript', 'CRDT', 'P2P Mesh', 'ML-DSA-65 Crypto', 'WebRTC'],
@@ -78,7 +80,6 @@
     {
       id: 'orion',
       name: 'OrionHealth',
-      version: 'v0.5.0',
       category: 'opensource',
       status: 'active',
       tech: ['Flutter', 'Dart', 'SQLite / SQLCipher', 'Offline-First', 'Health Metrics'],
@@ -88,7 +89,6 @@
     {
       id: 'worldexams',
       name: 'WorldExams (SaberParaTodos)',
-      version: 'v1.0.0',
       category: 'opensource',
       status: 'active',
       tech: ['Astro 6', 'Svelte 5', 'TypeScript', 'Tailwind CSS', 'Cloudflare Workers', 'Offline-First'],
@@ -99,18 +99,16 @@
     {
       id: 'shelf',
       name: 'Shelf',
-      version: 'v0.4.0',
       category: 'opensource',
       status: 'active',
       tech: ['React 19', 'TypeScript', 'Yjs', 'CRDT', 'P2P WebRTC', 'Post-Quantum Crypto', 'PWA'],
       github: 'https://github.com/iberi22/shelf',
-      demoUrl: 'https://estante-inventario.vercel.app',
+      demoUrl: 'https://shelf-inventory.vercel.app',
       color: 'var(--color-secondary)'
     },
     {
       id: 'gos',
       name: 'GOS (Gastronomic Open Standard)',
-      version: 'v0.3.0',
       category: 'opensource',
       status: 'active',
       tech: ['Astro', 'JSON Schema', 'Flutter PWA', 'Offline-First', 'Design System'],
@@ -121,7 +119,6 @@
     {
       id: 'gara-g',
       name: 'GARA-G',
-      version: 'v0.3.0',
       category: 'opensource',
       status: 'active',
       tech: ['Rust', 'Flutter', 'P2P V2V', 'Polygon', 'Automotive Telemetry'],
@@ -132,7 +129,6 @@
     {
       id: 'tripro-mining',
       name: 'Tripro SPA (Chile)',
-      version: 'Producción',
       category: 'production',
       status: 'production',
       tech: ['PostgreSQL', 'Next.js', 'React', 'Astro', 'Python', 'n8n', 'Node.js', 'Flow Payments', 'Tailwind CSS'],
@@ -142,7 +138,6 @@
     {
       id: 'smartax-mobile',
       name: 'Restrepo y Londoño / Smartax',
-      version: 'Producción',
       category: 'production',
       status: 'production',
       tech: ['REST APIs', 'Google Play Console', 'Android SDK Compliance', 'PHP', 'WordPress Plugins', 'PDF Engine', 'JavaScript'],
@@ -152,7 +147,6 @@
     {
       id: 'siesa-ecommerce',
       name: 'Siesa Ecommerce (E-Solutions)',
-      version: 'Producción',
       category: 'production',
       status: 'production',
       tech: ['PHP (Yii2)', 'Angular', 'Linux (CentOS 7)', 'LAMP Stack', 'CI/CD Git', 'SSL & VPN', 'MySQL'],
@@ -161,7 +155,6 @@
     {
       id: 'logicalsoft-siip',
       name: 'LogicalSoft',
-      version: 'Producción',
       category: 'production',
       status: 'production',
       tech: ['PHP', 'JavaScript', 'MySQL', 'ReactJS', 'Electron', 'Android Play Store', 'IndexedDB', 'AWS & GCP'],
@@ -170,7 +163,6 @@
     {
       id: 'los-tres-editores',
       name: 'Los Tres Editores SAS',
-      version: 'Producción',
       category: 'production',
       status: 'production',
       tech: ['PostgreSQL (Triggers/Functions)', 'Java EE', 'PHP (FPDF)', 'Moodle', 'Linux Debian', 'iReport'],
@@ -183,6 +175,7 @@
     const nameVal = t(`${key}.name`);
     return {
       ...p,
+      release: releaseFor(p.github),
       name: nameVal !== `${key}.name` ? nameVal : p.name,
       tagline: t(`${key}.tagline`),
       companyOrContext: t(`${key}.companyOrContext`),
@@ -311,12 +304,23 @@
                   <h3 class="text-2xl font-bold text-text-primary">{project.name}</h3>
                   {#if project.isFlagship}
                     <span class="px-2.5 py-0.5 rounded text-[11px] font-mono font-bold bg-accent/20 border border-accent text-accent shadow-sm shadow-accent/30 tracking-wider">
-                      ★ PROYECTO ESTRELLA
+                      ★ FLAGSHIP
                     </span>
                   {/if}
                   <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-bg-surface border border-white/10 text-text-muted">
                     {project.period}
                   </span>
+                  {#if project.release && project.github}
+                    <a
+                      href={`${project.github}/releases`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-bg-surface border border-accent/30 text-accent hover:border-accent"
+                      title="Latest published version on GitHub"
+                    >
+                      {project.release}
+                    </a>
+                  {/if}
                   {#if project.status === 'production'}
                     <span class="status-chip status-live"><span></span>{t('projects.status.production')}</span>
                   {:else if project.status === 'active'}
