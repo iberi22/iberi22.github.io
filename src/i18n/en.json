@@ -200,16 +200,16 @@
           "label": "Architectural design and vector persistence layer in Rust"
         },
         {
-          "date": "2026 Q1",
-          "label": "Release v0.1 - CRUD operations, local embeddings, and REST endpoints"
-        },
-        {
-          "date": "2026 Q2",
-          "label": "v0.6.0-beta - HNSW indices, Dockerization, and episodic memory"
-        },
-        {
           "date": "2026 Q3",
-          "label": "Roadmap: Semantic graph integration and context routing"
+          "label": "First public releases: v0.0.1 (Sep 1) and v0.2.0 (Sep 6)"
+        },
+        {
+          "date": "2026 Q4",
+          "label": "v0.2.19 (Oct 24), the 14th release: code explanations backed by call-graph evidence, MCP context snapshots, Windows release build"
+        },
+        {
+          "date": "Next",
+          "label": "Roadmap: semantic graph integration and context routing"
         }
       ]
     },
@@ -780,5 +780,20 @@
     "mailFooter1": "Modality: 1 weekly networking/advisory session (Fridays), scheduled 1 week in advance.",
     "mailFooter2": "Tools / Ecosystem: Hermes, OpenClaw, GitCore, Gestalt, Jules, Ollama/vLLM",
     "fmtLangNote": "Translation platforms supported. If you don't speak Spanish, we meet in English."
+  },
+  "activity": {
+    "heading": "# activity",
+    "title": "Shipping, ",
+    "titleAccent": "measured",
+    "subtitle": "Live numbers from my public GitHub profile, refreshed automatically on every deploy and weekly.",
+    "contributions": "GitHub contributions in the last 12 months",
+    "activeDays": "days with at least one contribution",
+    "repos": "public original repositories",
+    "xavierRelease": "Xavier latest release",
+    "releasesSuffix": "releases since Sep 2026",
+    "monthlyTitle": "Contributions per month",
+    "languagesTitle": "Languages across public repositories (by code size)",
+    "source": "Source: GitHub public profile and REST API. Snapshot of",
+    "partial": "partial month"
   }
 }

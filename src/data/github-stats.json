@@ -1,0 +1,151 @@
+{
+  "generatedAt": "2026-10-27",
+  "user": "iberi22",
+  "githubSince": "2015",
+  "publicRepos": {
+    "original": 41,
+    "active": 32,
+    "archived": 9
+  },
+  "org": {
+    "name": "southwest-ai-labs",
+    "publicRepos": 4
+  },
+  "stars": 10,
+  "contributions": {
+    "total": 29772,
+    "activeDays": 333,
+    "from": "2025-10-26",
+    "to": "2026-10-27",
+    "monthly": [
+      {
+        "month": "2025-10",
+        "count": 55
+      },
+      {
+        "month": "2025-11",
+        "count": 530
+      },
+      {
+        "month": "2025-12",
+        "count": 1696
+      },
+      {
+        "month": "2026-01",
+        "count": 1278
+      },
+      {
+        "month": "2026-02",
+        "count": 639
+      },
+      {
+        "month": "2026-03",
+        "count": 1089
+      },
+      {
+        "month": "2026-04",
+        "count": 590
+      },
+      {
+        "month": "2026-05",
+        "count": 756
+      },
+      {
+        "month": "2026-06",
+        "count": 3787
+      },
+      {
+        "month": "2026-07",
+        "count": 4082
+      },
+      {
+        "month": "2026-08",
+        "count": 4237
+      },
+      {
+        "month": "2026-09",
+        "count": 5255
+      },
+      {
+        "month": "2026-10",
+        "count": 5778
+      }
+    ]
+  },
+  "languages": [
+    {
+      "name": "Rust",
+      "share": 31.6
+    },
+    {
+      "name": "TypeScript",
+      "share": 31.4
+    },
+    {
+      "name": "Dart",
+      "share": 9.7
+    },
+    {
+      "name": "Python",
+      "share": 7.8
+    },
+    {
+      "name": "Svelte",
+      "share": 5.4
+    },
+    {
+      "name": "JavaScript",
+      "share": 5.1
+    },
+    {
+      "name": "HTML",
+      "share": 3
+    },
+    {
+      "name": "Other",
+      "share": 6
+    }
+  ],
+  "projects": {
+    "xavier": {
+      "version": "v0.2.19",
+      "releases": 14,
+      "latestReleaseDate": "2026-10-24"
+    },
+    "gestalt": {
+      "version": "v1.0.0",
+      "releases": 9,
+      "latestReleaseDate": "2026-10-13"
+    },
+    "photon-core": {
+      "version": "v1.0.0",
+      "releases": 1,
+      "latestReleaseDate": "2026-05-21"
+    },
+    "edge-mesh": {
+      "version": null,
+      "releases": 0,
+      "latestReleaseDate": null
+    },
+    "OrionHealth": {
+      "version": "v0.10.1",
+      "releases": 3,
+      "latestReleaseDate": "2026-07-11"
+    },
+    "worldexams": {
+      "version": "v1.2.0",
+      "releases": 0,
+      "latestReleaseDate": null
+    },
+    "shelf": {
+      "version": "v0.5.3",
+      "releases": 1,
+      "latestReleaseDate": "2026-08-27"
+    },
+    "gastronomic-open-standard-GOS": {
+      "version": null,
+      "releases": 0,
+      "latestReleaseDate": null
+    }
+  }
+}
